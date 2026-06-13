@@ -220,8 +220,7 @@
         <span class="tab-sub">Developer</span>
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="kao">
-        Kao / Titan
-        <span class="tab-sub">Our family</span>
+        Kao
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="references">
         Sources
@@ -351,7 +350,7 @@
 
       try {
         initMermaid();
-        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=4");
+        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=5");
         if (!response.ok) throw new Error(`Could not load content (${response.status})`);
         const markdown = await response.text();
         const sections = parseTabs(markdown);

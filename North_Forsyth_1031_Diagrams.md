@@ -13,6 +13,21 @@ Sell **Belara Apartments** ($20M, no debt) and defer the gain by reinvesting int
 | **Kao equity** | ~$20M via 1031 proceeds |
 | **Clocks** | 45-day ID · 180-day completion |
 
+## Key Terms
+
+| Term | Definition |
+|---|---|
+| **1031 Exchange** | A tax-deferred swap under [IRC §1031](https://www.law.cornell.edu/uscode/text/26/1031): sell investment real estate and reinvest in like-kind property to defer capital gains. Strict 45-day identification and 180-day completion deadlines apply. |
+| **Relinquished property** | The property being sold — here, Belara Apartments ($20M). |
+| **Replacement property** | The property being acquired — here, North Forsyth Commerce Center. |
+| **Qualified Intermediary (QI)** | A third party that holds the $20M sale proceeds between the Belara closing and reinvestment into North Forsyth. Kao never touches the money directly; doing so would trigger **constructive receipt** and defeat the exchange ([Treas. Reg. §1.1031(k)-1](https://www.law.cornell.edu/cfr/text/26/1.1031(k)-1)). |
+| **Exchange Accommodation Titleholder (EAT)** | A special-purpose entity that temporarily holds title to North Forsyth during ground-up construction, giving the exchange time to fund land and building costs within the 180-day window ([Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf)). |
+| **Tenancy-in-Common (TIC)** | Direct co-ownership of real estate — each owner holds an undivided percentage of the fee (here, 95% Kao / 5% Hanover). A TIC interest in land or buildings qualifies as like-kind replacement property; an LLC membership interest does not ([Rev. Proc. 2002-22](https://www.irs.gov/pub/irs-drop/rp-02-22.pdf)). |
+| **Build-to-suit exchange** | A variation for ground-up development: the QI/EAT funds land acquisition and construction draws from exchange proceeds during the 180-day period. Only value actually built and paid for by day 180 counts. |
+| **Boot** | Taxable gain triggered when the exchange is incomplete — e.g., Kao receives cash back, or less than $20M of qualifying replacement value is in place by day 180. |
+| **Promote** | The developer's disproportionate share of profits above IRR hurdles (20% / 30% / 40% in the term sheet). In a TIC, this cannot be paid as a distribution; it is replicated via a fee to a separate Hanover affiliate. |
+| **Day 45 / Day 180** | Federal deadlines starting at Belara closing: identify replacement property within 45 days; complete the exchange (acquire replacement property) within 180 days. |
+
 ## Why the Term Sheet LLC Fails
 
 The Hanover term sheet gives Kao a **95% LLC membership interest**. Under [IRC §1031(a)(2)(D)](https://www.law.cornell.edu/uscode/text/26/1031), partnership/LLC interests are not like-kind real property — even if the LLC only owns real estate. Same issue in *Gluck v. Commissioner*, T.C. Memo. 2020-66.
@@ -29,7 +44,7 @@ Hanover's **net dollars stay the same**. Only the legal wrapper changes.
 
 ```mermaid
 flowchart TB
-    Kao["Kao / Titan\nExchanger"]
+    Kao["Kao\nExchanger"]
     Belara["Belara Apartments\n$20M sale"]
     Strake["Strake Jesuit\nBuyer"]
     QI["Qualified Intermediary\nholds $20M"]

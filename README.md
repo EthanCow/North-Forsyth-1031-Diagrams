@@ -9,7 +9,7 @@ Party-specific tabs for sharing:
 | Overview | Anyone who needs the full picture |
 | Strake | Strake Jesuit (Belara buyer) |
 | Hanover | Hanover (developer) |
-| Kao / Titan | Family only |
+| Kao | Kao Management Trust (exchanger) |
 | Sources | IRS citations and case law |
 
 Informational only — not legal or tax advice.
