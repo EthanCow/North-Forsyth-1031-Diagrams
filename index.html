@@ -3,103 +3,178 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>North Forsyth 1031 Exchange Diagrams</title>
+  <title>North Forsyth 1031 Exchange</title>
   <style>
     :root {
       color-scheme: light dark;
       --bg: #ffffff;
+      --surface: #f6f8fa;
       --text: #1f2328;
       --muted: #656d76;
-      --border: #d0d7de;
+      --border: #d1d9e0;
       --accent: #0969da;
-      --code-bg: #f6f8fa;
-      --table-stripe: #f6f8fa;
+      --accent-soft: #ddf4ff;
+      --diagram-bg: #ffffff;
+      --diagram-border: #d1d9e0;
+      --header-h: 7.5rem;
+      --tab-active-bg: #ffffff;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #0d1117;
+        --surface: #161b22;
         --text: #e6edf3;
         --muted: #8b949e;
         --border: #30363d;
         --accent: #58a6ff;
-        --code-bg: #161b22;
-        --table-stripe: #161b22;
+        --accent-soft: #13253c;
+        --diagram-bg: #161b22;
+        --diagram-border: #30363d;
+        --tab-active-bg: #0d1117;
       }
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.55;
       color: var(--text);
       background: var(--bg);
     }
-    header {
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 1.5rem 1rem;
+      box-shadow: 0 1px 0 rgba(0,0,0,.04);
+    }
+    .header-top {
+      padding: 0.85rem 1.25rem 0.5rem;
       text-align: center;
-      background: var(--code-bg);
     }
-    header h1 {
-      margin: 0 0 0.25rem;
-      font-size: 1.5rem;
-    }
-    header p {
+    .header-top h1 {
       margin: 0;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .header-top p {
+      margin: 0.2rem 0 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .tab-bar {
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      padding: 0 0.5rem;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tab-bar::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex: 1 0 auto;
+      min-width: max-content;
+      padding: 0.65rem 1rem;
+      border: none;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color .15s, border-color .15s, background .15s;
+    }
+    .tab-btn:hover { color: var(--text); background: var(--accent-soft); }
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      background: var(--tab-active-bg);
+    }
+    .tab-btn .tab-sub {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+    .tab-btn.active .tab-sub { color: var(--accent); opacity: 0.75; }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 1.75rem 1.25rem 4rem;
+    }
+    .tab-panel { display: none; animation: fadeIn .2s ease; }
+    .tab-panel.active { display: block; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .tab-panel h2 {
+      font-size: 1.2rem;
+      margin: 0 0 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .tab-panel h2:not(:first-child) { margin-top: 2rem; }
+    .tab-panel h3 { font-size: 1rem; margin: 1.25rem 0 0.5rem; }
+    .tab-panel p { margin: 0.6rem 0; font-size: 0.95rem; }
+    .tab-panel ul { margin: 0.5rem 0; padding-left: 1.25rem; font-size: 0.95rem; }
+    .tab-panel li { margin: 0.3rem 0; }
+    .tab-panel a { color: var(--accent); text-decoration: none; }
+    .tab-panel a:hover { text-decoration: underline; }
+    .tab-panel blockquote {
+      margin: 1rem 0;
+      padding: 0.6rem 0.9rem;
+      border-left: 3px solid var(--accent);
+      background: var(--surface);
       color: var(--muted);
       font-size: 0.9rem;
+      border-radius: 0 6px 6px 0;
     }
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem 1.25rem 4rem;
-    }
-    #content h1 { font-size: 1.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
-    #content h2 { font-size: 1.35rem; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
-    #content h3 { font-size: 1.1rem; margin-top: 1.5rem; }
-    #content p, #content li { font-size: 1rem; }
-    #content a { color: var(--accent); }
-    #content table {
+    .tab-panel table {
       width: 100%;
       border-collapse: collapse;
-      margin: 1rem 0;
-      font-size: 0.9rem;
-      display: block;
-      overflow-x: auto;
+      margin: 0.75rem 0 1rem;
+      font-size: 0.875rem;
     }
-    #content th, #content td {
+    .tab-panel th, .tab-panel td {
       border: 1px solid var(--border);
-      padding: 0.5rem 0.75rem;
+      padding: 0.45rem 0.65rem;
       text-align: left;
       vertical-align: top;
     }
-    #content th { background: var(--code-bg); }
-    #content tr:nth-child(even) td { background: var(--table-stripe); }
-    #content blockquote {
-      margin: 1rem 0;
-      padding: 0.5rem 1rem;
-      border-left: 4px solid var(--accent);
-      background: var(--code-bg);
-      color: var(--muted);
-    }
-    #content hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-    #content code {
-      background: var(--code-bg);
-      padding: 0.15rem 0.35rem;
-      border-radius: 4px;
-      font-size: 0.9em;
-    }
-    #content pre:not(.mermaid) {
-      background: var(--code-bg);
-      padding: 1rem;
-      border-radius: 6px;
+    .tab-panel th { background: var(--surface); font-weight: 600; }
+    .tab-panel tr:nth-child(even) td { background: var(--surface); }
+    .tab-panel strong { font-weight: 600; }
+
+    .diagram-shell {
+      background: var(--diagram-bg);
+      border: 1px solid var(--diagram-border);
+      border-radius: 10px;
+      padding: 1.25rem 0.75rem;
+      margin: 1rem 0 1.25rem;
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
-    .mermaid {
-      margin: 1.5rem 0;
-      text-align: center;
-      overflow-x: auto;
+    .diagram-shell .mermaid {
+      display: flex;
+      justify-content: center;
+      min-width: min-content;
     }
+    .diagram-shell svg {
+      max-width: 100%;
+      height: auto !important;
+    }
+
     #loading {
       text-align: center;
       color: var(--muted);
@@ -111,41 +186,131 @@
       background: #ffebe9;
       border: 1px solid #ff8182;
       padding: 1rem;
-      border-radius: 6px;
-      margin: 2rem 0;
+      border-radius: 8px;
+      margin: 1rem 0;
     }
     @media (prefers-color-scheme: dark) {
       #error { color: #ffa198; background: #3d1214; border-color: #8e2929; }
     }
+
+    @media (max-width: 600px) {
+      .header-top h1 { font-size: 1rem; }
+      .tab-btn { padding: 0.55rem 0.75rem; font-size: 0.8rem; }
+      main { padding: 1.25rem 1rem 3rem; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>North Forsyth 1031 Exchange Diagrams</h1>
-    <p>Belara Apartments &rarr; North Forsyth Commerce Center &middot; Informational only, not legal or tax advice</p>
+  <header class="site-header">
+    <div class="header-top">
+      <h1>North Forsyth 1031 Exchange</h1>
+      <p>Belara Apartments &rarr; North Forsyth Commerce Center &middot; Informational only</p>
+    </div>
+    <nav class="tab-bar" role="tablist" aria-label="Party views">
+      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="overview">
+        Overview
+        <span class="tab-sub">Full picture</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="strake">
+        Strake
+        <span class="tab-sub">Buyer</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="hanover">
+        Hanover
+        <span class="tab-sub">Developer</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="kao">
+        Kao / Titan
+        <span class="tab-sub">Our family</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="references">
+        Sources
+        <span class="tab-sub">IRS &amp; case law</span>
+      </button>
+    </nav>
   </header>
+
   <main>
-    <div id="loading">Loading diagrams&hellip;</div>
+    <div id="loading">Loading&hellip;</div>
     <div id="error"></div>
-    <article id="content"></article>
+    <div id="panels"></div>
   </main>
+
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-    mermaid.initialize({
-      startOnLoad: false,
-      theme: "neutral",
-      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" },
-      securityLevel: "loose"
-    });
+    const TAB_ORDER = ["overview", "strake", "hanover", "kao", "references"];
+    let activeTab = "overview";
+    let mermaidReady = false;
+
+    function isDark() {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+
+    function initMermaid() {
+      const dark = isDark();
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: "base",
+        look: "classic",
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true,
+          curve: "basis",
+          padding: 16,
+          nodeSpacing: 40,
+          rankSpacing: 50
+        },
+        themeVariables: dark ? {
+          darkMode: true,
+          background: "#161b22",
+          primaryColor: "#21262d",
+          primaryTextColor: "#e6edf3",
+          primaryBorderColor: "#484f58",
+          lineColor: "#8b949e",
+          secondaryColor: "#161b22",
+          tertiaryColor: "#0d1117",
+          clusterBkg: "#21262d",
+          clusterBorder: "#484f58",
+          titleColor: "#e6edf3",
+          edgeLabelBackground: "#21262d",
+          nodeTextColor: "#e6edf3"
+        } : {
+          darkMode: false,
+          background: "#ffffff",
+          primaryColor: "#f6f8fa",
+          primaryTextColor: "#1f2328",
+          primaryBorderColor: "#d1d9e0",
+          lineColor: "#656d76",
+          secondaryColor: "#ffffff",
+          tertiaryColor: "#f6f8fa",
+          clusterBkg: "#f6f8fa",
+          clusterBorder: "#d1d9e0",
+          titleColor: "#1f2328",
+          edgeLabelBackground: "#ffffff",
+          nodeTextColor: "#1f2328"
+        },
+        securityLevel: "loose"
+      });
+      mermaidReady = true;
+    }
+
+    function parseTabs(markdown) {
+      const sections = {};
+      const parts = markdown.split(/<!--\s*TAB:(\w+)\s*-->/);
+      for (let i = 1; i < parts.length; i += 2) {
+        sections[parts[i].toLowerCase()] = parts[i + 1].trim();
+      }
+      return sections;
+    }
 
     const renderer = {
       code(token) {
         const lang = (token.lang || "").trim();
         const text = token.text || "";
         if (lang === "mermaid") {
-          return `<pre class="mermaid">${text}</pre>`;
+          return `<div class="diagram-shell"><pre class="mermaid">${text}</pre></div>`;
         }
         const escaped = text
           .replace(/&/g, "&amp;")
@@ -154,34 +319,83 @@
         return `<pre><code class="language-${lang}">${escaped}</code></pre>`;
       }
     };
-
     marked.use({ renderer });
 
-    async function renderPage() {
+    async function renderMermaidIn(panel) {
+      const nodes = panel.querySelectorAll(".mermaid:not([data-processed])");
+      if (nodes.length === 0) return;
+      await mermaid.run({ nodes });
+      nodes.forEach(n => n.setAttribute("data-processed", "true"));
+    }
+
+    async function switchTab(tabId) {
+      activeTab = tabId;
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        const on = btn.dataset.tab === tabId;
+        btn.classList.toggle("active", on);
+        btn.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      document.querySelectorAll(".tab-panel").forEach(panel => {
+        panel.classList.toggle("active", panel.dataset.tab === tabId);
+      });
+      const activePanel = document.querySelector(`.tab-panel[data-tab="${tabId}"]`);
+      if (activePanel) await renderMermaidIn(activePanel);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      history.replaceState(null, "", `#${tabId}`);
+    }
+
+    async function boot() {
       const loading = document.getElementById("loading");
       const errorBox = document.getElementById("error");
-      const content = document.getElementById("content");
+      const panelsRoot = document.getElementById("panels");
 
       try {
+        initMermaid();
         const response = await fetch("North_Forsyth_1031_Diagrams.md");
-        if (!response.ok) throw new Error(`Could not load markdown (${response.status})`);
+        if (!response.ok) throw new Error(`Could not load content (${response.status})`);
         const markdown = await response.text();
+        const sections = parseTabs(markdown);
 
-        content.innerHTML = marked.parse(markdown);
+        TAB_ORDER.forEach(tabId => {
+          const md = sections[tabId] || "<p>Content not found.</p>";
+          const panel = document.createElement("article");
+          panel.className = "tab-panel";
+          panel.dataset.tab = tabId;
+          panel.id = tabId;
+          panel.setAttribute("role", "tabpanel");
+          panel.innerHTML = marked.parse(md);
+          if (tabId === activeTab) panel.classList.add("active");
+          panelsRoot.appendChild(panel);
+        });
+
         loading.style.display = "none";
 
-        const nodes = content.querySelectorAll(".mermaid");
-        if (nodes.length > 0) {
-          await mermaid.run({ nodes });
-        }
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+          btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+        });
+
+        const hash = location.hash.replace("#", "");
+        if (TAB_ORDER.includes(hash)) activeTab = hash;
+
+        await switchTab(activeTab);
+
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", async () => {
+          initMermaid();
+          document.querySelectorAll(".mermaid[data-processed]").forEach(n => {
+            n.removeAttribute("data-processed");
+            n.innerHTML = n.textContent;
+          });
+          const panel = document.querySelector(`.tab-panel[data-tab="${activeTab}"]`);
+          if (panel) await renderMermaidIn(panel);
+        });
       } catch (err) {
         loading.style.display = "none";
         errorBox.style.display = "block";
-        errorBox.textContent = `Failed to render page: ${err.message}`;
+        errorBox.textContent = `Failed to load: ${err.message}`;
       }
     }
 
-    renderPage();
+    boot();
   </script>
 </body>
 </html>
