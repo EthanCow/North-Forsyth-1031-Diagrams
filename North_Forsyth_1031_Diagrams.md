@@ -45,7 +45,6 @@ flowchart TB
     QI --> EAT
     EAT --> Land --> Build -->|"Day 180"| TIC
     Kao -->|"Day 45 ID"| Land
-    Kao --> TIC
     TIC --> Fees
 ```
 

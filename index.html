@@ -351,7 +351,7 @@
 
       try {
         initMermaid();
-        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=3");
+        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=4");
         if (!response.ok) throw new Error(`Could not load content (${response.status})`);
         const markdown = await response.text();
         const sections = parseTabs(markdown);
