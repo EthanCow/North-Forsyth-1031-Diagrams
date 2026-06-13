@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>North Forsyth 1031 Exchange Diagrams</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #656d76;
+      --border: #d0d7de;
+      --accent: #0969da;
+      --code-bg: #f6f8fa;
+      --table-stripe: #f6f8fa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --border: #30363d;
+        --accent: #58a6ff;
+        --code-bg: #161b22;
+        --table-stripe: #161b22;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      background: var(--code-bg);
+    }
+    header h1 {
+      margin: 0 0 0.25rem;
+      font-size: 1.5rem;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    #content h1 { font-size: 1.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    #content h2 { font-size: 1.35rem; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+    #content h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+    #content p, #content li { font-size: 1rem; }
+    #content a { color: var(--accent); }
+    #content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      display: block;
+      overflow-x: auto;
+    }
+    #content th, #content td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    #content th { background: var(--code-bg); }
+    #content tr:nth-child(even) td { background: var(--table-stripe); }
+    #content blockquote {
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      border-left: 4px solid var(--accent);
+      background: var(--code-bg);
+      color: var(--muted);
+    }
+    #content hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    #content code {
+      background: var(--code-bg);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    #content pre:not(.mermaid) {
+      background: var(--code-bg);
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .mermaid {
+      margin: 1.5rem 0;
+      text-align: center;
+      overflow-x: auto;
+    }
+    #loading {
+      text-align: center;
+      color: var(--muted);
+      padding: 4rem 1rem;
+    }
+    #error {
+      display: none;
+      color: #cf222e;
+      background: #ffebe9;
+      border: 1px solid #ff8182;
+      padding: 1rem;
+      border-radius: 6px;
+      margin: 2rem 0;
+    }
+    @media (prefers-color-scheme: dark) {
+      #error { color: #ffa198; background: #3d1214; border-color: #8e2929; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>North Forsyth 1031 Exchange Diagrams</h1>
+    <p>Belara Apartments &rarr; North Forsyth Commerce Center &middot; Informational only, not legal or tax advice</p>
+  </header>
+  <main>
+    <div id="loading">Loading diagrams&hellip;</div>
+    <div id="error"></div>
+    <article id="content"></article>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: "neutral",
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" },
+      securityLevel: "loose"
+    });
+
+    const renderer = {
+      code(token) {
+        const lang = (token.lang || "").trim();
+        const text = token.text || "";
+        if (lang === "mermaid") {
+          return `<pre class="mermaid">${text}</pre>`;
+        }
+        const escaped = text
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+        return `<pre><code class="language-${lang}">${escaped}</code></pre>`;
+      }
+    };
+
+    marked.use({ renderer });
+
+    async function renderPage() {
+      const loading = document.getElementById("loading");
+      const errorBox = document.getElementById("error");
+      const content = document.getElementById("content");
+
+      try {
+        const response = await fetch("North_Forsyth_1031_Diagrams.md");
+        if (!response.ok) throw new Error(`Could not load markdown (${response.status})`);
+        const markdown = await response.text();
+
+        content.innerHTML = marked.parse(markdown);
+        loading.style.display = "none";
+
+        const nodes = content.querySelectorAll(".mermaid");
+        if (nodes.length > 0) {
+          await mermaid.run({ nodes });
+        }
+      } catch (err) {
+        loading.style.display = "none";
+        errorBox.style.display = "block";
+        errorBox.textContent = `Failed to render page: ${err.message}`;
+      }
+    }
+
+    renderPage();
+  </script>
+</body>
+</html>
