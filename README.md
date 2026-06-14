@@ -14,30 +14,21 @@ This is a **conditional, more-likely-than-not** position (not "clean," and nothi
 ## How it's built
 
 `index.html` fetches `North_Forsyth_1031_Diagrams.md`, splits it on `<!-- TAB:name -->` markers,
-and renders Markdown (marked.js) + diagrams (mermaid). The source of truth lives outside this repo
-as `North_Forsyth_1031_StructureA.md`; this markdown is generated from it.
+and renders Markdown (marked.js) + diagrams (mermaid). This file is a **short, party-facing
+summary** curated from the full source of truth, `North_Forsyth_1031_StructureA.md` (which lives
+outside this repo, alongside the companion memos and contains the complete analysis).
 
 ## Tabs
 
-| Tab | Contents |
+| Tab | Send to / contents |
 |---|---|
-| Overview | Disclaimer, thesis, MLTN honesty note, facts & assumptions, the deal in one screen |
-| Structure | Why it survives §1031, *Magneson/Bolker* limits, step-transaction, scorecard |
-| Big picture | Two-phase diagram |
-| Phase 1 | The exchange, build-to-suit math, equity exhaustion, mechanics |
-| Phase 2 | The §721 JV and its guardrails |
-| Seasoning | The deed-date clock, thresholds, path to "should" |
-| Neutrality | The five-part Hanover-protection fix |
-| Entities | Who's who, type, and tax status |
-| Money flow | Every dollar + Day-180 valuation/boot schedule |
-| Tax | Event-by-event treatment |
-| Tax mechanics | §707, §752, §704(c), basis/depreciation |
-| Timeline | Pre-close → exit |
-| Kao / Hanover / Strake | Role-by-party views |
-| Checklist | Everything to do |
-| Key terms | Glossary |
-| Sources | IRS statute, regs, rev. procs, case law |
-| Appendix | Legal rationale, Structure B, change log, open items |
+| Overview | The deal, the problem and the fix, the honest MLTN framing |
+| Structure | How it works — the two phases, diagrams, clocks, seasoning, neutrality, tax overlays |
+| Kao | The exchanger's role and steps |
+| Hanover | The developer's role (and the Structure B alternative) |
+| Strake | The Belara buyer's role |
+| Sources | IRS statute, regulations, revenue procedures, case law |
 
-Informational only — not legal or tax advice and not a covered opinion. Obtain a written §1031
-opinion on the executed documents before Belara closes.
+Informational only — not legal or tax advice and not a covered opinion. This is a conditional,
+more-likely-than-not position (not "clean"). Obtain a written §1031 opinion on the executed
+documents before Belara closes.
