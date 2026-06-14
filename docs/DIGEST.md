@@ -38,9 +38,9 @@ Internal model for our family: map the full path **Belara sale → North Forsyth
 | Replacement | North Forsyth Commerce Center — **~327,600 SF**, Forsyth County GA |
 | Project cost | **~$50.3M** · land **$6.5M** · loan **~60% LTC** |
 | Equity | **95% Kao / 5% Hanover** (term sheet) |
-| **Day 0 (model)** | **Sept 1, 2026** — Belara + land aligned |
-| **Day 45** | ~Oct 16, 2026 |
-| **Day 180** | ~Feb 28, 2027 |
+| **Day 0 (model)** | **Sept 15, 2026** — Belara + NFCC land close / construction start |
+| **Day 45** | **Oct 30, 2026** |
+| **Day 180** | **Mar 14, 2027** |
 | QI | **Riverway Title** (identified) |
 | EAT | **TBD** |
 | Land seller | Third party, **unaffiliated**, **under PSA** |
@@ -120,7 +120,7 @@ QI engaged pre-close · proceeds to QI only · escrow wiring · exchanger named 
 
 ## 9. Site status
 
-GitHub Pages content updated 2026-06-14 to reflect: Sept 1 timeline, draw model, path comparison, Hanover entity map, open exchanger issue — **not** a single locked structure.
+GitHub Pages content updated 2026-06-14 to reflect: **Sept 15** timeline, draw model, path comparison, Hanover entity map, open exchanger issue — **not** a single locked structure.
 
 ---
 

@@ -21,9 +21,9 @@
 
 | Event | Date |
 |---|---|
-| **Day 0 (model)** | **Sept 1, 2026** — Belara + NFCC land aligned |
-| **Day 45** | ~Oct 16, 2026 |
-| **Day 180** | ~Feb 28, 2027 |
+| **Day 0 (model)** | **Sept 15, 2026** — Belara close aligned with NFCC land close / construction start |
+| **Day 45** | **Oct 30, 2026** |
+| **Day 180** | **Mar 14, 2027** |
 | Term sheet response (original letter) | June 23, 2026 — **we drive Hanover response** |
 
 ---
@@ -32,9 +32,9 @@
 
 | Phase | Timing | Amount | Cumulative |
 |---|---|---|---|
-| Land | Day 0 (Sept 1) | **$6.5M** | $6.5M |
-| Sitework | Months 1–2 | **$5M** | $11.5M |
-| Foundations | Months 3–5 | **$10M** | **$21.5M** |
+| Land | Day 0 (Sept 15) | **$6.5M** | $6.5M |
+| Sitework | Oct–Nov 2026 | **$5M** | $11.5M |
+| Foundations | Dec 2026–Feb 2027 | **$10M** | **$21.5M** |
 
 Exchange equity funds first. **~$20M §1031 target** met by ~month 5 if in-place + documented.
 
