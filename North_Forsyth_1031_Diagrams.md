@@ -1,24 +1,28 @@
 <!-- TAB:overview -->
 
-> **Internal working model only** — not legal advice, not client-facing. No structure is locked; obtain §1031 counsel opinion before Belara closes.
+> **Internal working model only** — not legal advice, not client-facing. **Working structure: Structure A** (exchange first, §721 JV after seasoning) — **DRAFT**; obtain §1031 counsel opinion before Belara closes.
 
 ## The deal
 
 Sell **Belara Apartments** ($20M, no debt) and defer gain by reinvesting into **North Forsyth Commerce Center** — ≈$50.3M ground-up industrial (≈327,600 SF, Forsyth County GA) with **Hanover Industrial LLC** as developer.
 
+**Structure A in one line:** Kao exchanges into **100% fee title** via QI + EAT (Phase 1), then — after **genuine seasoning** — forms the term-sheet **95/5 promoted JV** via **§721** (Phase 2). Same commercial economics; promote stays **capital gain**, not ordinary-income fee.
+
 | | |
 |---|---|
+| **Working structure** | **Structure A** — exchange first, §721 JV after seasoning (**DRAFT**) |
 | **Belara seller (today)** | Titan Management — **must align with exchanger** (prefer **Kao Management Trust**) |
 | **Belara buyer** | Strake Jesuit |
-| **Commercial LP (term sheet)** | Kao Management Trust — 95% economics |
+| **Commercial LP (term sheet)** | Kao Management Trust — 95% economics (**Phase 2 JV**) |
 | **Developer** | Hanover Industrial LLC |
 | **Land** | $6.5M · third-party seller · **under PSA** · unaffiliated |
-| **Project cost** | ≈$50.3M · construction loan **≈60% LTC** |
+| **Project cost** | ≈$50.3M · construction loan **≈60% LTC** (~$30M) |
 | **QI** | **Riverway Title** |
-| **EAT** | TBD |
+| **EAT** | TBD (e.g. NFCC Parking Title LLC — placeholder) |
 | **Model Day 0** | **Sept 15, 2026** (Belara + NFCC land / construction start) |
-| **45-day ID deadline** | **Oct 30, 2026** — identification letter must be **on file with QI by then** (modeled **Sept 15**, before land wire) |
-| **180-day completion deadline** | **Mar 14, 2027** — EAT must deed replacement property to exchanger |
+| **45-day ID deadline** | **Oct 30, 2026** — letter on file **Sept 15** before land wire |
+| **180-day completion** | **Mar 14, 2027** — EAT deeds **100%** to Kao LLC |
+| **Phase 2 JV (model)** | Earliest **~Mar 2028** (seasoning floor — **OPEN** with counsel) |
 
 ## Commercial term sheet (unsigned — economics to preserve)
 
@@ -31,40 +35,54 @@ Sell **Belara Apartments** ($20M, no debt) and defer gain by reinvesting into **
 | Guaranties | Sponsor → lender + JV |
 | Close intent | **Simultaneous:** JV + GMP + loan + land + permit |
 
-Hanover has **not signed**. We will submit a **restructured term sheet** — same dollars, different legal sequencing for §1031.
+Hanover has **not signed**. We will submit a **restructured term sheet** — **Structure A sequencing**: Phase 1 exchange + EAT build, Phase 2 §721 JV with full waterfall.
 
-## Why the term sheet LLC (Day 1) conflicts with §1031
+## Why Structure A (not term sheet LLC Day 1)
 
-The term sheet gives Kao a **95% LLC membership interest** at closing. Post-TCJA, §1031 applies only to **real property** — a partnership/LLC interest is **not** like-kind ([IRC §1031(a)(1)](https://www.law.cornell.edu/uscode/text/26/1031), [Reg. §1.1031(a)-3](https://www.law.cornell.edu/cfr/text/26/1.1031(a)-3)). A ground-up build also requires **QI + EAT** parking — not in the term sheet's simultaneous JV close.
+The unsigned term sheet gives Kao a **95% LLC membership** at closing. That **fails §1031**: post-TCJA, only **real property** is like-kind — not an LLC/partnership interest ([IRC §1031(a)(1)](https://www.law.cornell.edu/uscode/text/26/1031), [Reg. §1.1031(a)-3](https://www.law.cornell.edu/cfr/text/26/1.1031(a)-3)). A **promote inside the exchange vehicle** makes it partnership economics, not replacement real estate.
+
+**Structure A fix:** separate in **time** — real property first, promoted partnership second.
+
+| | Term sheet (as written) | **Structure A** |
+|---|---|---|
+| Kao receives at exchange | 95% **LLC interest** | **100% fee simple** real property |
+| Hanover 5% + promote | Day 1 in JV | **Phase 2** via §721 after seasoning |
+| Hanover promote tax character | Capital gain (if exchange worked) | **Capital gain (carry)** in Phase 2 JV |
+| Exchange viability | **Fails** | **MLTN at best** — seasoning-dependent (**DRAFT**) |
+| Ground-up build | No EAT in term sheet | **QI + EAT** ([Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf)) |
+
+**Fallback (only if counsel rejects A):** Structure B — Kao **100% forever** + Hanover **ordinary-income incentive fee** (stronger exchange, worse for Hanover). Not the working model.
 
 ```mermaid
-flowchart LR
-  subgraph TS["Term sheet — LLC Day 1"]
-    K["Kao\n95% LLC interest"]
-    H["Hanover\n5% + promote"]
-    JV["Delaware LLC\nowns project"]
-    K --> JV
-    H --> JV
+flowchart TB
+  subgraph P1["PHASE 1 — Exchange · Days 0–180"]
+    Belara["Belara $20M"]:::asset
+    SK["Strake"]:::neutral
+    QI["Riverway Title\nQI"]:::neutral
+    EAT["EAT\nholds title"]:::neutral
+    KLLC["Kao acquisition LLC\n100% fee"]:::kao
+    Belara --> SK --> QI
+    QI --> EAT
+    EAT -->|"Mar 14 · Day 180 deed"| KLLC
   end
-  subgraph REQ["§1031 needs"]
-    QI["Riverway Title\nholds $20M"]
-    EAT["EAT\nholds title 0–180d"]
-    RP["Real property\nto exchanger"]
-    QI --> EAT --> RP
+  subgraph GAP["Seasoning · Kao owns 100%"]
+    G["≥12 mo post-deed +\nsubstantial completion\n(model: ~Mar 2028+)"]:::kao
   end
-  TS -.->|"restructure required"| REQ
+  subgraph P2["PHASE 2 — §721 JV"]
+    K2["Kao LLC\n95%"]:::kao
+    H["Hanover\n5% + promote"]:::han
+    JV["NFCC JV LLC"]:::asset
+    K2 -->|"§721"| JV
+    H -->|"§721 · loan converts"| JV
+  end
+  P1 --> GAP --> P2
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
 ```
 
-## Structure paths — compared (none locked)
-
-| Path | What it is | Exchange (draft view) | Hanover gets equity |
-|---|---|---|---|
-| **A. Term sheet LLC** | JV Day 1 as written | **Fails** — LLC interest | Day 1 |
-| **B. TIC + EAT** | Direct co-ownership at Day 180; promote as fee | Uncertain — counsel | Day 180 |
-| **C. Exchange then §721** | 100% fee to Kao, then JV after seasoning | MLTN at best | After 12–24+ mo |
-| **D. 100% + fee** | Kao owns forever; promote as incentive fee | Strongest exchange | Never (fee) |
-
-**Our stance:** Whatever works — pick with counsel, not by label.
+> **Residual risk (honest):** IRS **step-transaction** — could collapse Phase 1 + 2 if pre-wired. Mitigated by **no binding Phase 2 obligation**, **real seasoning**, Kao **operates as sole owner** in the gap. Target opinion: **MLTN**, not "clean." Source: `docs/sources/StructureA-draft.md` — **DRAFT**, not counsel-reviewed.
 
 ## Timeline & exchange equity draw
 
@@ -114,36 +132,68 @@ QI holds **≈$20M** from Belara (no debt). **Cannot disburse more than the pool
 | ④ | Oct–Nov 2026 | **Riverway Title** → **EAT** → Hanover GC | **5.0M** | Exchange pool |
 | ⑤ | Dec 2026–Feb 2027 | **Riverway Title** → **EAT** → Hanover GC | **8.5M** | Exchange pool (**exhausts ≈$20M**) |
 | ⑤b | Dec 2026–Feb 2027 | **Lender** → **EAT** → Hanover GC | **1.5M** | **Construction loan** (foundations balance) |
-| ⑥ | Mar 14, 2027 | **EAT** → **Kao LLC** (deed) | — | Exchange **completes** |
+| ⑥ | Mar 14, 2027 | **EAT** → **Kao LLC** (**100%** deed) | — | Phase 1 **complete** |
+| ⑦ | Mar 2027 – ~Mar 2028+ | **Seasoning** — Kao sole owner | — | Hanover = **loan + fees only** |
+| ⑧ | ~Mar 2028+ (**OPEN**) | **§721** — NFCC JV LLC | — | Hanover **5% + promote** |
 
-**Project draw model (user):** land $6.5M + sitework $5M + foundations $10M = **$21.5M** hard-cost phases. **Exchange pool covers $20.0M**; the last **$1.5M** of the foundations phase is **loan-funded**, not QI proceeds.
+**Phase 1 capital stack:** QI exchange pool (≈$20M) + construction loan (~$30M) + Hanover **secured loan** (~$1.1M) — **no Hanover equity, no promote** until Phase 2.
 
-Full build ≈**11 months** (~Aug 2027). Remaining **≈$28.8M** of ≈$50.3M project (after land + early hard costs) → **construction loan** (~60% LTC) per model.
+**Project draw model (user):** land $6.5M + sitework $5M + foundations $10M = **$21.5M** hard-cost phases. **Exchange pool covers $20.0M**; the last **$1.5M** of foundations is **loan-funded**.
 
-## Hanover entity map (roles — names TBD at formation)
+Full build ≈**11 months** (~Aug 2027). Balance of ≈$50.3M project → **construction loan** (~60% LTC).
 
-**During Days 0–180:** **EAT** holds title; **Hanover Construction Group** contracts with EAT. Chart below is the **term-sheet target** after restructure (JV/co-ownership timing **OPEN**).
-
-Pattern from Hanover's example deals + term sheet. **Hanover Construction Group** is the **GMP contractor** — not a JV equity holder during the EAT phase.
+## Phase 1 money flow (Days 0–180)
 
 ```mermaid
 flowchart TB
-  HIND["Hanover Industrial LLC\nSponsor"]:::han
-  LAND["Land acquisition SPV"]:::neutral
-  INV["Investor LP 95%\n(Kao / Kao Trust)"]:::kao
-  HAN5["Hanover GP/LP stack 5%\n+ promote"]:::han
-  GC["Hanover Construction Group\nGMP · 4.5% hard\n(contractor only)"]:::han
-  EATN["EAT / project entity\nholds title during build"]:::neutral
-  HIND --> LAND
-  HIND --> HAN5
-  INV --> EATN
-  HAN5 --> EATN
-  LAND --> EATN
-  GC -->|"GMP contract"| EATN
+  SK["Strake"]:::neutral
+  QI["Riverway Title"]:::neutral
+  EAT["EAT"]:::neutral
+  LN["Construction lender\n~$30M"]:::neutral
+  HLOAN["Hanover Capital LLC\n~$1.1M secured LOAN"]:::han
+  GC["Hanover Construction Group\nGMP 4.5%"]:::han
+  DEV["Hanover Industrial\nDMA 4%"]:::han
+  KLLC["Kao acquisition LLC\n100% at Day 180"]:::kao
+  SK -->|"$20M"| QI --> EAT
+  LN --> EAT
+  HLOAN -->|"debt only"| EAT
+  EAT --> GC
+  EAT --> DEV
+  EAT -->|"deed"| KLLC
   classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
   classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
 ```
+
+## Phase 2 — §721 JV (after seasoning)
+
+```mermaid
+flowchart TB
+  KLLC["Kao acquisition LLC\ncontributes property"]:::kao
+  HAN["Hanover member LLC\nloan converts"]:::han
+  JV["NFCC JV LLC\n95/5 + promote"]:::asset
+  KLLC -->|"§721 · 95%"| JV
+  HAN -->|"§721 · 5% + carry"| JV
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+```
+
+**Seasoning** starts **EAT→Kao deed** (Mar 14, 2027), not Day 0. Draft floor: **later of** 12 months post-deed **and** substantial completion → earliest JV **~Mar 2028**. Comfort: **~24 months** + lease-up/refi.
+
+## Entities — Structure A (names TBD)
+
+| Entity | Phase | Role |
+|---|---|---|
+| **Kao Management Trust** | Both | Exchangor |
+| **Kao acquisition LLC** | 1 → 2 | **100% deed**; then 95% JV member |
+| **Riverway Title** | 1 | QI |
+| **EAT** (TBD) | 1 | Title holder / borrower during build |
+| **Hanover Industrial LLC** | 1–2 | 4% DMA |
+| **Hanover Construction Group** | 1–2 | 4.5% GMP — contractor, **not** equity |
+| **Hanover Capital LLC** (placeholder) | 1 → 2 | **~$1.1M secured loan** → §721 conversion |
+| **Hanover member LLC** | 2 | 5% + promote |
+| **NFCC JV LLC** | 2 | Term-sheet waterfall |
 
 ## Key terms (short)
 
@@ -155,13 +205,18 @@ flowchart TB
 | **Boot** | Taxable if less than ≈$20M qualifying value in place by Day 180 |
 | **Like-kind** | Real property only — not LLC/partnership interests |
 | **Same taxpayer** | Belara seller = replacement recipient (resolve Titan vs Kao Trust) |
+| **§721** | Tax-free contribution to form Phase 2 JV — promote lives here |
+| **Seasoning** | Real ownership gap between exchange deed and JV — defeats step-transaction |
+| **Hanover Phase 1 loan** | ~$1.1M **secured debt** — converts to 5% at §721, **not** equity during exchange |
 
 ## Open before Belara PSA
 
 1. **Exchangor entity** — align Titan Management → **Kao Management Trust** (preferred)  
-2. **Structure path** — B, C, or D above — counsel review  
-3. **EAT** provider · lender approval of chosen structure  
-4. **Belara PSA** — QI/escrow language (Riverway Title)
+2. **§1031 counsel opinion** on **Structure A** Phase 1 + Phase 2 (**DRAFT** until received)  
+3. **EAT** provider · lender approval of EAT + Phase 2 JV path  
+4. **Belara PSA** — QI/escrow language (Riverway Title)  
+5. **Phase 1 docs** — QEAA, Hanover **loan** (not equity), DMA, GMP, Kao indemnity/LC  
+6. **Non-binding Phase 2 LOI** — no fixed-price equity option
 
 ## All parties — step index (model)
 
@@ -173,9 +228,10 @@ flowchart TB
 | **2** | **Sept 15 ①** | **Belara close** | **$20M → QI** | Signs; **no cash** | **Receives $20M** | — | — | — | — |
 | **3** | **Sept 15 ②** | **ID letter to QI** (before NFCC spend) | — | **Delivers letter** | **Acknowledges** | — | — | — | — |
 | **4** | **Sept 15 ③** | **Land close** | — | — | **$6.5M → EAT** | **On title** | GMP live | **Paid** | — |
-| **5** | Sept 16 – Mar 13 | **Construction** | — | — | **Draws ≤ ≈$13.5M** to EAT | Pays GC | **Builds** | — | **Loan after pool exhausted** |
-| **6** | **Mar 14** | **Exchange completes** | — | **Deed via LLC** | Closes exchange | **Deeds → Kao LLC** | GC continues | — | — |
-| **7** | ~Aug 2027 | Full build | — | Owns | — | Dissolved | JV path **OPEN** | — | Funds balance |
+| **5** | Sept 16 – Mar 13 | **Construction** | — | — | Draws to EAT | Pays GC | Builds + **secured loan** | — | Loan + Hanover loan |
+| **6** | **Mar 14** | **Phase 1 complete** — **100% deed** | — | **Owns 100%** | Closes exchange | Deeds → Kao LLC | Creditor + GC | — | — |
+| **7** | Mar 2027 – ~Mar 2028+ | **Seasoning** | — | Sole owner | — | Dissolved | Loan + fees only | — | — |
+| **8** | ~Mar 2028+ | **§721 JV** | — | 95% | — | — | **5% + promote** | — | — |
 
 | **Deadline only** | **Oct 30, 2026** | Last day to identify if not already done in step **3** | — | — | — | — | — | — | — |
 
@@ -288,30 +344,39 @@ flowchart LR
 
 <!-- TAB:hanover -->
 
-## Your role
+## Your role — Structure A
 
-**Hanover Industrial LLC** = **Sponsor** on the unsigned term sheet — development manager, loan/JV guarantor, and target **5% + promote** economics. **Hanover Construction Group** (affiliate) = **GMP contractor** — 4.5% of hard costs; **not** a JV equity holder on the org chart.
+**Hanover Industrial LLC** = Sponsor. **Structure A** splits your economics across two phases:
 
-**Legal structure is not locked.** Term sheet assumes **LLC JV Day 1**; §1031 requires **restructure** (EAT holds title during build; your equity/promote timing **OPEN**). **Commercial dollars** (fees, promote, guaranties) are what we aim to preserve.
+| Phase | Your role | Equity / promote |
+|---|---|---|
+| **Phase 1** (Days 0–180 + build) | DMA **4%**, GMP **4.5%**, loan **guaranties**, **~$1.1M secured loan** to EAT | **None** — you are **creditor + contractor** |
+| **Seasoning** (~Mar 2027 – ~Mar 2028+) | Same fees; loan outstanding; Kao owns **100%** | **Still none** — non-binding Phase 2 LOI only |
+| **Phase 2** (§721 JV) | Managing member; term-sheet **5% + promote** | **Capital gain carry** in Delaware LLC JV |
 
-| Role | Entity |
+**Hanover Construction Group** = GMP contractor to **EAT**, then to **Kao LLC**, then **JV** — never a substitute for Phase 2 membership.
+
+| Role | Entity (placeholder) |
 |---|---|
-| **Sponsor / developer** | **Hanover Industrial LLC** — 4% dev fee, guaranties, 5% + promote (timing OPEN) |
-| **GC / GMP** | **Hanover Construction Group** — contracts with **EAT / project entity**, not Kao directly |
-| **Investor side** | **Kao Management Trust** — 95% economics on term sheet |
-| **Title during build** | **EAT** (TBD) — legal owner Days 0–180 |
-| **Exchange funds** | **Riverway Title (QI)** → EAT — not Hanover's balance sheet |
-| **Construction loan** | Third-party lender — **~60% LTC**; you guaranty per term sheet |
+| **Sponsor / DMA** | Hanover Industrial LLC — 4% |
+| **GC / GMP** | Hanover Construction Group — 4.5% hard |
+| **Phase 1 capital** | **Hanover Capital LLC** — **~$1.1M secured, interest-bearing loan** (not equity) |
+| **Phase 2 member** | Hanover member LLC — 5% + promote via **§721** |
+| **JV** | NFCC JV LLC — full term-sheet waterfall |
 
-## Why §1031 changes your closing sequence
+## Why Structure A (not term sheet Day 1)
 
-Term sheet: **simultaneous** JV + GMP + loan + land + permit — Kao gets **95% LLC membership** Day 1. That **breaks §1031** (LLC interest ≠ like-kind real property). Restructured model:
+Term sheet **LLC JV at closing** breaks Kao's §1031. Structure A preserves **your promote as capital gain** by keeping promote **out of Phase 1** and into **Phase 2 partnership** — same pre-tax economics, later legal ownership.
 
-1. **EAT** holds NFCC title and borrows during **180-day** exchange window  
-2. **You** contract as **developer + GC** to the **EAT** — paid from QI draws, then construction loan  
-3. **Your 5% + promote** enters **later** (Day 180 co-ownership, post-exchange §721 JV, or fee-only path) — **counsel picks**
+**You accept in Phase 1:** no equity, no promote, more **guaranty/creditor** risk. **You get in Phase 2:** standard promoted JV if Kao proceeds and seasoning clears counsel.
 
-Your fees and guaranties can start in Phase 1; **your equity membership** likely cannot.
+## Hanover protection in Phase 1 (neutrality package — DRAFT)
+
+1. **Standalone market DMA + GMP** — arm's-length fees with normal remedies  
+2. **~$1.1M = true secured loan** at market interest — **not** "preferred return"  
+3. **Kao indemnity/LC** for your guaranty exposure  
+4. **Cost-based break fee** if Kao declines Phase 2 — **not** promote-mirroring  
+5. **Non-binding LOI** for Phase 2 — no fixed-price equity option
 
 ## Key dates (Hanover — model)
 
@@ -320,8 +385,10 @@ Your fees and guaranties can start in Phase 1; **your equity membership** likely
 | **Pre-close** | Before Sept 15 | Execute **GMP** + dev agreements with **EAT**; lender guaranty docs |
 | **Day 0 — ① Belara** | **Sept 15, 2026** | **GMP effective** after Kao ID + land close to **EAT** |
 | **Construction** | Sept 16, 2026 – Mar 13, 2027 | **Invoice EAT**; paid from QI draws then **loan** |
-| **Day 180** | **Mar 14, 2027** | EAT deeds to **Kao LLC**; you remain **GC**; equity path **OPEN** |
-| **Full build** | ~**Aug 2027** | Complete building; loan funds balance of ~$50.3M project |
+| **Day 180** | **Mar 14, 2027** | EAT deeds **100%** to Kao LLC — you stay **GC**; **no equity deed** |
+| **Seasoning** | Mar 2027 – ~Mar 2028+ | Creditor + contractor; loan outstanding | 
+| **Phase 2 §721** | ~**Mar 2028+** (**OPEN**) | Loan converts → **5% + promote** in JV LLC |
+| **Full build** | ~**Aug 2027** | Construction completes under Kao ownership |
 
 ## Step 1 — Pre-close (before Sept 15)
 
@@ -346,9 +413,9 @@ flowchart TB
 |---|---|
 | **Hanover Industrial** | Negotiate restructured economics; dev management agreement (4%) with **EAT** |
 | **Hanover Construction Group** | Finalize **GMP** — 4.5% hard, $300K advance, 5% contingency — **contractor to EAT** |
-| **Hanover** | Loan completion + overrun **guaranties** per term sheet — lender lends to **EAT** |
-| **EAT** | Formed/engaged; signs QEAA with exchanger; holds title |
-| **Not yet** | Delaware JV LLC with Kao 95% — **deferred** until structure path chosen |
+| **Hanover Capital LLC** | Draft **secured loan** docs (~$1.1M) — subordination, interest, collateral |
+| **EAT** | QEAA; holds title; borrows construction + Hanover loans |
+| **Phase 2** | **Non-binding LOI** only — full JV docs **after** seasoning |
 
 ## Step 2 — Day 0: land close (Sept 15, 2026)
 
@@ -423,85 +490,95 @@ flowchart LR
 
 | Event | Hanover |
 |---|---|
-| **EAT → Kao LLC deed** | Exchange completes — **Kao** owns NFCC; you do **not** receive a deed slice yet (unless TIC path — OPEN) |
-| **GMP** | Continues through **Kao LLC** as owner |
-| **5% + promote** | **Not automatic** — depends on structure path (Overview) |
+| **EAT → Kao LLC deed** | **100%** to Kao — exchange done; **you are not on title** |
+| **GMP / DMA** | Continue — Kao is owner; you are still vendor |
+| **Your loan** | **Still outstanding** — converts at §721, not at Day 180 |
+| **Promote** | **Does not start** — Phase 2 only |
 
-## Step 5 — After Day 180 (~Aug 2027 full build)
+## Step 5 — Seasoning (Mar 2027 – ~Mar 2028+)
 
-| Structure path (OPEN) | When Hanover gets equity / promote |
+Kao holds **100%** — depreciation, cash flow, loan obligations, lease-up. You: **secured lender** + **GC/DMA** + **guarantor**. **No binding JV obligation.**
+
+| Milestone | Model date |
 |---|---|
-| **TIC + EAT** | Possible **5% undivided** co-ownership deed at Day 180 |
-| **Exchange then §721** | **12–24+ mo** after deed; loan converts to 5% via contribution |
-| **100% + incentive fee** | **Never** equity — promote as ordinary-income fee |
-| **Term sheet LLC Day 1** | **Fails §1031** — not viable as written |
+| EAT→Kao deed (seasoning starts) | **Mar 14, 2027** |
+| Substantial completion (~11 mo build) | ~**Aug 2027** |
+| 12 months post-deed | **Mar 14, 2028** |
+| Earliest §721 JV (floor: later of above) | **~Mar 2028** |
+| Comfort path (draft) | **~Mar 2029** + lease-up/refi |
 
-Construction to ~**$50.3M** total completes with **loan + remaining draws**; you keep earning **dev + GC fees** and bear **guaranty** exposure per negotiated restructure.
-
-## Hanover entities (roles)
-
-| Entity | Role |
-|---|---|
-| **Hanover Industrial LLC** | Sponsor — dev fee, guaranties, promote stack |
-| **Land acquisition SPV** | May acquire land in non-§1031 deals; here **EAT** buys land (pattern TBD) |
-| **Hanover Construction Group** | **GMP only** — 4.5% hard, $300K advance, 5% contingency |
-| **Investor LP (95%)** | Kao side — **Phase 2** in most restructure paths |
-| **Hanover GP/LP + capital** | 5% + promote — **timing OPEN** |
+## Step 6 — Phase 2: §721 JV (~Mar 2028+ — OPEN with counsel)
 
 ```mermaid
 flowchart TB
-  HIND["Hanover Industrial LLC"]:::han
-  GC["Hanover Construction Group\nGMP · 4.5% hard"]:::han
-  H5["Hanover 5% stack\n+ promote · timing OPEN"]:::han
-  PROJ["EAT → then Kao LLC"]:::neutral
-  HIND --> H5
-  GC -->|"GMP contract"| PROJ
-  H5 -.->|"equity later"| PROJ
+  KLLC["Kao acquisition LLC\nproperty"]:::kao
+  HCAP["Hanover Capital LLC\nloan converts"]:::han
+  HMEM["Hanover member LLC"]:::han
+  JV["NFCC JV LLC\nterm sheet waterfall"]:::asset
+  KLLC -->|"§721 · 95%"| JV
+  HCAP --> HMEM
+  HMEM -->|"§721 · 5% + promote"| JV
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+```
+
+| Item | Phase 2 |
+|---|---|
+| **Kao** | Contributes property → **95%** |
+| **Hanover** | Loan converts → **5%** + **20/30/40 promote** @ 10/14/18 IRR |
+| **Tax character** | Promote = **capital gain (carry)** — not ordinary-income fee |
+| **Docs** | Essentially **unsigned term sheet JV** — triggered after seasoning |
+
+```mermaid
+flowchart LR
+  P1["Phase 1\nEAT build"]:::neutral
+  S["Seasoning\nKao 100%"]:::kao
+  P2["Phase 2\n§721 JV"]:::han
+  P1 --> S --> P2
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
   classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
 ```
 
-## Commercial terms (term sheet — unsigned)
+## Commercial terms (term sheet — Phase 2 target)
 
 | Item | Term |
 |---|---|
-| Equity | 5% (95% Kao) — **timing restructured for §1031** |
-| Promote | 20/30/40 @ 10/14/18 IRR |
-| Dev fee | 4% |
+| Equity | 5% (95% Kao) — **at §721**, not Day 1 |
+| Promote | 20/30/40 @ 10/14/18 IRR — **capital gain in JV** |
+| Dev fee | 4% — runs Phase 1 + 2 |
 | GC / GMP | 4.5% hard · $300K advance |
-| Overruns | 100% controllable → Sponsor |
-| Guaranties | Lender + JV completion / overrun |
+| Phase 1 loan | ~$1.1M secured — **converts** to 5% |
+| Overruns / guaranties | Per term sheet |
 
-## Term sheet vs §1031 restructure
+## Term sheet vs Structure A
 
-| Term sheet (as written) | Restructured model (draft) |
+| Term sheet | **Structure A** |
 |---|---|
-| LLC JV **Day 1** | **EAT** holds title **0–180d**; JV or co-ownership **later** |
-| Kao 95% **membership** at close | Kao **real property** first; LLC interest **deferred** |
-| Simultaneous JV + GMP + loan + land | Land + build via **QI/EAT**; loan to **EAT** |
-| Promote **inside LLC** | Fee or **Phase-2** partnership — counsel |
+| LLC JV **Day 1** | **EAT** Phase 1 → **§721 JV** Phase 2 |
+| Hanover 5% **equity** at close | **Loan** Phase 1 → **equity** Phase 2 |
+| Promote in Day-1 LLC | Promote in **Phase 2 LLC only** |
+| Kao gets LLC interest in exchange | Kao gets **100% real property**, then contributes |
 
-**Intent:** same commercial economics — different legal sequencing and documents.
-
-**Sources:** Term sheet 06.12.2026 · `docs/incoming/Hanover-Org-Chart-Example-Project.pdf`
+**Sources:** Term sheet 06.12.2026 · `docs/sources/StructureA-draft.md` (**DRAFT**)
 
 <!-- TAB:kao -->
 
-## Your role
+## Your role — Structure A (exchangor)
 
-**Exchangor (our family)** — the taxpayer selling Belara and acquiring North Forsyth to **defer** the Belara capital gain. Not Hanover. Not Strake.
+**Exchangor (our family)** — sell Belara, acquire North Forsyth, defer gain. **Structure A:** you receive **100% fee title** in Phase 1, then contribute to the **95% JV** after seasoning.
 
 | Role | Party |
 |---|---|
-| **Relinquished property** | Belara Apartments — legal seller today: **Titan Management** |
-| **Preferred exchanger / term-sheet LP** | **Kao Management Trust** — **must align before Belara PSA** |
+| **Working structure** | **Structure A** — exchange first, §721 JV after seasoning (**DRAFT**) |
+| **Relinquished property** | Belara — seller today: **Titan Management** (align → **Kao Management Trust**) |
 | **Belara buyer** | **Strake Jesuit** |
-| **Qualified Intermediary** | **Riverway Title** — holds $20M; you **never** receive sale proceeds |
-| **EAT** | **TBD** — temporary **legal owner** of NFCC during build (up to 180 days) |
-| **Developer** | **Hanover Industrial LLC** — dev fee, guaranties; equity timing **OPEN** |
-| **GC** | **Hanover Construction Group** — GMP contractor to EAT / project entity |
-| **Land seller** | Third party, unaffiliated — **under PSA** |
-| **Structure path** | **Not locked** — Overview tab |
+| **QI** | **Riverway Title** — you **never** receive sale proceeds |
+| **EAT** | TBD — holds title Days 0–180 |
+| **Phase 1 receipt** | **Kao acquisition LLC** — **100% deed** at Day 180 |
+| **Phase 2** | Contribute property → **95%** of NFCC JV LLC; Hanover **5% + promote** via §721 |
+| **Hanover Phase 1** | Contractor + **secured lender** (~$1.1M) — **not** your partner yet |
 
 ## Why a §1031 exchange (not just "buying NFCC")
 
@@ -509,7 +586,7 @@ Selling Belara for **$20M** triggers a large capital gain. **IRC §1031** defers
 
 1. **Strake's purchase price** wires to **Riverway Title (QI)** — not to you. Touching the cash = **constructive receipt** = exchange fails.
 2. **On or before 45 days** after Belara close, you must have given the QI a **written identification** of replacement property. **Oct 30, 2026** is the **last day**; in our model the letter goes to Riverway **Sept 15, before any NFCC disbursement**.
-3. Within **180 days**, you **complete** the exchange. NFCC is not built yet, so an **Exchange Accommodation Titleholder (EAT)** holds title while **QI funds** (only after identification) buy land and pay construction; on Day 180 the EAT **deeds** the property to **your acquisition LLC**.
+3. Within **180 days**, EAT deeds **100% fee simple** to your LLC — **not** a 95% LLC interest. Promote and Hanover equity come **later** in Phase 2 §721.
 
 The word **"exchange"** means: Belara out → North Forsyth in, same taxpayer, QI in the middle, tax deferred. It is the **tax mechanism** for this deal — not a separate optional step.
 
@@ -524,8 +601,10 @@ The word **"exchange"** means: Belara out → North Forsyth in, same taxpayer, Q
 | **Day 0 — ③ Land** | **Sept 15, 2026** | Riverway releases **$6.5M** → **EAT**; land seller paid |
 | **45-day deadline** | **Oct 30, 2026** | Last day to identify — **not** when we act in this model |
 | **Construction** | Sept 16, 2026 – Mar 13, 2027 | QI draws (to ≈$20M) then loan → EAT → Hanover GC |
-| **Day 180** | **Mar 14, 2027** | **EAT deeds** to **Kao acquisition LLC** — exchange **closes** |
-| **Full build** | ~**Aug 2027** | ~11 months from Sept 15; balance via **construction loan** |
+| **Day 180 — Phase 1 done** | **Mar 14, 2027** | **EAT deeds 100%** → Kao acquisition LLC |
+| **Seasoning** | Mar 2027 – ~Mar 2028+ | You own **100%** — operate, depreciate, bear loan |
+| **Phase 2 §721** | ~**Mar 2028+** (**OPEN**) | Contribute → **95%** JV; Hanover loan → **5% + promote** |
+| **Full build** | ~**Aug 2027** | Construction completes while you own 100% |
 
 ## Step 1 — Pre-close (before Sept 15)
 
@@ -646,9 +725,37 @@ flowchart LR
 
 **Until this deed:** you do **not** own NFCC for §1031 purposes — the **EAT** does. That is why the EAT exists.
 
-## After Day 180
+## Step 5 — Seasoning: you own 100% (Mar 2027 – ~Mar 2028+)
 
-Construction continues toward ~**Aug 2027** full completion. Hanover **95/5 JV and promote** depend on structure path (TIC, exchange-then-§721, fee-only, etc.) — **OPEN**. See Overview.
+**Seasoning clock starts at the deed** (Mar 14, 2027), not Belara close. You must **actually own and operate** before §721:
+
+- **100% fee title**, borrower on loan, sign leases, take depreciation  
+- **No binding obligation** to form JV — non-binding LOI only  
+- Hanover remains **lender + contractor**; promote **not active**  
+- **Kao indemnity/LC** for Hanover guaranty exposure (per neutrality package)
+
+| Target | Model |
+|---|---|
+| Floor (draft) | Later of **12 mo post-deed** AND **substantial completion** → **~Mar 2028** |
+| Comfort (draft) | **~24 mo post-deed** + lease-up/refi → **~Mar 2029** |
+
+> **Step-transaction risk:** If Phase 2 looks pre-wired from Day 0, IRS could collapse both phases. Real time + real sole ownership is the defense — **DRAFT**, needs counsel opinion.
+
+## Step 6 — Phase 2: §721 JV (~Mar 2028+ — OPEN)
+
+```mermaid
+flowchart TB
+  LLC["Kao acquisition LLC\n100% owner"]:::kao
+  JV["NFCC JV LLC"]:::asset
+  H["Hanover\n5% + promote"]:::han
+  LLC -->|"§721 · contribute property · 95%"| JV
+  H -->|"§721 · loan converts · 5%"| JV
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+```
+
+Term-sheet economics **activate here** — 95/5, 20/30/40 promote. Hanover promote = **capital gain (carry)**, not ordinary-income fee.
 
 ## Critical rules (exchangor)
 
@@ -663,11 +770,12 @@ Construction continues toward ~**Aug 2027** full completion. Hanover **95/5 JV a
 
 - [ ] Lock **exchangor entity** (Kao Trust preferred)  
 - [ ] Engage **Riverway Title**; select **EAT**  
-- [ ] §1031 counsel + CPA; pick structure path (Overview tab)  
+- [ ] §1031 counsel opinion on **Structure A** Phase 1 + Phase 2  
+- [ ] **Non-binding Phase 2 LOI** — no fixed-price equity option  
 - [ ] Draft **identification letter** — deliver to Riverway **before** any NFCC disbursement  
 - [ ] Draft Belara PSA — proceeds to QI only  
 
-**Sources:** [IRC §1031](https://www.law.cornell.edu/uscode/text/26/1031) · [Reg. §1.1031(k)-1](https://www.law.cornell.edu/cfr/text/26/1.1031(k)-1) · [Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf)
+**Sources:** [IRC §1031](https://www.law.cornell.edu/uscode/text/26/1031) · [IRC §721](https://www.law.cornell.edu/uscode/text/26/721) · [Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf) · `docs/sources/StructureA-draft.md` (**DRAFT**)
 
 <!-- TAB:references -->
 

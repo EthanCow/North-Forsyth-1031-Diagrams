@@ -204,7 +204,7 @@
   <header class="site-header">
     <div class="header-top">
       <h1>North Forsyth §1031</h1>
-      <p>Belara &rarr; North Forsyth Commerce Center &middot; Internal working model</p>
+      <p>Belara &rarr; North Forsyth &middot; Structure A &middot; Internal working model</p>
     </div>
     <nav class="tab-bar" role="tablist" aria-label="Party views">
       <button class="tab-btn active" role="tab" aria-selected="true" data-tab="overview">
@@ -359,7 +359,7 @@
 
       try {
         initMermaid();
-        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=15");
+        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=16");
         if (!response.ok) throw new Error(`Could not load content (${response.status})`);
         const markdown = await response.text();
         const sections = parseTabs(markdown);

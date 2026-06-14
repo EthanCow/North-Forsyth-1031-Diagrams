@@ -121,7 +121,7 @@ QI engaged pre-close · proceeds to QI only · escrow wiring · exchanger named 
 
 ## 9. Site status
 
-GitHub Pages content updated 2026-06-14 to reflect: **Sept 15** timeline, draw model, path comparison, Hanover entity map, open exchanger issue — **not** a single locked structure.
+GitHub Pages content updated 2026-06-14: **Structure A** working model (exchange + §721 JV), Sept 15 timeline, party steps — **DRAFT**, counsel opinion **OPEN**.
 
 ---
 

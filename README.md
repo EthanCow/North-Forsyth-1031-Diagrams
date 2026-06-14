@@ -23,4 +23,4 @@ Internal family tool — not legal advice, not client-facing. **No structure is 
 | `docs/research/` | 2026-06-14 research memos |
 | `ai_rules.md` | Facts + agent rules |
 
-Updated **2026-06-14**: Sept 15 timeline, party step-by-step tabs, path comparison, Riverway QI, Hanover org pattern, open exchanger entity.
+Updated **2026-06-14**: **Structure A** diagrams, Sept 15 timeline, party step-by-step tabs, Riverway QI.

@@ -59,7 +59,8 @@ Every chat in this repo, **without the user typing @-commands**:
 | **Land seller** | STATED (user) | **Third party, unaffiliated** with Hanover or us; **under PSA** |
 | **QI** | STATED (user) | **Riverway Title** — identified; engagement/docs TBD |
 | **EAT** | OPEN | Not selected yet |
-| **Structure preference** | STATED (user) | **Whatever works** — no preference for Structure A vs TIC; outcome > label |
+| **Structure preference** | STATED (user) | **Structure A** (exchange first, §721 JV) — working model on site; counsel opinion **OPEN** |
+| **Site working model** | DRAFT | **Structure A** per `docs/sources/StructureA-draft.md` — not counsel-adopted |
 | **Hanover term sheet response** | STATED (user) | **Depends on us** — we drive timing/substance of what we send back |
 | **Belara PSA / QI escrow** | STATED (user) | **Not drafted yet** — we have leverage to add QI/escrow language later; see **Future: Belara PSA** below |
 | **Budget (headline)** | STATED + TERM SHEET | ~**$50.3M** total, **$6.5M** land — detailed dev budget **not** modeling priority |
@@ -119,8 +120,7 @@ Same **taxpayer/ownership chain** must be preserved through the exchange (per un
 | 6 | **Exchangor entity** — Titan Management sells Belara; Kao Management Trust on term sheet — same family, **not same legal entity** |
 | 7 | EAT provider — not selected |
 
-**Current site (rolled back):** TIC + EAT + promote-as-fee model — **DRAFT**.  
-**Structure A draft** (`docs/sources/StructureA-draft.md`): exchange-first then §721 — **DRAFT**, not adopted.
+**Current site:** **Structure A** (exchange first, §721 JV after seasoning) — **DRAFT**. Fallback: Structure B (fee-only) if counsel rejects A.
 
 ---
 
