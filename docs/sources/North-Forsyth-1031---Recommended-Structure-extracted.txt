@@ -1,0 +1,99 @@
+PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT
+North Forsyth §1031 Exchange — Recommended Structure
+Structure A: “Exchange First, Then Combine” (with Structure B as the stronger fallback)
+Recommendation:
+Exchange Belara into 100% fee title, then form the promoted Hanover JV after genuine seasoning via §721
+Confidence:
+More-likely-than-not, improving toward “should” with seasoning (conditional, not “clean”)
+Status:
+Draft for counsel/CPA review — revised June 14, 2026
+1. Executive summary
+The Hanover term sheet would give Kao a 95% interest in a vehicle that also carries Hanover's promote. A promote is a profit share, which turns the vehicle into a partnership — and a partnership interest is not like-kind real property, so the exchange would fail. The recommended fix separates the two ideas in time. In Phase 1, Kao exchanges Belara into 100% fee title in North Forsyth through a qualified intermediary and a build-to-suit EAT. In Phase 2, after the exchange has genuinely seasoned, Kao contributes the property to a promoted joint venture with Hanover under §721 (tax-free). The parties keep the full term-sheet economics; the exchange remains defensible. This is a conditional, more-likely-than-not position whose strength rises with seasoning — not a “clean” or automatic result.
+2. The two phases
+Phase 1 — the exchange (Days 0–180). Belara proceeds park with the QI. The EAT takes title to North Forsyth, borrows the construction loan, and builds. By Day 180 the EAT deeds 100% fee title to Kao's disregarded single-member LLC. The exchange completes against direct real estate, so there is no partnership to recharacterize on the entity-classification axis.
+Phase 2 — the JV (after genuine seasoning). Kao contributes the property to a new operating partnership under §721; Hanover converts its Phase-1 loan into a 5% interest and takes the promote. The JV carries the full term sheet: 95/5, the 20/30/40 promote over 10/14/18, the 4% and 4.5% fees, and the guaranties.
+3. Why this survives where the term sheet fails
+100% real property in Phase 1. A single owner cannot be a partnership; Rev. Proc. 2002-22 never comes into play. A partnership interest is not real property under §1031(a)(1) and Reg. §1.1031(a)-3 — so Kao takes real property, not an interest in a recharacterizable co-ownership.
+Promote lives in the Phase-2 partnership. A promote is perfectly legal inside a partnership and keeps capital-gain character as a profits interest (§1061 then requires a >3-year hold for long-term rates).
+The residual risk is step-transaction, and it is managed, not ignored. See seasoning and neutrality, below.
+4. The build-to-suit math (the hard constraint)
+To defer the full ~$20M, Kao must reinvest ~$20M in completed real property by Day 180:
+Component
+Amount
+Counts?
+Land (acquired by the EAT)
+$6.5M
+Yes
+Completed improvements physically in place by Day 180
+~$13.5M
+Yes
+Stored materials, deposits, prepaids, off-site fabrication
+—
+No
+Work performed after the EAT→Kao transfer
+—
+No
+Day-180 reinvestment target
+~$20.0M
+Must be in place
+Any shortfall is boot, taxed in 2026. Extend the 2026 return; commission a Day-180 in-place valuation; and identify a specific, named, 1031-eligible backup DST within 45 days that can close within 180 days. Kao's ~$20M funds land plus the first ~$13.5M of improvements; the remaining ~$30M of the project is funded only by the construction loan and Hanover's loan — both debt with guaranties, never Hanover equity.
+5. Seasoning — the clock that makes or breaks Structure A
+The seasoning clock runs from the EAT→Kao deed date, not Day 0; the 180-day parking period is part of the exchange, not seasoning. There is no statutory safe-harbor period — longer and more genuine is safer.
+Target
+Threshold
+Rationale
+Absolute floor
+Later of 12 months after the deed and substantial completion
+A full tax year of genuine ownership; nothing contributed mid-construction
+Path to “should”
+~24 months after the deed, plus lease-up and/or a refinance
+Kao demonstrably held and operated as a real owner before combining
+Hard don'ts
+No same-closing mechanics; no contribution while incomplete; no pre-signed plan
+Each is a step-transaction red flag
+During the gap, Kao must operate as the genuine 100% owner:
+Named on title, the loan, leases, and insurance; bearing the economic benefits and burdens; funding shortfalls with debt, not Hanover equity.
+No binding obligation to contribute — a non-binding LOI only, with no fixed-price equity option for Hanover.
+A contemporaneously documented independent business purpose for combining later (completion/lease-up de-risking, refinancing, bringing in the operating partner once stabilized).
+6. Neutrality & Hanover protection (Phase 1 stands on its own)
+Hanover is protected as a contractor and creditor through standalone, arm's-length contracts — not by an unenforceable promise of future equity. All five elements go together:
+Standalone market Phase-1 contracts — a development management agreement at a market 4% fee and a GMP/GC contract at a market 4.5%, each with normal reimbursement, lien rights, and default remedies.
+Hanover's 5% as a true secured LOAN bearing interest — ~$1.1M funded as debt (note + collateral, market rate, stated maturity), not a “preferred return.” It converts to a 5% interest via §721 only in Phase 2.
+Kao guaranty-indemnity backed by collateral/LC — a real, fundable obligation covering Hanover's Phase-1 exposure.
+Fixed or cost-based termination fee if Kao walks — documented costs, fees earned, and a reasonable margin; it must not mirror the promote/IRR waterfall.
+LOI expressly non-binding; no fixed-price equity option — protection comes from the commercial contracts and the secured loan, not a pre-signed partnership.
+7. Economics (unchanged from the term sheet)
+Element
+Term
+Ownership
+Kao 95% / Hanover 5% (after Phase 2)
+Promote
+20% / 30% / 40% over 10% / 14% / 18% IRR (carried interest)
+Development fee
+4% (standalone DMA)
+GC fee
+4.5% of hard costs (GMP)
+Guaranties
+Hanover provides completion/carry/overrun/carve-out
+Hanover promote tax character
+Capital gain (profits interest; §1061 >3-yr hold)
+8. Structure B — the stronger fallback
+Kao owns 100% permanently and Hanover is a fee developer whose promote is replicated as an ordinary-income incentive fee (same hurdles, measured at sale/refi/appraisal). With a single owner there is no partnership question, so this is the strongest version of the exchange. The trade-off is that Hanover's incentive fee is ordinary income rather than capital gain — gross it up to keep Hanover whole. Use Structure B when the parties want the strongest, simplest exchange; use Structure A when Hanover requires true ownership and capital-gain carry.
+9. Next steps / checklist
+Before Belara closes
+Engage the QI and EAT (test independence / disqualified-person status); engage §1031 counsel + CPA.
+Form Kao NFCC Owner LLC (sole member = the exact Belara seller; admit no second member).
+Get written lender consent to lend to the EAT and to the later transfer/JV.
+Confirm Kao never owned North Forsyth and the land seller is unrelated (Rev. Proc. 2004-51 / §1031(f)).
+Model boot, §752, and §707; line up a named backup DST.
+Phase 1 — the exchange
+Day 0: Belara closes; proceeds to the QI (never to Kao).
+Day 45: identify North Forsyth and a named backup DST in writing.
+Days 0–180: EAT builds under FMV DMA + GMP; Hanover guaranties; Hanover 5% in as a secured, interest-bearing loan.
+Day 180: EAT deeds 100% to Kao NFCC Owner LLC; commission a Day-180 in-place valuation; extend the 2026 return; file Form 8824.
+Phase 2 — the JV
+Let the exchange season from the deed date; Kao holds and operates as 100% owner.
+Do not pre-sign the contribution — non-binding LOI only; no fixed-price equity option.
+Form the JV; make the §721 contribution; convert Hanover's loan to its 5% + promote; adopt the operating agreement.
+Confirm no §707 disguised sale and model §752 before signing.
+This memorandum is privileged and confidential attorney work product prepared for internal planning. It is not a covered opinion and is not legal or tax advice that may be relied upon to avoid penalties. Entity names are placeholders; figures are rounded planning numbers, not verified deal terms. The position described is conditional and best characterized as more-likely-than-not (not "clean," and no position here rises to "will"); its strength depends on seasoning and facts. Obtain a written §1031 opinion on the executed documents before Belara closes.

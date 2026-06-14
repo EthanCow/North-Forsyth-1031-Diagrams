@@ -1,0 +1,14 @@
+---
+description: 5-tab markdown — preserve markers, mermaid colors, serve GOAL.md
+globs: North_Forsyth_1031_Diagrams.md
+alwaysApply: false
+---
+
+# Tab content
+
+Tabs: `overview`, `strake`, `hanover`, `kao`, `references` — must match `index.html` `TAB_ORDER`.
+
+- Preserve `<!-- TAB:id -->` markers
+- Keep mermaid classDef colors (kao/han/neutral/asset)
+- Mark unsourced claims DRAFT or OPEN
+- Strake tab = internal reference for us, not a Strake deliverable

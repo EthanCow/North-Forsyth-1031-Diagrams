@@ -1,0 +1,75 @@
+PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT
+North Forsyth §1031 Exchange — Tax Memorandum (Legal Analysis)
+Belara Apartments → North Forsyth Commerce Center · Structure A (“Exchange First, Then Combine”)
+Re:
+Like-kind exchange of Belara into a 100% fee interest, followed by a §721 contribution to a promoted JV
+Status:
+Draft for counsel/CPA review — revised June 14, 2026
+Bottom line:
+Defensible at a more-likely-than-not level; strengthens toward “should” with genuine seasoning. Structure B is the stronger fallback.
+1. Question presented
+Can Kao defer gain under §1031 by exchanging Belara Apartments into a 100% fee interest in North Forsyth (acquired through a qualified intermediary and a build-to-suit Exchange Accommodation Titleholder), and then — after a genuine seasoning period — contribute that property to a promoted joint venture with Hanover under §721, without defeating the exchange?
+2. Short answer
+Yes, more likely than not, if (and only if) the two phases are kept genuinely separate. Phase 1 is strong on entity classification because Kao receives 100% real property, so there is no co-ownership to recharacterize as a partnership. The principal exposure is the step-transaction doctrine — the risk that the IRS collapses the exchange and the later §721 contribution into a single, integrated acquisition of a partnership interest, which is not like-kind. That risk is managed (not eliminated) by a real seasoning gap measured from the deed date, the absence of any binding obligation to contribute, Kao operating as 100% owner in the interim, a documented independent business purpose, and avoidance of a §707 disguised sale. The opinion target is more-likely-than-not with a documented path to “should”; do not promise “should” in writing. If the parties want the strongest exchange, Structure B (Kao 100% permanently plus an ordinary-income incentive fee) is the safer choice.
+3. Facts and assumptions
+Item
+Value / note
+Relinquished property
+Belara Apartments (multifamily, held for investment); ~$20.0M; stated no debt
+Buyer of Belara
+Strake Jesuit (relinquished side only)
+Replacement property
+North Forsyth Commerce Center, ~327,600 SF ground-up industrial, Cumming, GA
+Total project cost
+~$50.3M (land $6.5M + improvements ~$43.8M)
+Construction loan
+~$29M, third-party lender; Hanover guaranties
+Capital
+Kao ~$20.2M exchange equity; Hanover ~$1.1M funded in Phase 1 as a secured, interest-bearing LOAN (not equity)
+Hanover economics
+5% interest + promote (20/30/40 over 10/14/18 IRR), 4% development fee, 4.5% GC fee
+Clocks
+45-day identification; completion the earlier of 180 days or the extended return due date
+Assumptions to verify (not yet confirmed):
+Belara was held for investment and is debt-free at closing; the Belara seller is the exact taxpayer that takes the replacement.
+Kao has never owned North Forsyth; the QI, EAT, land seller, and construction lender are unrelated to Kao and Hanover (disqualified-person testing).
+The figures above are accurate.
+4. Governing law
+4.1 §1031 is real-property only; a partnership interest does not qualify
+Post-TCJA, §1031(a)(1) limits like-kind exchanges to real property, and Treas. Reg. §1.1031(a)-3 defines real property so as to exclude a partnership interest. A profit share turns a co-ownership into a partnership; a partnership interest is therefore not like-kind, and an exchange that delivers one fails. (Citation note: current §1031(a)(2) is the “held primarily for sale” exception; the former list that expressly excluded partnership interests at “(a)(2)(D)” was removed by the 2017 TCJA when §1031 became real-property-only. Cite §1031(a)(1) and Reg. §1.1031(a)-3, not the dead (a)(2)(D).)
+4.2 Deferred and build-to-suit exchange mechanics
+Treas. Reg. §1.1031(k)-1 provides the qualified-intermediary and constructive-receipt safe harbor and the disqualified-person rules. Rev. Proc. 2000-37 provides the QEAA “parking” safe harbor under which an EAT may take qualified indicia of ownership, borrow, and build for up to 180 days; the QEAA should be executed within 5 business days of the EAT taking title, the relinquished property identified within 45 days, and the combined parking period kept within 180 days. Rev. Proc. 2004-51 denies safe-harbor treatment where the taxpayer owned the replacement within the prior 180 days. Only improvements actually in place by Day 180 count toward the exchange.
+4.3 §721 and the “held for” case law — with its limits
+§721 provides nonrecognition on a contribution of property to a partnership for a partnership interest. Magneson v. Commissioner, 753 F.2d 1490 (9th Cir. 1985), supports respecting a §721 contribution following an exchange as continuing the investment. The case law must not be overstated:
+Old and circuit-limited. Magneson and Bolker are pre-1984, Ninth Circuit decisions. Georgia is in the Eleventh Circuit, which is not bound; there is no on-point Eleventh Circuit or Supreme Court holding on this fact pattern.
+Bolker is not a §721 case. Bolker v. Commissioner, 760 F.2d 1039 (9th Cir. 1985), involved a liquidating distribution to a sole shareholder who then exchanged; it should not be cited as direct §721 authority.
+Magneson is materially milder. It involved an immediate, modest general-partnership rollover, not a leveraged ground-up EAT build dropped into a promoted LLC.
+4.4 Step-transaction doctrine (the real exposure)
+Courts collapse separate steps into one transaction under any of three tests: the binding-commitment test, the mutual-interdependence test, and the end-result test. If Phase 1 and Phase 2 look pre-wired, the IRS can treat Kao as having acquired a partnership interest from the outset — not like-kind — and the exchange fails. Managing this doctrine is the entire design objective of Structure A.
+4.5 Partnership-tax overlays that can create current gain
+§707 disguised sale. Reg. §1.707-3 presumes a sale where a contribution and a related distribution occur within two years. The loan-to-equity conversion and any distributions near the contribution must be sequenced and modeled; the conversion also raises note-vs-cash contribution, debt assumption/cancellation, and §108 COD questions that need analysis, not a label.
+§752 liability shift. Under Reg. §1.752-2, Hanover guaranties can make the ~$29M debt recourse to the guarantor and shift liability share away from Kao; a decrease in Kao's share is a deemed cash distribution under §752(b) that can exceed basis and trigger current gain. Model basis and liability share before finalizing guaranties.
+§704(c). Built-in gain on the contributed property is allocated back to Kao; the remedial method is generally cleanest for keeping the deferred Belara gain with Kao while giving Hanover correct depreciation.
+Basis & depreciation. Carryover basis (§1031(d)); unrecaptured §1250 gain rides along (up to 25%); §263A capitalizes construction-period carrying costs; the later-sale waterfall runs §704(c) gain to Kao, then §1250, then 95/5 with the promote above hurdles, then Georgia tax.
+4.6 Related-party and state-law points
+Land seller should be an unrelated third party (arm's length); if ever a Hanover affiliate, re-analyze §1031(f) and Rev. Proc. 2004-51.
+Georgia local counsel: real-estate transfer tax, intangibles/security-deed tax, the EAT→Kao deed chain and recording, entity authority, and title endorsements.
+Rev. Proc. 2002-22 (TIC co-ownership) is advance-ruling guidance, not a safe harbor; it explains why the old development-TIC + promote-as-fee approach was offside.
+5. Analysis
+Phase 1 is the strong half. Because Kao receives 100% fee title, there is no co-ownership and no Rev. Proc. 2002-22 question; the exchange completes against direct real estate. To defer the full ~$20M, Kao must reinvest ~$20M in completed real property by Day 180 — land of $6.5M plus roughly $13.5M of improvements physically in place. Stored materials, prepaids, and post-transfer work do not count; any shortfall is boot taxed in 2026. A Day-180 in-place valuation should document the amount reinvested, the 2026 return should be extended, and a specific, named, closable backup DST should be identified within 45 days as a cushion.
+Neutrality matters to the analysis. If Hanover does all the building and funding in Phase 1 on a handshake about future equity, the step-transaction argument strengthens. Each Phase-1 relationship should therefore be a standalone, arm's-length, market contract that makes sense even if Phase 2 never happens: a market development management agreement (4%), a market GMP/GC contract (4.5%), and Hanover's 5% funded as a true secured, interest-bearing loan (not a “preferred return”), with a Kao guaranty-indemnity backed by collateral or a letter of credit, and (if Kao declines Phase 2) a fixed or cost-based termination fee that does not mirror the promote. Any Phase-2 understanding is a non-binding LOI with no fixed-price equity option.
+Phase 2 is the contested half. The §721 contribution itself is nonrecognition, but it is subject to the §707 and §752 overlays above, and the whole structure stands or falls on seasoning. The seasoning clock runs from the EAT→Kao deed date, not Day 0. A working floor is the later of 12 months after the deed and substantial completion; roughly 24 months plus lease-up and/or a refinance supports a path to “should.” Throughout the gap, Kao must operate as the genuine 100% owner — named on title, the loan, leases, and insurance; bearing benefits and burdens; funding shortfalls with debt rather than Hanover equity — with a contemporaneously documented business purpose for combining later.
+6. Conclusion and opinion level
+Structure A is defensible at a more-likely-than-not level and improves toward “should” as seasoning lengthens and an independent business purpose is documented. It is conditional, not clean, and no element of it rises to “will.” The exchange should be reported on Form 8824 for an extended 2026 return, and a written §1031 opinion should be obtained on the executed documents before Belara closes. The §752 and §707 models should be built with the CPA before signing, because either can create cash tax in a year with no liquidity event.
+7. Structure B (the stronger fallback)
+Kao owns 100% permanently; Hanover is a fee developer whose promote economics are replicated through an incentive fee (same 20/30/40 over 10/14/18, measured at sale/refi/appraisal). With a single owner there is no partnership/TIC question, so this is by far the strongest version of the exchange. The one concession is that the incentive fee is ordinary income to Hanover rather than capital gain; gross it up to keep Hanover whole, or Hanover accepts ordinary treatment. Residual risk is disguised-equity recharacterization of an oversized fee, kept low by capping the fee, barring Hanover ownership rights, and giving Hanover no capital account.
+8. Open items to verify before reliance
+Exact Belara seller and debt-free confirmation; the real deal numbers.
+Independence / disqualified-person testing of the QI, EAT, land seller, and lender; written lender consent to the EAT and to the later transfer/JV (due-on-sale).
+Land non-affiliation (§1031(f) / Rev. Proc. 2004-51 if it fails).
+§752 basis model and §707 two-year timeline; §704(c) method confirmation (remedial).
+Build-to-suit feasibility: Day-180 in-place valuation; ~$13.5M of completed improvements; a named, closable backup DST; extend the 2026 return.
+Georgia transfer/intangibles tax, deed chain, recording, entity authority.
+A contemporaneous seasoning / step-transaction file; no binding contribution agreement or fixed-price option.
+A written §1031 opinion (MLTN, with a documented path to “should”).
+This memorandum is privileged and confidential attorney work product prepared for internal planning. It is not a covered opinion and is not legal or tax advice that may be relied upon to avoid penalties. Entity names are placeholders; figures are rounded planning numbers, not verified deal terms. The position described is conditional and best characterized as more-likely-than-not (not "clean," and no position here rises to "will"); its strength depends on seasoning and facts. Obtain a written §1031 opinion on the executed documents before Belara closes.

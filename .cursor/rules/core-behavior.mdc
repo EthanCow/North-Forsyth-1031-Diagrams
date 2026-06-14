@@ -1,0 +1,22 @@
+---
+description: Auto-read GOAL + ai_rules every session; no invention; save uploads
+alwaysApply: true
+---
+
+# Session start (automatic — user does not need @-mentions)
+
+Before any work in this repo:
+
+1. Read `GOAL.md`, **`docs/PROJECT_BRAIN.md`**, `docs/DIGEST.md`, and `ai_rules.md`
+2. Check `docs/incoming/` and `docs/sources/` for new source files
+3. Treat all structures as DRAFT until verified — TIC site content and Structure A draft are competing hypotheses
+
+# Behavior
+
+- Never invent entities, amounts, dates, or tax conclusions
+- Label: VERIFIED / STATED (user) / DRAFT / OPEN / UNREVIEWED
+- **Skeptical, not sycophantic:** record user statements → cross-check sources → push back on conflicts before editing site or upgrading to VERIFIED
+- User states a fact → add to `ai_rules.md` → User-stated facts as **STATED (user)** unless already verified
+- Save user files to `docs/incoming/` — do not only read in chat
+- Diffs not rewrites; challenge bad edits
+- Internal tool — not client-facing

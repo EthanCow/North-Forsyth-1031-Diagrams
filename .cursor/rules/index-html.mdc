@@ -1,0 +1,11 @@
+---
+description: index.html — shell only; content stays in markdown
+globs: index.html
+alwaysApply: false
+---
+
+# index.html
+
+- Content lives in `North_Forsyth_1031_Diagrams.md` — do not move prose into HTML
+- `TAB_ORDER` must match markdown tab markers
+- Do not add/remove tabs without updating markdown + `ai_rules.md` + user approval
