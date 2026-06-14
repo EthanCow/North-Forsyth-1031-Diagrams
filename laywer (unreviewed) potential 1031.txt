@@ -1,0 +1,293 @@
+Selling an apartment complex for $20 million and completing a §1031 like-kind exchange into a to-be-built industrial building is very doable, but it requires precise structuring, timing, and professional coordination..and remember..ownership has to stay be in the same entity.Below is the clean, real-world way this is typically done.
+
+
+
+⸻
+
+
+
+1. Confirm the Transaction Qualifies for a 1031 Exchange
+
+
+
+A 1031 exchange (under Section 1031 of the Internal Revenue Code) allows you to defer capital gains taxes if:
+
+
+
+Both properties are held for investment or business use
+
+The replacement property is like-kind (industrial qualifies for multifamily)
+
+You follow strict timelines
+
+You never take constructive receipt of the sale proceeds
+
+
+
+Oversight comes from the Internal Revenue Service, so documentation and compliance matter.
+
+
+
+⸻
+
+
+
+2. Sell the Apartment Complex (Relinquished Property)
+
+
+
+Key steps:
+
+
+
+Put the apartment complex under contract
+
+Before closing, engage a Qualified Intermediary (QI)
+
+    This is mandatory
+
+
+
+At closing:
+
+
+
+Sale proceeds go directly to the QI
+
+You do not touch the money
+
+Let’s assume net exchange proceeds ≈ $20M
+
+
+
+⸻
+
+
+
+3. Identify the Replacement Property (Within 45 Days)
+
+
+
+You have 45 days from the sale closing to formally identify the replacement property in writing.
+
+
+
+For a to-be-built industrial project, you typically identify:
+
+
+
+The land
+
+The construction project
+
+Often via a reverse or improvement exchange structure
+
+
+
+Identification rules commonly used:
+
+
+
+3-Property Rule, or
+
+200% Rule
+
+
+
+You must clearly describe:
+
+
+
+Address / parcel
+
+Intended improvements
+
+Estimated total value (must meet or exceed $20M)
+
+
+
+⸻
+
+
+
+4. Use a Construction (Improvement) 1031 Exchange Structure
+
+
+
+Since the industrial building does not yet exist, you’ll use a 1031 Improvement Exchange (sometimes called a Build-to-Suit Exchange).
+
+
+
+How this works structurally:
+
+
+
+The QI forms or uses an Exchange Accommodation Titleholder (EAT)
+
+The EAT temporarily holds title to the land
+
+Exchange funds are used to:
+
+Buy the land
+
+Pay construction costs
+
+Improvements must be completed within 180 days
+
+
+
+⚠️ Only improvements completed within the 180-day exchange window count toward exchange value
+
+
+
+⸻
+
+
+
+5. Meet the 180-Day Exchange Deadline
+
+
+
+You must complete all of the following within 180 days of selling the apartments:
+
+
+
+Acquire the replacement property (via EAT)
+
+Complete as much construction as possible
+
+Ensure total value ≥ $20M (purchase + improvements)
+
+
+
+If only $16M is completed by Day 180:
+
+
+
+You’ll have $4M of taxable “boot”
+
+
+
+⸻
+
+
+
+6. Financing the Industrial Project (Very Common)
+
+
+
+If the industrial project costs more than $20M:
+
+
+
+You can add:
+
+Bank construction loans
+
+Mezzanine debt
+
+Partner equity
+
+Debt does not break a 1031 exchange
+
+You must replace equal or greater debt than was paid off on the apartments
+
+
+
+⸻
+
+
+
+7. Title Transfers at the End
+
+
+
+Once the 180 days expire:
+
+
+
+The EAT transfers title of the improved industrial property to you
+
+The exchange is complete
+
+Capital gains tax is deferred, not forgiven
+
+
+
+⸻
+
+
+
+8. Professional Team You Must Have
+
+
+
+This transaction cannot be DIY. You need:
+
+
+
+Qualified Intermediary (with improvement exchange experience)
+
+Real estate attorney (1031-savvy)
+
+CPA / tax advisor
+
+Construction lender
+
+Industrial developer or GC
+
+Title & escrow professionals familiar with EATs
+
+
+
+⸻
+
+
+
+9. Common Pitfalls to Avoid
+
+
+
+❌ Missing the 45-day identification deadline
+
+❌ Under-building by Day 180
+
+❌ Taking possession of sale proceeds
+
+❌ Poorly drafted identification language
+
+❌ Using a QI without construction exchange experience
+
+
+
+⸻
+
+
+
+10. Practical Reality Check
+
+
+
+For a $20M exchange into a to-be-built industrial asset, many investors:
+
+
+
+Exchange into land + partially built structure
+
+Finish remaining construction after the exchange window using non-exchange funds
+
+
+
+This preserves tax deferral while allowing full project completion.
+
+
+
+⸻
+
+
+
+Bottom Line
+
+
+
+Yes — you can absolutely sell a $20M apartment complex and 1031 into a to-be-built industrial building, but only through a properly structured improvement exchange with an EAT and strict adherence to timelines.

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>North Forsyth §1031 — Structure A (Exchange First, Then Combine)</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<style>
+  :root{
+    --navy:#1f3a5f; --navy2:#2b4f7e; --ink:#1a1a1a; --grey:#5b6b7f; --rule:#d8dee6;
+    --kao:#e3edf7; --kaoB:#1f3a5f; --han:#fbeede; --hanB:#9c6b1e;
+    --neutral:#eef0f2; --neutralB:#7a8696; --green:#2d6a4f; --greenbg:#e5efe9;
+    --red:#9b2226; --redbg:#f7e7e7; --amber:#9c6b1e; --amberbg:#fbf1e0; --bg:#f6f8fb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;}
+  header{background:var(--navy);color:#fff;padding:26px 30px 22px;}
+  header .kick{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#cdd9e8;font-weight:700;}
+  header h1{margin:6px 0 4px;font-size:25px;font-weight:800;letter-spacing:-.01em;}
+  header p{margin:0;color:#d7e1ee;font-size:14px;max-width:1000px;}
+  .privbar{background:#16293f;color:#aebfd4;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    padding:6px 30px;font-weight:700;}
+  nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--rule);
+    display:flex;flex-wrap:wrap;gap:2px;padding:8px 18px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+  nav button{border:0;background:transparent;color:var(--grey);font-size:13.5px;font-weight:600;
+    padding:8px 13px;border-radius:7px;cursor:pointer;white-space:nowrap;}
+  nav button:hover{background:#eef2f7;color:var(--navy);}
+  nav button.active{background:var(--navy);color:#fff;}
+  main{max-width:1040px;margin:0 auto;padding:26px 24px 70px;}
+  section{display:none;animation:fade .2s ease;}
+  section.active{display:block;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  h2{font-size:21px;color:var(--navy);margin:4px 0 14px;letter-spacing:-.01em;}
+  h3{font-size:15.5px;color:var(--ink);margin:22px 0 8px;}
+  p{margin:0 0 12px;font-size:14.5px;}
+  .lead{font-size:15.5px;}
+  .card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px 20px;margin:0 0 16px;
+    box-shadow:0 1px 3px rgba(20,40,70,.05);}
+  .mermaid{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px;margin:6px 0 8px;text-align:center;}
+  .mermaid svg{max-width:100%;height:auto;}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule);
+    border-radius:10px;overflow:hidden;font-size:13.6px;margin:4px 0 14px;}
+  th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-size:12.5px;letter-spacing:.02em;}
+  td{padding:9px 12px;border-top:1px solid var(--rule);vertical-align:top;}
+  tr:nth-child(even) td{background:#f7f9fc;}
+  .pill{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:700;white-space:nowrap;}
+  .p-kao{background:var(--kao);color:var(--kaoB);} .p-han{background:var(--han);color:var(--hanB);}
+  .p-neu{background:var(--neutral);color:#46535f;} .p-jv{background:var(--greenbg);color:var(--green);}
+  .tax-def{color:var(--green);font-weight:700;} .tax-tax{color:var(--red);font-weight:700;} .tax-ord{color:var(--amber);font-weight:700;}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:12.5px;}
+  .legend span{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:8px;border:1px solid var(--rule);background:#fff;}
+  .dot{width:11px;height:11px;border-radius:3px;display:inline-block;}
+  .callout{border-left:4px solid var(--navy);background:#eef3f9;padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 16px;font-size:14px;}
+  .warn{border-left-color:var(--amber);background:var(--amberbg);}
+  .good{border-left-color:var(--green);background:var(--greenbg);}
+  .bad{border-left-color:var(--red);background:var(--redbg);}
+  ul{margin:0 0 12px;padding-left:20px;} li{margin:0 0 7px;font-size:14.3px;}
+  ol{margin:0 0 12px;padding-left:20px;} ol li{margin:0 0 7px;font-size:14.3px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .kpi{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 16px;}
+  .kpi div{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:12px 16px;flex:1;min-width:150px;}
+  .kpi b{display:block;font-size:20px;color:var(--navy);} .kpi small{color:var(--grey);font-size:12px;}
+  .foot{color:var(--grey);font-size:12px;border-top:1px solid var(--rule);margin-top:24px;padding-top:14px;}
+  code{background:#eef2f7;padding:1px 5px;border-radius:4px;font-size:12.5px;}
+  a{color:var(--navy2);} @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="privbar">Privileged &amp; Confidential — Attorney Work Product — Illustrative, not a substitute for a signed §1031 opinion</div>
+<header>
+  <div class="kick">North Forsyth Commerce Center · §1031 Exchange</div>
+  <h1>Structure A — Exchange First, Then Combine</h1>
+  <p>Kao exchanges Belara into <b>100% direct ownership</b> of North Forsyth, then — <b>after a genuine seasoning period</b> — forms the promoted Hanover joint venture by a tax-free §721 contribution. Same economics as the term sheet, and the exchange is defensible — a <b>more-likely-than-not</b> position that strengthens toward "should" as seasoning lengthens (not "clean," not automatic).</p>
+</header>
+
+<nav id="nav"></nav>
+<main>
+
+<!-- OVERVIEW -->
+<section id="overview" class="active">
+  <h2>The deal, in one screen</h2>
+  <div class="kpi">
+    <div><b>$20.0M</b><small>Belara sale (no debt) → deferred</small></div>
+    <div><b>~$50.3M</b><small>North Forsyth project cost</small></div>
+    <div><b>95 / 5</b><small>Kao / Hanover economics</small></div>
+    <div><b>~$29M</b><small>Construction loan</small></div>
+  </div>
+  <div class="callout good"><b>Why this works where the term sheet failed.</b> A promote cannot live inside the vehicle Kao receives in the exchange — a profit share turns a co-ownership into a partnership, and a partnership interest is not "real property" (§1031 is real-property-only post-TCJA; Reg. §1.1031(a)-3). Structure A keeps the promote <b>out</b> of the exchange: Kao receives 100% real property, then — <i>after the exchange has seasoned</i> — the parties form the promoted JV, in a partnership where a promote is perfectly legal and keeps capital-gain treatment.</div>
+
+  <div class="callout warn"><b>How strong is this, honestly?</b> <b>More likely than not (MLTN)</b> — not "clean" and not automatic. The §721 step has support (<i>Magneson</i>) but the case law has real limits, and the IRS can attack the two phases under the <b>step-transaction doctrine</b>. The position <b>strengthens toward "should"</b> as seasoning lengthens and an independent business purpose is documented. If the parties want the strongest possible exchange, <b>Structure B</b> (Kao 100% forever + an ordinary-income incentive fee) is the safer trade. This material keeps <b>A primary</b> as an informed choice, but presents both honestly. No position in this document rises to "will."</div>
+
+  <div class="grid2">
+    <div class="card"><h3>Phase 1 — The Exchange (Days 0–180)</h3>
+      <p>Belara proceeds park with the Qualified Intermediary. An Exchange Accommodation Titleholder takes title to North Forsyth, borrows the construction loan, and builds. By Day 180 it deeds <b>100% fee title</b> to Kao's single-member LLC. The exchange completes against direct real estate, so there is no partnership to recharacterize <i>on the entity-classification axis</i>.</p></div>
+    <div class="card"><h3>Phase 2 — The JV (after genuine seasoning)</h3>
+      <p>After a genuine seasoning gap, Kao contributes the property to a new operating partnership ("PropCo JV") under §721 — tax-free. Hanover converts its loan into a 5% interest and takes the promote. The JV carries the full term sheet: 95/5, the 20/30/40 promote, the 4% and 4.5% fees, and the guaranties.</p></div>
+  </div>
+
+  <div class="callout"><b>What changed from the original GitHub diagrams.</b> No development-TIC, no partition waiver, and no "promote-as-fee." Those were the three high-risk positions. Here the replacement is taken as 100% fee ownership, and the promote is delivered through a partnership formed <i>after a seasoned exchange</i>.</div>
+</section>
+
+<!-- STRUCTURE -->
+<section id="structure">
+  <h2>How it works, and why it survives §1031</h2>
+
+  <h3>The core trade-off</h3>
+  <p>You <b>cannot</b> put a true tenancy-in-common and an enforceable promote in the same vehicle at the same time. A clean TIC (what §1031 needs) requires pro-rata economics and bars any fee tied to income or profits (Rev. Proc. 2002-22 §§6.08, 6.11, 6.12, 6.15). A promote is, by definition, a profit share. Force both into one vehicle and the IRS recharacterizes it as a partnership — meaning Kao received a partnership interest, not real property, and the exchange fails. The fix is to <b>separate them in time</b>: real-property acquisition first, promoted partnership second.</p>
+
+  <h3>Why Phase 1 is strong on entity classification</h3>
+  <p>Kao receives <b>100% fee title</b>, so on the <b>entity-classification</b> axis there is nothing to attack: a single owner cannot be a partnership, and Rev. Proc. 2002-22 never comes into play. This is necessary but <b>not sufficient</b> — see step-transaction. A partnership interest is not "real property" for §1031 (§1031(a)(1) limits like-kind exchanges to real property; Reg. §1.1031(a)-3 confirms a partnership interest does not qualify), so taking 100% real property is the whole point.</p>
+
+  <h3>Why a later §721 contribution can be respected — and the limits of the case law</h3>
+  <p>The leading authorities are <b>Magneson</b> (753 F.2d 1490 (9th Cir. 1985)) and <b>Bolker</b> (760 F.2d 1039 (9th Cir. 1985)). They support the idea that continuing an investment (rather than cashing out) can satisfy §1031's "held for" requirement notwithstanding a planned subsequent transaction. <b>Read them honestly — do not overstate them:</b></p>
+  <ul>
+    <li><b>Old and circuit-limited.</b> Both are <b>pre-1984</b>, <b>Ninth Circuit</b> decisions. Georgia is in the <b>Eleventh Circuit</b>, not bound by them; there is no on-point 11th Cir. or Supreme Court holding blessing this exact fact pattern.</li>
+    <li><b>Bolker is <i>not</i> a §721 case.</b> It involved a <b>liquidating distribution</b> to a sole shareholder who then exchanged — it should not be cited as direct §721 authority.</li>
+    <li><b>Magneson</b> involved an immediate, modest general-partnership rollover, not a leveraged ground-up EAT build dropped into a promoted LLC. The economics and timing here are materially more aggressive.</li>
+    <li><b>The IRS does not concede the point</b> and can deploy the step-transaction doctrine to treat Kao as having acquired a partnership interest from the outset — which is not like-kind.</li>
+  </ul>
+
+  <div class="callout bad"><b>The real residual risk: step-transaction.</b> The genuine exposure is whether the IRS <b>collapses Phase 1 and Phase 2</b> into a single integrated acquisition of a partnership interest (the binding-commitment, mutual-interdependence, and end-result tests). Structure A <i>manages</i> (does not eliminate) this through: no binding contribution obligation at the exchange; a genuine seasoning gap measured from the deed date; Kao operating as 100% owner in the interim; a documented independent business purpose; and avoiding a §707 disguised sale. With these, the position is realistically <b>MLTN</b>, improving toward "should" as seasoning lengthens.</div>
+
+  <h3>Scorecard — Structure A vs. the alternatives</h3>
+  <table>
+    <tr><th>Criterion</th><th>Term sheet (as drafted)</th><th>Structure A (recommended)</th><th>Structure B (fallback)</th></tr>
+    <tr><td>Does the §1031 exchange survive?</td><td class="tax-tax">No — fails</td><td><b>MLTN; → "should" with seasoning</b></td><td class="tax-def">Yes — strongest</td></tr>
+    <tr><td>Kao economic position</td><td>95%</td><td>~100% in Phase 1, 95% after Phase 2</td><td>~100% less incentive fee (≈95%)</td></tr>
+    <tr><td>Hanover economics (pre-tax)</td><td>5% + promote + fees</td><td>Same</td><td>Same</td></tr>
+    <tr><td>Hanover promote tax character</td><td>Capital gain (carry)</td><td><b>Capital gain (carry)</b></td><td><b>Ordinary fee (gross-up)</b></td></tr>
+    <tr><td>Hanover is a legal owner?</td><td>Yes</td><td>Yes (after Phase 2 only)</td><td>No (contractual only)</td></tr>
+    <tr><td>Main residual risk</td><td>Exchange fails outright</td><td><b>Step-transaction / "held for"</b></td><td>Disguised equity (low)</td></tr>
+    <tr><td>Opinion level (realistic)</td><td>N/A (fails)</td><td><b>MLTN → should</b> (seasoning-dependent)</td><td><b>Should</b> (strongest available here)</td></tr>
+    <tr><td>Complexity</td><td>Low</td><td>Medium–High</td><td>Low</td></tr>
+  </table>
+</section>
+
+<!-- BIG PICTURE -->
+<section id="bigpicture">
+  <h2>The big picture</h2>
+  <div class="legend">
+    <span><i class="dot" style="background:var(--kao);border:1px solid var(--kaoB)"></i> Kao entity</span>
+    <span><i class="dot" style="background:var(--han);border:1px solid var(--hanB)"></i> Hanover entity</span>
+    <span><i class="dot" style="background:var(--neutral);border:1px solid var(--neutralB)"></i> Neutral / third party</span>
+    <span><i class="dot" style="background:var(--greenbg);border:1px solid var(--green)"></i> Asset / JV</span>
+  </div>
+  <pre class="mermaid">
+flowchart TB
+  subgraph P1["PHASE 1 — THE EXCHANGE · Days 0–180"]
+    direction TB
+    Belara["Belara Apartments&lt;br/&gt;$20M · no debt"]:::asset
+    Strake["Strake Jesuit&lt;br/&gt;buyer"]:::neutral
+    QI["Compass Exchange Services LLC&lt;br/&gt;Qualified Intermediary"]:::neutral
+    EAT["NFCC Parking Title LLC&lt;br/&gt;EAT · holds title 0–180d"]:::neutral
+    KaoLLC["Kao NFCC Owner LLC&lt;br/&gt;Kao's disregarded SMLLC"]:::kao
+    Belara -->|"Day 0 · $20M"| Strake
+    Strake -->|"$20M proceeds"| QI
+    QI -->|"funds Kao's ~$20M equity"| EAT
+    EAT -->|"Day 180 · deeds 100% fee title"| KaoLLC
+  end
+  subgraph P2["PHASE 2 — THE JOINT VENTURE · after seasoning"]
+    direction TB
+    KaoLLC2["Kao NFCC Owner LLC&lt;br/&gt;contributes property"]:::kao
+    HanMem["Hanover NFCC Member LLC&lt;br/&gt;5% + promote"]:::han
+    JV["North Forsyth Commerce Center JV LLC&lt;br/&gt;partnership for tax"]:::asset
+    KaoLLC2 -->|"§721 · 95% · no tax"| JV
+    HanMem -->|"§721 · 5% + carry"| JV
+  end
+  KaoLLC -->|"seasoning gap&lt;br/&gt;Kao owns and operates 100%"| KaoLLC2
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+  </pre>
+  <p class="lead">Read it left-to-right in time: a real-property acquisition first, a normal promoted partnership second. The <b>seasoning gap</b> between them — measured from the deed date — is what keeps the IRS from collapsing the two steps.</p>
+</section>
+
+<!-- PHASE 1 -->
+<section id="phase1">
+  <h2>Phase 1 — The Exchange (Days 0–180)</h2>
+  <p>Every dollar and the title movement during the build-to-suit window. Kao never touches the proceeds; the EAT is the borrower and builder; Kao receives <b>100%</b> at the end.</p>
+  <pre class="mermaid">
+flowchart TB
+  Belara["Belara Apartments&lt;br/&gt;$20M · no debt"]:::asset
+  Strake["Strake Jesuit&lt;br/&gt;buyer"]:::neutral
+  QI["Compass Exchange Services LLC&lt;br/&gt;Qualified Intermediary"]:::neutral
+  Lender["Construction Lender&lt;br/&gt;~$29M · unrelated bank"]:::neutral
+  HanCap["Hanover NFCC Capital LLC&lt;br/&gt;5% funded as a secured LOAN ~$1.1M"]:::han
+  EAT["NFCC Parking Title LLC · EAT&lt;br/&gt;holds title · borrows loan · builds"]:::neutral
+  Land["NFCC land&lt;br/&gt;$6.5M"]:::asset
+  GC["Hanover Construction Group LLC&lt;br/&gt;GMP draws · 4.5% fee"]:::han
+  Dev["Hanover NFCC Developer LLC&lt;br/&gt;4% development fee"]:::han
+  KaoLLC["Kao NFCC Owner LLC&lt;br/&gt;disregarded → Kao Management Trust"]:::kao
+
+  Belara -->|"Day 0 sale"| Strake
+  Strake -->|"$20M"| QI
+  QI -->|"Kao equity draws ~$20M"| EAT
+  Lender -->|"loan draws"| EAT
+  HanCap -->|"loan draws"| EAT
+  EAT -->|"$6.5M"| Land
+  EAT -->|"hard-cost draws"| GC
+  EAT -->|"fee"| Dev
+  EAT -->|"Day 180 · conveys 100% fee title"| KaoLLC
+  Ident["Day 45 · Kao identifies NFCC in writing"]:::neutral
+  Ident -.-> EAT
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+  </pre>
+
+  <h3>The build-to-suit math (the hard constraint)</h3>
+  <p>To defer the full ~$20M of Belara gain, Kao must reinvest ~$20M in <b>completed real property by Day 180</b>:</p>
+  <table>
+    <tr><th>Component</th><th>Amount</th><th>Counts toward the exchange?</th></tr>
+    <tr><td>Land (acquired by the EAT)</td><td><b>$6.5M</b></td><td class="tax-def">Yes — real property in place</td></tr>
+    <tr><td><b>Completed improvements physically in place by Day 180</b></td><td><b>~$13.5M</b></td><td class="tax-def">Yes — only the portion actually constructed</td></tr>
+    <tr><td>Stored materials, deposits, prepaid contracts, off-site fabrication</td><td>—</td><td class="tax-tax">No</td></tr>
+    <tr><td>Work performed <b>after</b> the EAT→Kao transfer</td><td>—</td><td class="tax-tax">No</td></tr>
+    <tr><td><b>Day-180 reinvestment target</b></td><td><b>~$20.0M</b></td><td>Must be built and in place</td></tr>
+  </table>
+  <p>For a ~$50.3M ground-up project, getting <b>$13.5M of verifiable, in-place improvements</b> on top of the land within 180 days is the central feasibility risk. <b>Any shortfall is boot, taxed in 2026.</b></p>
+
+  <div class="callout warn"><b>Three clocks &amp; a real cushion.</b>
+  <ul>
+    <li><b>Day 45:</b> identify North Forsyth in writing <b>and</b> a <b>backup replacement</b> — a specific, named, 1031-eligible <b>DST</b> offering, closable within 180 days if the build lags.</li>
+    <li><b>Day 180:</b> the EAT must convey by Day 180 <b>or the extended return due date, whichever is earlier — so extend the 2026 return.</b></li>
+    <li><b>Valuation:</b> commission a <b>Day-180 in-place valuation</b> so the amount actually reinvested is documented (see Money flow for the boot schedule).</li>
+  </ul></div>
+
+  <h3>Equity exhaustion — what funds the rest of the build</h3>
+  <p>Kao's ~$20M is fully deployed into land + the first ~$13.5M of improvements <b>before</b> Day 180. <b>Everything after that — the remaining ~$30M of the $50.3M project — is funded by the construction loan (~$29M) and Hanover's ~$1.1M, both as DEBT with guaranties, never as Hanover equity.</b> Treating any of that funding as Hanover <i>equity</i> in Phase 1 would create the partnership the exchange cannot have. Keep the Phase-1 stack strictly: <b>Kao equity (exchanged) + third-party construction loan + Hanover secured loan.</b></p>
+
+  <h3>Who does what in Phase 1</h3>
+  <ul>
+    <li><b>Kao</b> sells through the QI and never controls the cash. Forms <code>Kao NFCC Owner LLC</code> (disregarded SMLLC; sole member = the exact Belara seller) to receive <b>100% title</b>.</li>
+    <li><b>The EAT</b> (<code>NFCC Parking Title LLC</code>) is the legal owner/borrower/builder during parking under Rev. Proc. 2000-37. It must be <b>independent</b> (not a disqualified person), <b>bankruptcy-remote</b>, party to a written <b>QEAA</b>, with <b>no agency language</b> making it Kao's agent.</li>
+    <li><b>Hanover</b> builds under a standalone FMV Development Management Agreement (4%) and a GMP/GC contract (4.5%), and gives the loan guaranties. Its 5% goes in <b>now as a secured, interest-bearing loan</b> (note + collateral), converting to equity only in Phase 2. Hanover is <b>not on title</b> during the exchange.</li>
+  </ul>
+
+  <h3>Phase-1 mechanics to nail down (with counsel)</h3>
+  <ul>
+    <li><b>QI/EAT independence:</b> confirm neither is a disqualified person (Reg. §1.1031(k)-1(k)).</li>
+    <li><b>QEAA + timeline (Rev. Proc. 2000-37):</b> written QEAA <b>within 5 business days</b> of the EAT taking title; EAT holds <b>qualified indicia of ownership</b>; identify the relinquished property within 45 days of parking; combined parking period ≤ 180 days.</li>
+    <li><b>Lender consent (twice):</b> to lend to the EAT, and to the later transfer to Kao and the Phase-2 JV — addressing due-on-sale.</li>
+    <li><b>Title:</b> EAT-to-Kao deed chain, owner's policy and endorsements, recording — Georgia counsel.</li>
+    <li><b>Guaranty routing &amp; EAT bankruptcy-remoteness</b> documented so the at-risk party is protected without creating equity.</li>
+  </ul>
+</section>
+
+<!-- PHASE 2 -->
+<section id="phase2">
+  <h2>Phase 2 — The Joint Venture (§721, after seasoning)</h2>
+  <p>Once the exchange has closed and seasoned, the parties form the real JV. The §721 contribution is nonrecognition, subject to the §707/§752 overlays in Tax mechanics, and the promote now sits where it belongs.</p>
+  <pre class="mermaid">
+flowchart TB
+  KaoLLC["Kao NFCC Owner LLC&lt;br/&gt;contributes property (subject to loan)"]:::kao
+  HanMem["Hanover NFCC Member LLC&lt;br/&gt;contributes 5% / converts loan"]:::han
+  JV["North Forsyth Commerce Center JV LLC&lt;br/&gt;Delaware LLC · partnership for tax"]:::asset
+  Rent["Operating cash flow&lt;br/&gt;rents"]:::neutral
+  KaoD["Kao — 95% distributions"]:::kao
+  HanD["Hanover — 5% + promote&lt;br/&gt;20/30/40 over 10/14/18"]:::han
+
+  KaoLLC -->|"§721 · 95% interest · no tax"| JV
+  HanMem -->|"§721 · 5% + carried interest · no tax"| JV
+  Rent --> JV
+  JV -->|"pro-rata first"| KaoD
+  JV -->|"pro-rata + promote above hurdles"| HanD
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+  </pre>
+  <div class="callout"><b>The guardrails that make Phase 2 safe.</b> No binding contribution agreement before the exchange completes — a <b>non-binding LOI only, with no fixed-price equity option</b>; a genuine seasoning gap with Kao operating as 100% owner; a documented business purpose; and careful sequencing so Hanover cash in plus a Kao distribution out within ~2 years does not trip the §707 disguised-sale rule.</div>
+</section>
+
+<!-- SEASONING -->
+<section id="seasoning">
+  <h2>Seasoning — the clock that makes or breaks Structure A</h2>
+  <p>Seasoning is the single most important variable — the real time, real ownership, and real risk-bearing between the exchange and the §721 contribution that defeats a step-transaction argument. <b>There is no statutory safe-harbor period;</b> longer and more genuine is always safer.</p>
+
+  <div class="callout warn"><b>When the clock starts (commonly gotten wrong).</b> The seasoning clock runs from the date the <b>EAT deeds the property to Kao</b> (completion of the exchange), <b>not from Day 0</b>. The 180-day parking period is part of the exchange, not part of seasoning. Counting from Day 0 to claim "six months seasoned at Day 180" is exactly the pre-wiring the IRS looks for.</div>
+
+  <h3>Working thresholds (planning targets, confirm with opinion counsel)</h3>
+  <table>
+    <tr><th>Target</th><th>Threshold</th><th>Rationale</th></tr>
+    <tr><td><b>Absolute floor</b></td><td>The <b>later of</b> (a) <b>12 months</b> after the EAT→Kao deed and (b) <b>substantial completion</b></td><td>A full tax year of genuine ownership across two returns; nothing contributed mid-construction</td></tr>
+    <tr><td><b>Comfort / path to "should"</b></td><td>~<b>24 months</b> after the deed, plus meaningful <b>lease-up</b> and/or a <b>refinance</b></td><td>Demonstrates Kao held and operated as a real owner before any combination</td></tr>
+    <tr><td><b>Hard "don'ts"</b></td><td>No same-closing mechanics; no contribution while incomplete; no contribution dated off a pre-signed plan</td><td>Each is a step-transaction red flag</td></tr>
+  </table>
+
+  <h3>What "operating as owner" must look like during the gap</h3>
+  <ul>
+    <li>Kao (through its disregarded SMLLC) holds <b>100% fee title</b> and is named on title, the loan, leases, and insurance.</li>
+    <li>Kao bears the <b>economic benefits and burdens</b>: funds shortfalls (via debt, not Hanover equity), receives net cash flow, takes depreciation.</li>
+    <li><b>No binding obligation to contribute</b> — any forward understanding is a <b>non-binding LOI</b> with a non-binding JV term sheet attached; never a signed contribution agreement, never a fixed-price equity option for Hanover.</li>
+    <li>An <b>independent business purpose</b> for combining later is documented in real time (completion/lease-up de-risking, refinancing, bringing in the operating partner once stabilized).</li>
+  </ul>
+  <div class="callout"><b>Bottom line:</b> the longer the gap and the more genuinely Kao behaves as the 100% owner, the closer the opinion moves to "should." A short or mechanical gap pushes it back toward "fails." Do not let construction or financing pressure compress the gap.</div>
+</section>
+
+<!-- NEUTRALITY -->
+<section id="neutrality">
+  <h2>Neutrality &amp; Hanover protection — making Phase 1 stand on its own</h2>
+  <p>The central critique: it is <b>not</b> neutral to let Hanover do all the building and funding in Phase 1 on a handshake that it will get ownership and the promote in Phase 2. If Hanover's Phase-1 role looks like disguised equity or a pre-wired partnership, the step-transaction argument strengthens. The fix is to make <b>every Phase-1 relationship a standalone, arm's-length, market commercial contract</b> that would make sense even if Phase 2 never happened — and to protect Hanover with real creditor and contractual remedies instead of an unenforceable promise.</p>
+  <ol>
+    <li><b>Standalone market Phase-1 contracts.</b> Development role = a <b>DMA at a market 4% fee</b>; construction role = a <b>GMP/GC contract at a market 4.5%</b>; both with normal <b>reimbursement, lien rights, and default remedies</b>, priced as if to a third party — not as consideration for future equity.</li>
+    <li><b>Hanover's 5% goes in as a true secured LOAN bearing interest — <i>not</i> a "preferred return."</b> ~$1.1M funded as <b>debt</b> (<code>Hanover NFCC Capital LLC</code>), evidenced by a <b>promissory note at a market rate</b>, <b>secured</b>, with stated maturity and default remedies. "Preferred return" is equity language and undercuts debt characterization — don't use it. The loan <b>converts to a 5% interest via §721 in Phase 2.</b></li>
+    <li><b>Kao guaranty-indemnity, backed by collateral/LC.</b> Because Hanover provides guaranties and does at-risk work before it owns anything, Kao gives Hanover a <b>guaranty/indemnity for Hanover's Phase-1 exposure</b>, <b>collateralized</b> (pledged collateral or a letter of credit) so it is a real, fundable obligation.</li>
+    <li><b>Fixed / cost-based termination fee if Kao walks — <i>not</i> promote-mirroring.</b> If Kao declines Phase 2, Hanover is made whole through a <b>fixed or cost-based break fee</b> (documented costs, fees earned, reasonable margin). It must <b>not</b> replicate the promote/IRR waterfall — a promote-mirroring walk-away payment would itself look like disguised equity.</li>
+    <li><b>LOI expressly non-binding; no fixed-price equity option.</b> Any Phase-2 understanding is a <b>non-binding LOI</b> (with a non-binding JV term sheet). Hanover gets <b>no enforceable right to acquire equity at a fixed price</b>; Kao has <b>no binding obligation to contribute</b>. Protection comes from the commercial contracts and the secured loan — not a pre-signed partnership.</li>
+  </ol>
+  <div class="callout good"><b>Why this matters for the opinion:</b> done this way, Phase 1 is economically coherent on its own (market fees + a secured, interest-bearing loan + collateralized indemnity), Hanover is genuinely protected as a <b>contractor and creditor</b>, and there is no binding commitment that lets the IRS argue the partnership existed from Day 0.</div>
+</section>
+
+<!-- ENTITIES -->
+<section id="entities">
+  <h2>Entities — who they are, what type, and how they're taxed</h2>
+  <p>Names are illustrative placeholders; swap in the real entities. The pattern is what matters.</p>
+  <table>
+    <tr><th>Entity</th><th>Type</th><th>Owned by</th><th>Role</th><th>Tax status</th></tr>
+    <tr><td><b>Kao Management Trust</b> <span class="pill p-kao">Kao</span></td><td>Family / grantor trust</td><td>Kao family</td><td>The exchanger and ultimate taxpayer</td><td>Pass-through to the Kao family</td></tr>
+    <tr><td><b>Belara Holdings LLC</b> <span class="pill p-kao">Kao</span></td><td>TX single-member LLC</td><td>Kao Management Trust</td><td>Holds &amp; sells Belara</td><td>Disregarded</td></tr>
+    <tr><td><b>Kao NFCC Owner LLC</b> <span class="pill p-kao">Kao</span></td><td>DE single-member LLC</td><td>Kao Management Trust</td><td>Receives 100% replacement (Phase 1); becomes 95% JV member (Phase 2)</td><td>Disregarded → partner</td></tr>
+    <tr><td><b>Strake Jesuit</b> <span class="pill p-neu">3rd party</span></td><td>Institution</td><td>—</td><td>Buyer of Belara only</td><td>n/a to the exchange</td></tr>
+    <tr><td><b>Compass Exchange Services LLC</b> <span class="pill p-neu">neutral</span></td><td>Qualified Intermediary</td><td>Independent QI firm</td><td>Holds proceeds; runs the safe harbor</td><td>Unrelated; not a tax party</td></tr>
+    <tr><td><b>NFCC Parking Title LLC</b> <span class="pill p-neu">neutral</span></td><td>Single-member LLC (EAT)</td><td>EAT provider (unrelated)</td><td>Parks title, borrows the loan, builds</td><td>Beneficial owner under Rev. Proc. 2000-37</td></tr>
+    <tr><td><b>Construction Lender</b> <span class="pill p-neu">3rd party</span></td><td>Bank</td><td>—</td><td>~$29M construction loan</td><td>Unrelated / arm's length</td></tr>
+    <tr><td><b>NFCC Land Seller</b> <span class="pill p-neu">3rd party</span></td><td>LLC</td><td><b>Unrelated third party (recommended)</b></td><td>Sells land to the EAT</td><td>Arm's length; Kao never owned it. <b>Must verify non-affiliation</b> — if ever a Hanover affiliate, re-analyze §1031(f) / Rev. Proc. 2004-51</td></tr>
+    <tr><td><b>Hanover NFCC Developer LLC</b> <span class="pill p-han">Hanover</span></td><td>LLC</td><td>The Hanover Company</td><td>Development manager (4% fee; standalone DMA)</td><td>Ordinary fee income</td></tr>
+    <tr><td><b>Hanover Construction Group LLC</b> <span class="pill p-han">Hanover</span></td><td>LLC</td><td>The Hanover Company</td><td>GC under the GMP (4.5% of hard costs)</td><td>Ordinary fee income</td></tr>
+    <tr><td><b>Hanover NFCC Capital LLC</b> <span class="pill p-han">Hanover</span></td><td>LLC</td><td>The Hanover Company</td><td>Phase 1: funds the 5% as a <b>secured, interest-bearing loan</b> (note + collateral) — <b>not</b> a "preferred return"</td><td>Lender (interest income); converts via §721 in Phase 2</td></tr>
+    <tr><td><b>Hanover NFCC Member LLC</b> <span class="pill p-han">Hanover</span></td><td>LLC</td><td>The Hanover Company</td><td>Phase 2: 5% member + promote holder</td><td>Partner; promote = carried interest (profits interest; §1061 &gt; 3-yr hold)</td></tr>
+    <tr><td><b>North Forsyth Commerce Center JV LLC</b> <span class="pill p-jv">JV</span></td><td>DE LLC, partnership for tax</td><td>Kao NFCC Owner (95%) + Hanover NFCC Member (5%)</td><td>The operating joint venture (Phase 2)</td><td>Partnership (pass-through)</td></tr>
+  </table>
+</section>
+
+<!-- MONEY FLOW -->
+<section id="money">
+  <h2>Money flow — every dollar</h2>
+  <h3>Phase 1 — funding the build</h3>
+  <table>
+    <tr><th>From</th><th>To</th><th>Amount</th><th>Purpose</th></tr>
+    <tr><td>Strake Jesuit</td><td>Compass Exchange Services (QI)</td><td>$20.0M</td><td>Belara sale proceeds (parked)</td></tr>
+    <tr><td>QI</td><td>EAT</td><td>~$20.0M</td><td>Kao's exchange equity (Kao owns <b>100%</b> in Phase 1), drawn for land + construction</td></tr>
+    <tr><td>Construction Lender</td><td>EAT</td><td>up to ~$29M</td><td>Construction loan draws (debt; Hanover guaranties)</td></tr>
+    <tr><td>Hanover NFCC Capital LLC</td><td>EAT</td><td>~$1.1M</td><td>The 5%, funded as a <b>secured, interest-bearing loan</b> — not equity, not a "preferred return"</td></tr>
+    <tr><td>EAT</td><td>NFCC Land Seller (unrelated 3rd party)</td><td>$6.5M</td><td>Land purchase</td></tr>
+    <tr><td>EAT</td><td>Hanover Construction Group</td><td>hard-cost draws</td><td>GMP construction (4.5% GC fee inside)</td></tr>
+    <tr><td>EAT</td><td>Hanover NFCC Developer</td><td>4% of cost</td><td>Development fee (standalone DMA)</td></tr>
+    <tr><td>EAT</td><td>Kao NFCC Owner LLC</td><td>100% title</td><td>Day 180 conveyance (no cash — deed)</td></tr>
+  </table>
+  <div class="callout"><b>Equity-exhaustion discipline.</b> Kao's ~$20M funds land + the first ~$13.5M of completed improvements by Day 180. The remaining ~$30M is funded only by the construction loan (~$29M) and Hanover's ~$1.1M loan — both <b>debt with guaranties</b>, never Hanover equity. No Hanover equity exists until the Phase-2 §721 conversion.</div>
+
+  <h3>Day-180 valuation &amp; boot schedule</h3>
+  <table>
+    <tr><th>Line</th><th>Amount</th><th>Notes</th></tr>
+    <tr><td>Belara net proceeds to reinvest (target)</td><td>~$20.0M</td><td>Full deferral requires reinvesting all of it</td></tr>
+    <tr><td>Land in place</td><td>$6.5M</td><td>Counts</td></tr>
+    <tr><td>Completed improvements physically in place by Day 180</td><td>~$13.5M (goal)</td><td>Only the constructed-and-in-place portion counts</td></tr>
+    <tr><td><b>Total qualifying replacement value</b></td><td>land + in-place improvements</td><td>If &lt; $20.0M → the shortfall is boot</td></tr>
+    <tr><td><b>Boot (taxable in 2026)</b></td><td>$20.0M − qualifying value</td><td>Capital gain + unrecaptured §1250 on the shortfall (§1031(b))</td></tr>
+    <tr><td>Mitigant</td><td>Backup DST interest</td><td>Named, identified ≤ Day 45, closable ≤ Day 180</td></tr>
+  </table>
+
+  <h3>Phase 2 — forming &amp; running the JV</h3>
+  <table>
+    <tr><th>From</th><th>To</th><th>Amount</th><th>Purpose</th></tr>
+    <tr><td>Kao NFCC Owner LLC</td><td>JV</td><td>property (≈95%)</td><td>§721 contribution (no tax); built-in gain tracked under §704(c)</td></tr>
+    <tr><td>Hanover NFCC Member LLC</td><td>JV</td><td>~$1.1M loan converts</td><td>§721 conversion of the Phase-1 loan into a 5% interest + promote (watch §707 timing)</td></tr>
+    <tr><td>JV operations</td><td>Members</td><td>pro-rata 95/5</td><td>Distributions per the operating agreement</td></tr>
+    <tr><td>JV (above hurdles)</td><td>Hanover</td><td>20 / 30 / 40%</td><td>Promote over 10 / 14 / 18% IRR (carried interest)</td></tr>
+    <tr><td>JV</td><td>Construction Lender</td><td>debt service</td><td>Principal &amp; interest</td></tr>
+  </table>
+</section>
+
+<!-- TAX -->
+<section id="tax">
+  <h2>Tax treatment — event by event</h2>
+  <div class="legend">
+    <span><i class="dot" style="background:var(--green)"></i> Deferred / no tax</span>
+    <span><i class="dot" style="background:var(--red)"></i> Taxable now</span>
+    <span><i class="dot" style="background:var(--amber)"></i> Ordinary income / cost</span>
+  </div>
+  <table>
+    <tr><th>Event</th><th>Tax result</th><th>Notes &amp; authority</th></tr>
+    <tr><td>Sale of Belara to Strake (Day 0)</td><td class="tax-def">Gain deferred</td><td>§1031, if proceeds reinvested in like-kind real property; QI holds the cash</td></tr>
+    <tr><td>Depreciation recapture on Belara</td><td class="tax-def">Deferred</td><td>Carryover basis rolls into the replacement (unrecaptured §1250 deferred)</td></tr>
+    <tr><td>EAT parks &amp; builds (Days 0–180)</td><td class="tax-def">No tax event to Kao</td><td>EAT is beneficial owner under Rev. Proc. 2000-37</td></tr>
+    <tr><td>EAT conveys 100% to Kao NFCC Owner LLC (Day 180)</td><td class="tax-def">Completes exchange — no gain</td><td>Same taxpayer via disregarded SMLLC (Reg. §301.7701-3)</td></tr>
+    <tr><td>Cash boot, or &lt; ~$20M in place by Day 180</td><td class="tax-tax">Taxable in 2026</td><td>§1031(b); capital gain + unrecaptured §1250 on the shortfall</td></tr>
+    <tr><td>Georgia transfer tax on the deed</td><td class="tax-ord">Transfer tax due</td><td>GA real-estate transfer tax (~$1 / $1,000); confirm intangibles tax on the security deed</td></tr>
+    <tr><td>§721 contribution to the JV (Phase 2)</td><td class="tax-def">Nonrecognition — check overlays</td><td>§721 nonrecognition of the contribution itself, <b>subject to §707 / §752 overlays</b> (below) that can create current gain; built-in gain tracked to Kao under §704(c) (remedial)</td></tr>
+    <tr><td>Liability shift on contribution (Hanover guaranties)</td><td class="tax-tax">Possible gain</td><td>§752(b): if Kao's share of the ~$29M debt drops below basis, the decrease is a deemed distribution → gain. <b>Model this</b> (Reg. §1.752-2)</td></tr>
+    <tr><td>Loan-to-equity conversion / cash near contribution</td><td class="tax-tax">Possible deemed sale</td><td>§707 disguised-sale 2-yr presumption (Reg. §1.707-3); sequence to avoid</td></tr>
+    <tr><td>Hanover development &amp; GC fees (4% / 4.5%)</td><td class="tax-ord">Ordinary income to Hanover</td><td>Capitalized / deducted by the project</td></tr>
+    <tr><td>Hanover promote (carried interest)</td><td class="tax-def">Capital gain when realized</td><td>Profits interest; §1061 requires &gt; 3-year hold for long-term rates (it limits, it does not create, capital gain)</td></tr>
+    <tr><td>Ongoing JV operations</td><td class="tax-ord">Pass-through</td><td>Kao 95% taxed at trust/beneficiary level; GA-source income (state filing)</td></tr>
+    <tr><td>Future sale of North Forsyth (no further exchange)</td><td class="tax-tax">Deferred + new gain taxed</td><td>§704(c) allocates the built-in Belara gain to Kao; or roll again under §1031</td></tr>
+  </table>
+  <div class="callout"><b>The one tax decision.</b> Hanover's promote keeps capital-gain treatment <i>only</i> because it is a partnership profits interest (Phase 2). If you instead used the simpler "Kao 100% + fee developer" fallback (Structure B), the same dollars become an <span class="tax-ord">ordinary-income</span> fee, which you would gross up to keep Hanover whole.</div>
+</section>
+
+<!-- TAX MECHANICS -->
+<section id="taxmechanics">
+  <h2>Tax mechanics — the partnership questions the exchange overview skips</h2>
+  <p>The §1031 analysis is necessary but not the whole story. The Phase-2 §721 contribution and the debt structure raise four partnership-tax issues that must be modeled before relying on this structure. Each can create <b>current gain</b> even if the exchange itself succeeds.</p>
+
+  <h3>§707 — disguised sale (the timing trap)</h3>
+  <ul>
+    <li><b>2-year presumption (Reg. §1.707-3):</b> transfers between a partner and a partnership within two years of each other are <b>presumed a sale</b>; outside two years, presumed not. Rebuttable, but sets the baseline.</li>
+    <li><b>Live issue:</b> how Hanover's Phase-1 loan → Phase-2 equity conversion is treated, and whether Kao's funding/distribution pattern looks like a sale.</li>
+    <li><b>Not just a label:</b> "the loan converts via §721" hides real mechanics — whether Hanover contributes the note or cash, how the JV's assumption/cancellation of the debt is treated, any <b>§108 COD</b> consequences, and resulting basis. Analyze it; don't paper it as one line.</li>
+    <li><b>Plan:</b> sequence the conversion and any distributions; document non-sale intent; keep the seasoning gap long.</li>
+  </ul>
+
+  <h3>§752 — liability shifts (this one can surprise Kao)</h3>
+  <ul>
+    <li>Hanover guaranties can make the ~$29M debt <b>recourse</b> to the guarantor and shift liability share <b>away from Kao</b> (Reg. §1.752-2). A decrease in Kao's liability share is a <b>deemed cash distribution</b> under §752(b).</li>
+    <li><b>Consequence:</b> that deemed distribution can <b>exceed Kao's basis</b> and trigger <b>current gain</b> — potentially undoing part of the deferral.</li>
+    <li><b>Plan:</b> model Kao's basis and liability share before finalizing guaranties; consider bottom-dollar/vertical-slice limits or a Kao guaranty of a sufficient slice.</li>
+  </ul>
+
+  <h3>§704(c) — built-in gain</h3>
+  <ul>
+    <li>The property enters the JV with built-in gain (FMV over Kao's carryover basis); §704(c) allocates that gain back to Kao on later sale/depreciation.</li>
+    <li><b>Recommended method: "remedial"</b> — cleanest for keeping the deferred Belara gain with Kao and giving Hanover correct depreciation; confirm with the CPA.</li>
+  </ul>
+
+  <h3>Basis &amp; depreciation (the long tail)</h3>
+  <ul>
+    <li><b>Carryover basis:</b> Kao's low Belara basis carries into North Forsyth (§1031(d)); deferral, not erasure.</li>
+    <li><b>Unrecaptured §1250 gain</b> rides along and is taxed up to 25% when gain is recognized.</li>
+    <li><b>§263A</b> UNICAP applies to the construction — interest/carrying costs largely capitalized.</li>
+    <li><b>Later-sale waterfall:</b> (1) §704(c) built-in Belara gain to Kao; (2) unrecaptured §1250 at 25%; (3) remaining gain 95/5 with the promote above hurdles; (4) Georgia tax on GA-source gain — or roll again under §1031.</li>
+  </ul>
+  <div class="callout warn"><b>None of these are reasons not to do Structure A</b> — they are reasons to <b>model §752 and §707 with the CPA before signing</b>, because either can create cash tax in a year with no liquidity event.</div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <h2>Timeline</h2>
+  <pre class="mermaid">
+flowchart LR
+  A["Pre-close&lt;br/&gt;QI · EAT · entities&lt;br/&gt;lender consent · opinion"]:::neutral
+  B["Day 0&lt;br/&gt;Belara → QI&lt;br/&gt;$20M parked"]:::asset
+  C["Day 45&lt;br/&gt;Identify NFCC + backup DST&lt;br/&gt;in writing"]:::neutral
+  D["Days 0–180&lt;br/&gt;EAT builds&lt;br/&gt;QI + loan fund draws"]:::neutral
+  E["Day 180&lt;br/&gt;EAT deeds 100%&lt;br/&gt;to Kao SMLLC"]:::kao
+  F["Seasoning (from deed)&lt;br/&gt;12-mo floor → ~24 mo + lease-up&lt;br/&gt;file Form 8824"]:::kao
+  G["Phase 2&lt;br/&gt;§721 into PropCo JV&lt;br/&gt;Hanover 5% + promote"]:::han
+  H["Exit / refi&lt;br/&gt;promote paid&lt;br/&gt;§1061 &gt; 3-yr hold"]:::asset
+  A --> B --> C --> D --> E --> F --> G --> H
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+  </pre>
+</section>
+
+<!-- CHECKLIST -->
+<section id="checklist">
+  <h2>Everything to do</h2>
+  <div class="grid2">
+    <div class="card"><h3>Before Belara closes</h3><ul>
+      <li>Engage the QI and the EAT provider; confirm independence (not disqualified persons).</li>
+      <li>Form <code>Kao NFCC Owner LLC</code>; sole member = the exact Belara seller. Admit no second member.</li>
+      <li>Get <b>written lender consent</b> to lend to the EAT and to the go-forward JV.</li>
+      <li>Confirm Kao has never owned North Forsyth; confirm the land seller is unrelated (Rev. Proc. 2004-51 / §1031(f)).</li>
+      <li>Engage §1031 counsel + CPA; obtain the written opinion on the final documents (target MLTN → "should"; don't promise "should").</li>
+      <li>Model boot scenarios and the §752/§707 consequences; line up a named backup DST.</li>
+    </ul></div>
+    <div class="card"><h3>Phase 1 — the exchange</h3><ul>
+      <li><b>Day 0:</b> Belara closes; proceeds wire to the QI (never to Kao).</li>
+      <li><b>Day 45:</b> identify North Forsyth + a named backup DST in writing.</li>
+      <li><b>Days 0–180:</b> EAT builds under FMV DMA + GMP; Hanover guaranties; Hanover 5% in as a secured, interest-bearing loan.</li>
+      <li><b>Day 180:</b> EAT deeds 100% to <code>Kao NFCC Owner LLC</code>; commission a Day-180 in-place valuation.</li>
+      <li><b>Extend the 2026 return</b> so the deadline is the full 180 days.</li>
+      <li>File <b>Form 8824</b>; recognize boot only on any shortfall.</li>
+    </ul></div>
+    <div class="card"><h3>Phase 2 — the JV</h3><ul>
+      <li>Let the exchange <b>season</b> from the deed date; Kao holds and operates as 100% owner.</li>
+      <li>Do not pre-sign the contribution — <b>non-binding LOI only; no fixed-price equity option.</b></li>
+      <li>Form <code>North Forsyth Commerce Center JV LLC</code>; make the §721 contribution.</li>
+      <li>Convert Hanover's loan to its 5% + promote; adopt the operating agreement (95/5, 20/30/40 over 10/14/18, fees, guaranties).</li>
+      <li>Confirm no §707 disguised sale (watch cash in/out within 2 years) and model §752.</li>
+    </ul></div>
+    <div class="card"><h3>Ongoing &amp; exit</h3><ul>
+      <li>Run the JV as a partnership; file Form 1065 + K-1s.</li>
+      <li>Kao reports 95% (GA-source); Hanover its 5% + fees.</li>
+      <li>Hold &gt; 3 years so Hanover's promote is long-term (§1061).</li>
+      <li>At exit, plan another §1031 if continued deferral is wanted.</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section id="glossary">
+  <h2>Key terms</h2>
+  <table>
+    <tr><th>Term</th><th>What it means here</th></tr>
+    <tr><td><b>§1031 exchange</b></td><td>Defer gain by reinvesting Belara's proceeds into like-kind real property (North Forsyth). 45-day ID, 180-day completion.</td></tr>
+    <tr><td><b>Qualified Intermediary (QI)</b></td><td>Independent party that holds the $20M so Kao avoids constructive receipt (Reg. §1.1031(k)-1).</td></tr>
+    <tr><td><b>EAT / QEAA</b></td><td>Exchange Accommodation Titleholder parks title and builds during the 180-day window (Rev. Proc. 2000-37). The build-to-suit fix.</td></tr>
+    <tr><td><b>Disregarded SMLLC</b></td><td>Single-member LLC ignored for tax, so Kao is treated as owning the real estate directly — preserves "same taxpayer."</td></tr>
+    <tr><td><b>§721 contribution</b></td><td>Tax-free contribution of property to a partnership for a partnership interest. The bridge from 100% ownership to the promoted JV (subject to §707/§752 overlays).</td></tr>
+    <tr><td><b>Promote / carried interest</b></td><td>Hanover's disproportionate profit share above IRR hurdles (20/30/40 over 10/14/18). Legal inside a partnership; capital gain because it is a profits interest — §1061 then requires a &gt; 3-yr hold for long-term rates.</td></tr>
+    <tr><td><b>§704(c)</b></td><td>Keeps the deferred Belara gain allocated to Kao after the §721 contribution (recommend remedial method).</td></tr>
+    <tr><td><b>§707 disguised sale</b></td><td>Cash into a partnership plus a distribution out within ~2 years can be recharacterized as a taxable sale. Sequence carefully.</td></tr>
+    <tr><td><b>§752 liability shift</b></td><td>A partner's share of partnership debt is part of basis. If Hanover's guaranties shift the ~$29M loan away from Kao, the decrease is a deemed distribution that can trigger gain. Model before signing.</td></tr>
+    <tr><td><b>Seasoning</b></td><td>The real time gap (from the deed date) between the exchange and the §721 contribution that defeats a step-transaction argument.</td></tr>
+    <tr><td><b>Step-transaction</b></td><td>IRS doctrine that can collapse pre-arranged steps. Structure A's main residual risk; managed by the seasoning + neutrality guardrails.</td></tr>
+    <tr><td><b>Boot</b></td><td>Cash back or value not reinvested by Day 180 — taxed in 2026.</td></tr>
+    <tr><td><b>GMP</b></td><td>Guaranteed Maximum Price construction contract with Hanover's GC affiliate (4.5% of hard costs).</td></tr>
+  </table>
+</section>
+
+<!-- REFERENCES -->
+<section id="references">
+  <h2>References</h2>
+  <h3>Statute &amp; regulations</h3>
+  <ul>
+    <li><a href="https://www.law.cornell.edu/uscode/text/26/1031">IRC §1031</a> — like-kind exchanges; real-property only post-TCJA (§1031(a)(1)), so partnership interests can't qualify. Current §1031(a)(2) is the "held primarily for sale" exception; the old partnership-interest exclusion at "(a)(2)(D)" was removed by the 2017 TCJA (cite (a)(1) + Reg. §1.1031(a)-3, not the dead (a)(2)(D)).</li>
+    <li><a href="https://www.law.cornell.edu/cfr/text/26/1.1031(a)-3">Treas. Reg. §1.1031(a)-3</a> — definition of "real property"; confirms a partnership interest is not real property.</li>
+    <li><a href="https://www.law.cornell.edu/uscode/text/26/721">IRC §721</a> — nonrecognition on contribution to a partnership.</li>
+    <li><a href="https://www.law.cornell.edu/uscode/text/26/704">IRC §704(c)</a> — built-in gain allocation (recommend remedial method).</li>
+    <li><a href="https://www.law.cornell.edu/uscode/text/26/707">IRC §707(a)(2)(B)</a> — disguised-sale rule.</li>
+    <li><a href="https://www.law.cornell.edu/cfr/text/26/1.707-3">Treas. Reg. §1.707-3</a> — disguised-sale mechanics; the 2-year presumption.</li>
+    <li><a href="https://www.law.cornell.edu/uscode/text/26/752">IRC §752</a> — partnership liabilities; a decrease in a partner's share is a deemed distribution.</li>
+    <li><a href="https://www.law.cornell.edu/cfr/text/26/1.752-2">Treas. Reg. §1.752-2</a> — recourse liability allocation; how guaranties shift debt.</li>
+    <li><a href="https://www.law.cornell.edu/uscode/text/26/1061">IRC §1061</a> — carried-interest 3-year holding period (limits, does not create, capital gain).</li>
+    <li><a href="https://www.law.cornell.edu/cfr/text/26/1.1031(k)-1">Treas. Reg. §1.1031(k)-1</a> — QI / constructive-receipt safe harbor; disqualified-person rules at (k).</li>
+    <li><a href="https://www.law.cornell.edu/cfr/text/26/301.7701-3">Treas. Reg. §301.7701-3</a> — disregarded entity.</li>
+  </ul>
+  <h3>Revenue procedures &amp; case law</h3>
+  <ul>
+    <li><a href="https://www.irs.gov/pub/irs-drop/rp-00-37.pdf">Rev. Proc. 2000-37</a> — QEAA / build-to-suit parking (5-business-day QEAA; qualified indicia of ownership; ≤180-day parking).</li>
+    <li><a href="https://www.irs.gov/pub/irs-drop/rp-04-51.pdf">Rev. Proc. 2004-51</a> — no safe harbor for taxpayer-pre-owned property.</li>
+    <li><a href="https://www.irs.gov/pub/irs-drop/rp-02-22.pdf">Rev. Proc. 2002-22</a> — TIC co-ownership ruling guidelines (advance-ruling guidance, <b>not</b> a safe harbor).</li>
+    <li><i>Read the case law with its limits: both are pre-1984, 9th Cir.; Georgia is in the 11th Cir.</i></li>
+    <li><a href="https://openjurist.org/753/f2d/1490/magneson-v-commissioner-of-internal-revenue">Magneson v. Commissioner</a>, 753 F.2d 1490 (9th Cir. 1985) — post-exchange §721 contribution respected, <b>but</b> an immediate, modest general-partnership rollover, not a leveraged EAT build into a promoted LLC.</li>
+    <li><a href="https://law.justia.com/cases/federal/appellate-courts/F2/760/1039/">Bolker v. Commissioner</a>, 760 F.2d 1039 (9th Cir. 1985) — supports "held for investment" despite a planned later transaction; <b>caveat: not a §721 case</b> (liquidating distribution).</li>
+  </ul>
+  <div class="foot">Illustrative diagram of "Structure A" from the recommended-structure memo. Entity names are placeholders; figures are rounded planning numbers. This is a conditional, more-likely-than-not position (not "clean"); no position here rises to "will." Not legal or tax advice and not a covered opinion; obtain a written §1031 opinion on the executed documents before Belara closes. Prepared June 13, 2026; revised June 14, 2026.</div>
+</section>
+
+</main>
+<script>
+  const tabs=[
+    ["overview","Overview"],["structure","Structure"],["bigpicture","Big picture"],
+    ["phase1","Phase 1 · Exchange"],["phase2","Phase 2 · JV"],["seasoning","Seasoning"],
+    ["neutrality","Neutrality"],["entities","Entities"],["money","Money flow"],
+    ["tax","Tax treatment"],["taxmechanics","Tax mechanics"],["timeline","Timeline"],
+    ["checklist","Checklist"],["glossary","Key terms"],["references","References"]
+  ];
+  const nav=document.getElementById("nav");
+  tabs.forEach(([id,label],i)=>{
+    const b=document.createElement("button");
+    b.textContent=label; b.dataset.t=id; if(i===0)b.classList.add("active");
+    b.onclick=()=>{
+      document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));
+      document.querySelectorAll("main section").forEach(x=>x.classList.remove("active"));
+      b.classList.add("active");
+      document.getElementById(id).classList.add("active");
+      window.scrollTo({top:0,behavior:"smooth"});
+    };
+    nav.appendChild(b);
+  });
+  mermaid.initialize({startOnLoad:true,theme:"base",securityLevel:"loose",
+    flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:45,rankSpacing:50},
+    themeVariables:{fontFamily:"inherit",fontSize:"13px",lineColor:"#5b6b7f",
+      primaryColor:"#eef2f7",primaryBorderColor:"#1f3a5f",primaryTextColor:"#1a1a1a",
+      clusterBkg:"#f6f8fb",clusterBorder:"#c3ccd8"}});
+</script>
+</body>
+</html>

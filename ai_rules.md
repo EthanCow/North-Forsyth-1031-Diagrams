@@ -180,5 +180,9 @@ When drafting Belara PSA, must include (for counsel/escrow):
 | `docs/incoming/hanover-org-chart-extracted.txt` | Text extract |
 | `docs/incoming/` term sheet (pdf/docx) | Kao → Hanover JV proposal, 06.12.2026 |
 | `docs/incoming/lawyer-unreviewed-potential-1031.txt` | Generic §1031 primer — UNREVIEWED |
-| `docs/sources/StructureA-draft.md` | Structure A hypothesis — DRAFT |
+| `docs/sources/StructureA-draft.md` | Structure A hypothesis — **site working model** — DRAFT |
 | `docs/sources/*-extracted.txt` | AI tax memos — DRAFT, not counsel |
+| `Claude CoWork research/` | Original Structure A research (md, html, docx) — mirrors `docs/sources/` |
+| `Hanover JV Term Sheet/` | Term sheet copies (same files as `docs/incoming/`) |
+| `Hanover Org Chart Example Project.pdf` | Root copy — also in `docs/incoming/` |
+| `laywer (unreviewed) potential 1031.txt` | Root copy — typo filename; see `docs/incoming/lawyer-unreviewed-potential-1031.txt` |
