@@ -64,6 +64,10 @@ Every chat in this repo, **without the user typing @-commands**:
 | **Hanover term sheet response** | STATED (user) | **Depends on us** — we drive timing/substance of what we send back |
 | **Belara PSA / QI escrow** | STATED (user) | **Not drafted yet** — we have leverage to add QI/escrow language later; see **Future: Belara PSA** below |
 | **Budget (headline)** | STATED + TERM SHEET | ~**$50.3M** total, **$6.5M** land — detailed dev budget **not** modeling priority |
+| **Hanover relationship** | STATED (user) | User is a **salaried Hanover employee**; family holds **ZERO Hanover equity**. → **Not** a tax related-party (§267(b)/§707(b)/§1031(f) key off ownership, not employment). **But** the trust relationship **amplifies step-transaction risk** — paper extra-clean; employee **recuses** from Hanover-side deal decisions |
+| **Exchanger decision** | STATED (user) | **Kao Management Trust** = long-term owner/exchanger. **Titan Management** = parents' company (holds Belara today). Align Belara into a **trust-owned disregarded SMLLC pre-close**. **Grantor vs non-grantor trust = gating CPA fork** (non-grantor move = gift/sale) |
+| **Risk floor / objective** | STATED (user) | **MLTN acceptable** for the exchange; **keep Hanover capital-gain carry**; **Kao no surprise tax = HARD** (§752/§707/§704(c) must be tax-silent) |
+| **Current best structure** | DRAFT | **Structure C-Hybrid** — see `docs/research/2026-06-14_structure-C-hybrid-legal-review.md`. Hanover = **fresh-cash 5% capital interest + separate zero-liquidation-value profits-interest promote**; loan repaid not converted. Supersedes draft Structure A's loan-conversion approach |
 
 ---
 
