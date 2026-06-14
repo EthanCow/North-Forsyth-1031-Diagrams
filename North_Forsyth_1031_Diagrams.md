@@ -4,7 +4,7 @@
 
 ## The deal
 
-Sell **Belara Apartments** ($20M, no debt) and defer gain by reinvesting into **North Forsyth Commerce Center** — ~$50.3M ground-up industrial (~327,600 SF, Forsyth County GA) with **Hanover Industrial LLC** as developer.
+Sell **Belara Apartments** ($20M, no debt) and defer gain by reinvesting into **North Forsyth Commerce Center** — ≈$50.3M ground-up industrial (≈327,600 SF, Forsyth County GA) with **Hanover Industrial LLC** as developer.
 
 | | |
 |---|---|
@@ -13,7 +13,7 @@ Sell **Belara Apartments** ($20M, no debt) and defer gain by reinvesting into **
 | **Commercial LP (term sheet)** | Kao Management Trust — 95% economics |
 | **Developer** | Hanover Industrial LLC |
 | **Land** | $6.5M · third-party seller · **under PSA** · unaffiliated |
-| **Project cost** | ~$50.3M · construction loan **~60% LTC** |
+| **Project cost** | ≈$50.3M · construction loan **≈60% LTC** |
 | **QI** | **Riverway Title** |
 | **EAT** | TBD |
 | **Model Day 0** | **Sept 1, 2026** (Belara + land aligned) |
@@ -89,7 +89,7 @@ flowchart LR
 | Sitework | Months 1–2 | 5M | 11.5M |
 | Foundations | Months 3–5 | 10M | **21.5M** |
 
-Full build ~**11 months**. ~$20M §1031 target is met by ~month 5 on this schedule if work is **in place, paid through QI/EAT, and documented** at Day 180. Remaining ~$30M of project → construction loan (+ structure-dependent Hanover role).
+Full build ≈**11 months**. ≈$20M §1031 target is met by ≈month 5 on this schedule if work is **in place, paid through QI/EAT, and documented** at Day 180. Remaining ≈$30M of project → construction loan (+ structure-dependent Hanover role).
 
 ## Hanover entity map (roles — names TBD at formation)
 
@@ -99,8 +99,8 @@ Pattern from Hanover's example deals + term sheet. **Hanover Construction Group*
 flowchart TB
   HIND["Hanover Industrial LLC\nSponsor"]:::han
   LAND["Land acquisition SPV"]:::neutral
-  INV["Investor LP ~95%\n(Kao / Kao Trust)"]:::kao
-  HAN5["Hanover GP/LP stack ~5%\n+ promote"]:::han
+  INV["Investor LP 95%\n(Kao / Kao Trust)"]:::kao
+  HAN5["Hanover GP/LP stack 5%\n+ promote"]:::han
   GC["Hanover Construction Group\nGMP · 4.5% hard\n(contractor only)"]:::han
   EATN["EAT / project entity\nholds title during build"]:::neutral
   HIND --> LAND
@@ -120,7 +120,7 @@ flowchart TB
 |---|---|
 | **QI** | **Riverway Title** — holds $20M; Kao never touches proceeds |
 | **EAT** | Holds title during build (up to 180 days) — provider TBD |
-| **Boot** | Taxable if &lt; ~$20M qualifying value in place by Day 180 |
+| **Boot** | Taxable if less than ≈$20M qualifying value in place by Day 180 |
 | **Like-kind** | Real property only — not LLC/partnership interests |
 | **Same taxpayer** | Belara seller = replacement recipient (resolve Titan vs Kao Trust) |
 
@@ -174,15 +174,15 @@ flowchart LR
 |---|---|
 | **Hanover Industrial LLC** | Term-sheet Sponsor; signs development / JV docs |
 | **Land acquisition SPV** | Acquires land (example: HCI DP Land Acquisition LLC) |
-| **Investor LP ~95%** | Kao / Kao Management Trust side |
-| **Hanover GP/LP + capital** | ~5% + promote stack |
+| **Investor LP (95%)** | Kao / Kao Management Trust side |
+| **Hanover GP/LP + capital** | 5% + promote stack |
 | **Hanover Construction Group** | **GMP contractor only** — 4.5% of hard costs, $300K advance, 5% contingency. **Not a JV equity holder** on the org chart; contracts with project entity / EAT |
 
 ```mermaid
 flowchart TB
   HIND["Hanover Industrial LLC"]:::han
   GC["Hanover Construction Group\nGMP · 4.5% hard"]:::han
-  H5["Hanover ~5% stack\n+ promote"]:::han
+  H5["Hanover 5% stack\n+ promote"]:::han
   PROJ["Project / EAT entity"]:::neutral
   HIND --> H5
   GC -->|"GMP contract"| PROJ
@@ -223,7 +223,7 @@ flowchart TB
 
 ## Your role
 
-**Exchangor** — sell Belara, reinvest ~$20M into North Forsyth, defer gain. Runs on **45-day** and **180-day** clocks from Belara close.
+**Exchangor** — sell Belara, reinvest ≈$20M into North Forsyth, defer gain. Runs on **45-day** and **180-day** clocks from Belara close.
 
 | Item | Detail |
 |---|---|
@@ -253,7 +253,7 @@ flowchart TB
 | Sitework (mo 1–2) | 5M | 11.5M |
 | Foundations (mo 3–5) | 10M | **21.5M** |
 
-Exchange equity funds **first**. ~$20M target met by ~month 5 if in-place and documented at Day 180.
+Exchange equity funds **first**. ≈$20M target met by ≈month 5 if in-place and documented at Day 180.
 
 ## Critical rules
 
@@ -261,7 +261,7 @@ Exchange equity funds **first**. ~$20M target met by ~month 5 if in-place and do
 - **Never touch proceeds** — constructive receipt kills the exchange
 - **No debt on Belara** — no mortgage boot
 - Identify NFCC in writing by Day 45; complete exchange by Day 180
-- File **Form 8824**; boot on any documented shortfall below ~$20M in-place
+- File **Form 8824**; boot on any documented shortfall below ≈$20M in-place
 
 ## Before Belara closes
 

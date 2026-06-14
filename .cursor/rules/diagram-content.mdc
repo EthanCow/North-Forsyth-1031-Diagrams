@@ -10,5 +10,6 @@ Tabs: `overview`, `strake`, `hanover`, `kao`, `references` — must match `index
 
 - Preserve `<!-- TAB:id -->` markers
 - Keep mermaid classDef colors (kao/han/neutral/asset)
+- **No `~` in markdown prose** — use `≈` for approximations (tilde pairs render as strikethrough)
 - Mark unsourced claims DRAFT or OPEN
 - Strake tab = internal reference for us, not a Strake deliverable
