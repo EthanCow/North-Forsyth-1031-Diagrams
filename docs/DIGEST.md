@@ -80,16 +80,18 @@ QI pool ≈$20M from Belara. Identification letter to QI **before** any NFCC dis
 
 ---
 
-## 6. Structure paths (no winner — research 2026-06-14)
+## 6. Structure paths
 
-| Path | Exchange viability (draft) | Hanover equity | Term sheet rewrite |
-|---|---|---|---|
-| **1. LLC JV Day 1** (as written) | **Fails** on form | Day 1 | N/A for §1031 |
-| **2. TIC + EAT + promote-as-fee** | Uncertain — needs counsel | Day 180 (5% undivided) | Heavy |
-| **3. 100% fee → §721 JV after seasoning** | MLTN at best — step-transaction risk | After 12–24+ mo | Very heavy |
-| **4. 100% forever + incentive fee** | Strongest exchange | Never (fee only) | Heavy; Hanover ordinary income on promote |
+**Site working model:** **Structure A** — exchange first (EAT, 100% fee to Kao), §721 JV after seasoning. Source: `docs/sources/StructureA-draft.md` — **DRAFT**.
 
-**User stance:** Whatever works — compare with counsel, don't pick by label.
+| Path | Exchange (draft) | Hanover promote |
+|---|---|---|
+| **Structure A** (site model) | MLTN at best | **Capital gain** in Phase 2 JV |
+| Term sheet LLC Day 1 | **Fails** | N/A |
+| TIC + promote-as-fee | Uncertain | Aggressive |
+| Structure B fee-only | Strongest | **Ordinary income** |
+
+**Counsel opinion:** **OPEN** — Structure A on site for planning; not adopted until written opinion.
 
 ---
 
