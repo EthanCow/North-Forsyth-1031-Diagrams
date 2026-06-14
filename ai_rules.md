@@ -50,7 +50,8 @@ Every chat in this repo, **without the user typing @-commands**:
 | **Belara sale** | VERIFIED | **$20M, no debt**; Belara timing **flexible** — align with NFCC model below |
 | **Belara seller (legal)** | STATED (user) | **Titan Management** — **not** the same entity as Kao Management Trust (term sheet LP). Family controls both; **entity alignment OPEN** before close |
 | **NFCC / project Day 0 (modeling)** | STATED (user) | **Sept 15, 2026** — land close; **$6.5M land** at Day 0 |
-| **Simplified draw model** | STATED (user) | **Sitework:** mo 1–2, **$5M** · **Foundations:** mo 3–5, **$10M** → **~$21.5M** deployed (land + improvements) by ~month 5 |
+| **Simplified draw model** | STATED (user) | **Sitework:** Oct–Nov, **$5M** · **Foundations:** Dec–Feb, **$10M** total ($8.5M QI + $1.5M loan) → **$21.5M** project hard-cost phases; **QI pool ≈$20M** |
+| **45-day identification** | STATED (user) + mechanics | Letter to QI **before** NFCC spend; **Oct 30, 2026** = **deadline**, not action date (modeled **Sept 15** same day as Belara) |
 | **Full build duration** | STATED (user) | Ground-up industrial **~11 months** to fully complete |
 | **180-day / $20M** | STATED (user) | **Very reasonable** with equity first; draw model above exceeds $20M target if schedule holds |
 | **Equity draw order** | STATED (user) | **Exchange equity first** (land, then early hard costs) |

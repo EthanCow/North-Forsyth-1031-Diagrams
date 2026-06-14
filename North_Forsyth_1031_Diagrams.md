@@ -17,7 +17,8 @@ Sell **Belara Apartments** ($20M, no debt) and defer gain by reinvesting into **
 | **QI** | **Riverway Title** |
 | **EAT** | TBD |
 | **Model Day 0** | **Sept 15, 2026** (Belara + NFCC land / construction start) |
-| **Clocks** | Day 45 = Oct 30, 2026 · Day 180 = Mar 14, 2027 |
+| **45-day ID deadline** | **Oct 30, 2026** — identification letter must be **on file with QI by then** (modeled **Sept 15**, before land wire) |
+| **180-day completion deadline** | **Mar 14, 2027** — EAT must deed replacement property to exchanger |
 
 ## Commercial term sheet (unsigned — economics to preserve)
 
@@ -67,42 +68,63 @@ flowchart LR
 
 ## Timeline & exchange equity draw
 
-**Day 0 = Belara close** (IRS clocks start). Modeled aligned with **NFCC land close / construction start: Sept 15, 2026**. Party-by-party steps → **Kao tab**.
+**Day 0 = Belara close** (IRS clocks start). Modeled **Sept 15, 2026**, aligned with NFCC land. Party detail → tabs.
+
+### Two IRS clocks (do not confuse with action order)
+
+| Clock | Starts | Last day (model) | What it means |
+|---|---|---|---|
+| **45-day identification** | Belara close | **Oct 30, 2026** | Exchangor must give QI a **written list** of replacement property **on or before** this date |
+| **180-day completion** | Belara close | **Mar 14, 2027** | Replacement property must be **received** (here: EAT deeds to Kao LLC) **on or before** this date |
+
+**Oct 30 is a deadline, not the day we identify.** QI cannot apply Belara proceeds to NFCC until NFCC is **identified**. In our model the identification letter is delivered **Sept 15 — same day as Belara, before the land wire** (see order below). Oct 30 is cushion if Belara slips.
+
+### Sept 15 — order of operations (same calendar day)
 
 ```mermaid
 flowchart TB
-  subgraph D0["Sept 15 · Day 0"]
-    SK["Strake"]:::neutral
-    QI["Riverway Title\n$20M"]:::neutral
-    EAT["EAT on NFCC title"]:::neutral
-    SK -->|"$20M"| QI
-    QI -->|"$6.5M land"| EAT
+  subgraph D0["Sept 15 · Day 0 — chronological"]
+    A["① Belara close\nStrake → Riverway Title $20M"]:::neutral
+    B["② ID letter\nKao → Riverway Title"]:::kao
+    C["③ Land close\nRiverway → EAT $6.5M"]:::neutral
+    A --> B --> C
   end
-  subgraph D45["Oct 30 · Day 45"]
-    ID["Kao identifies NFCC\nin writing to QI"]:::kao
-  end
-  subgraph BUILD["Oct 2026 – Mar 2027"]
-    DR["QI releases funds\n→ EAT → Hanover GC"]:::neutral
+  subgraph BUILD["Sept 16 – Mar 13 · construction"]
+    D["④ QI draws → EAT → Hanover GC\nexchange pool only"]:::neutral
   end
   subgraph D180["Mar 14 · Day 180"]
-    DEED["EAT deeds property\n→ Kao LLC"]:::kao
+    E["⑤ EAT deeds → Kao LLC"]:::kao
   end
-  D0 --> D45 --> BUILD --> D180
+  D0 --> BUILD --> D180
+  DL["Oct 30 · 45-day deadline\n(already identified in ②)"]:::neutral
+  DL -.->|"not a spend date"| B
   classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
 ```
 
-| Draw — **QI releases to EAT** (exchange equity first) | Calendar (model) | $ | Running total |
-|---|---|---|---|
-| Land | Sept 15, 2026 | 6.5M | 6.5M |
-| Sitework | Oct–Nov 2026 | 5M | 11.5M |
-| Foundations | Dec 2026–Feb 2027 | 10M | **21.5M** |
+### Exchange pool — sources and uses
 
-Full build ≈**11 months** (~Aug 2027). ≈$20M §1031 target met if work is **in place, paid QI → EAT → contractors, and documented** by Day 180. Remaining ≈$30M → **construction loan** (~60% LTC) after exchange equity is deployed.
+QI holds **≈$20M** from Belara (no debt). **Cannot disburse more than the pool** for exchange-funded work.
+
+| Order | When | From → To | $ | Source |
+|---|---|---|---|---|
+| ① | Sept 15 | Strake → escrow → **Riverway Title** | **20.0M** | Belara sale |
+| ② | Sept 15 | (no wire) Kao → **Riverway Title** | — | **ID letter** on file |
+| ③ | Sept 15 | **Riverway Title** → **EAT** → land seller | **6.5M** | Exchange pool |
+| ④ | Oct–Nov 2026 | **Riverway Title** → **EAT** → Hanover GC | **5.0M** | Exchange pool |
+| ⑤ | Dec 2026–Feb 2027 | **Riverway Title** → **EAT** → Hanover GC | **8.5M** | Exchange pool (**exhausts ≈$20M**) |
+| ⑤b | Dec 2026–Feb 2027 | **Lender** → **EAT** → Hanover GC | **1.5M** | **Construction loan** (foundations balance) |
+| ⑥ | Mar 14, 2027 | **EAT** → **Kao LLC** (deed) | — | Exchange **completes** |
+
+**Project draw model (user):** land $6.5M + sitework $5M + foundations $10M = **$21.5M** hard-cost phases. **Exchange pool covers $20.0M**; the last **$1.5M** of the foundations phase is **loan-funded**, not QI proceeds.
+
+Full build ≈**11 months** (~Aug 2027). Remaining **≈$28.8M** of ≈$50.3M project (after land + early hard costs) → **construction loan** (~60% LTC) per model.
 
 ## Hanover entity map (roles — names TBD at formation)
 
-Pattern from Hanover's example deals + term sheet. **Hanover Construction Group** is the **GMP contractor** — not a JV equity holder on this chart.
+**During Days 0–180:** **EAT** holds title; **Hanover Construction Group** contracts with EAT. Chart below is the **term-sheet target** after restructure (JV/co-ownership timing **OPEN**).
+
+Pattern from Hanover's example deals + term sheet. **Hanover Construction Group** is the **GMP contractor** — not a JV equity holder during the EAT phase.
 
 ```mermaid
 flowchart TB
@@ -127,8 +149,9 @@ flowchart TB
 
 | Term | Meaning |
 |---|---|
-| **QI** | **Riverway Title** — holds $20M; Kao never touches proceeds |
+| **QI** | **Riverway Title** — holds ≈$20M Belara proceeds; funds NFCC **only after** identification letter on file |
 | **EAT** | Holds title during build (up to 180 days) — provider TBD |
+| **45-day ID** | Written list to QI — **deadline** Oct 30, 2026; modeled **Sept 15** before land wire |
 | **Boot** | Taxable if less than ≈$20M qualifying value in place by Day 180 |
 | **Like-kind** | Real property only — not LLC/partnership interests |
 | **Same taxpayer** | Belara seller = replacement recipient (resolve Titan vs Kao Trust) |
@@ -142,17 +165,19 @@ flowchart TB
 
 ## All parties — step index (model)
 
-**Day 0 = Sept 15, 2026** (Belara + NFCC land). Detail by party → tabs.
+**Chronological order** — same story on every tab.
 
-| Step | When | Strake | Kao / family | Riverway (QI) | EAT | Hanover | Land seller | Lender |
-|---|---|---|---|---|---|---|---|---|
-| **1 Pre-close** | Before Sept 15 | PSA, diligence | Entity align, engage QI/EAT | Engagement docs | QEAA TBD | GMP + dev agreements | Land PSA | Term sheet / comfort |
-| **2 Belara close** | Sept 15 | **$20M → QI**; deed in | Signs as seller; **no cash** | **Holds $20M** | — | — | — | — |
-| **3 NFCC land** | Sept 15 | — | — | **$6.5M → EAT** | **On title** | — | **Paid $6.5M** | — |
-| **4 ID letter** | Oct 30 | — | **Identifies NFCC to QI** | Receives ID | — | — | — | — |
-| **5 Construction** | Oct–Feb | — | — | **Draws → EAT** | Pays GC | **GMP / builds** | — | Loan later (~60% LTC) |
-| **6 Exchange close** | Mar 14, 2027 | — | **Receives deed** via LLC | Closes exchange | **Deeds → Kao LLC** | Still GC | — | — |
-| **7 Post-180** | ~Aug 2027 | — | Owns / operates | — | Dissolved | JV path **OPEN** | — | Funds balance |
+| # | When | What happens | Strake | Kao | Riverway (QI) | EAT | Hanover | Land seller | Lender |
+|---|---|---|---|---|---|---|---|---|---|
+| **1** | Pre-close | QI/EAT engaged; **ID letter drafted**; GMP; land PSA | PSA | Entity align | Engagement | QEAA | GMP + DMA | PSA | Comfort letter |
+| **2** | **Sept 15 ①** | **Belara close** | **$20M → QI** | Signs; **no cash** | **Receives $20M** | — | — | — | — |
+| **3** | **Sept 15 ②** | **ID letter to QI** (before NFCC spend) | — | **Delivers letter** | **Acknowledges** | — | — | — | — |
+| **4** | **Sept 15 ③** | **Land close** | — | — | **$6.5M → EAT** | **On title** | GMP live | **Paid** | — |
+| **5** | Sept 16 – Mar 13 | **Construction** | — | — | **Draws ≤ ≈$13.5M** to EAT | Pays GC | **Builds** | — | **Loan after pool exhausted** |
+| **6** | **Mar 14** | **Exchange completes** | — | **Deed via LLC** | Closes exchange | **Deeds → Kao LLC** | GC continues | — | — |
+| **7** | ~Aug 2027 | Full build | — | Owns | — | Dissolved | JV path **OPEN** | — | Funds balance |
+
+| **Deadline only** | **Oct 30, 2026** | Last day to identify if not already done in step **3** | — | — | — | — | — | — | — |
 
 <!-- TAB:strake -->
 
@@ -183,7 +208,7 @@ You do **not** need to understand EATs or replacement property — but you **mus
 | **Day 0 — Belara close** | **Sept 15, 2026** | Wire **$20M** through escrow → **Riverway Title**; receive Belara deed |
 | **After Day 0** | — | **Nothing** on NFCC, construction, or §1031 |
 
-Modeled same day as NFCC land close for Kao's clocks — **your** obligation is only the Belara purchase.
+Modeled same day as Kao's NFCC land close — **your** obligation is only the Belara purchase. Kao delivers the §1031 identification letter to Riverway **before** Riverway wires any NFCC funds (not your document to sign).
 
 ## Step 1 — Pre-close (before Sept 15)
 
@@ -293,8 +318,8 @@ Your fees and guaranties can start in Phase 1; **your equity membership** likely
 | Milestone | Date | Hanover role |
 |---|---|---|
 | **Pre-close** | Before Sept 15 | Execute **GMP** + dev agreements with **EAT**; lender guaranty docs |
-| **Day 0** | **Sept 15, 2026** | **GMP effective**; land closes to **EAT** (not to JV LLC); you do **not** close Belara |
-| **Construction** | Oct 2026 – Feb 2027 | **Invoice EAT** under GMP; build sitework + foundations |
+| **Day 0 — ① Belara** | **Sept 15, 2026** | **GMP effective** after Kao ID + land close to **EAT** |
+| **Construction** | Sept 16, 2026 – Mar 13, 2027 | **Invoice EAT**; paid from QI draws then **loan** |
 | **Day 180** | **Mar 14, 2027** | EAT deeds to **Kao LLC**; you remain **GC**; equity path **OPEN** |
 | **Full build** | ~**Aug 2027** | Complete building; loan funds balance of ~$50.3M project |
 
@@ -327,18 +352,21 @@ flowchart TB
 
 ## Step 2 — Day 0: land close (Sept 15, 2026)
 
-You are **not** at the Belara closing. NFCC land closes **same day** for exchange alignment.
+You are **not** at the Belara closing. On NFCC, Riverway funds land **only after** Kao's identification letter is on file (same day, before this wire).
 
 ```mermaid
 flowchart TB
+  K["Kao\nID letter"]:::kao
   QI["Riverway Title"]:::neutral
   EAT["EAT\non title"]:::neutral
   LS["Land seller"]:::neutral
   GC["Hanover Construction Group\nGMP starts"]:::han
   HIND["Hanover Industrial\n4% dev fee"]:::han
-  QI -->|"$6.5M"| EAT -->|"$6.5M"| LS
+  K -->|"② first"| QI
+  QI -->|"③ $6.5M"| EAT -->|"$6.5M"| LS
   GC -->|"contract"| EAT
   HIND -->|"DMA"| EAT
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
   classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
 ```
@@ -350,30 +378,34 @@ flowchart TB
 | **EAT** | **Hanover Construction Group** | — | **GMP** in place; mobilization per contract |
 | **EAT** | **Hanover Industrial** | — | **Dev management** (4%) accrues per DMA |
 
-## Step 3 — Construction: who pays you (Oct 2026 – Feb 2027)
+## Step 3 — Construction: who pays you (Sept 16, 2026 – Mar 13, 2027)
 
-You bill the **EAT** — not Kao, not the QI directly. QI funds flow **QI → EAT → you**.
+You bill the **EAT**. Early costs: **Riverway Title → EAT → you**. After the **≈$20M exchange pool** is spent, **lender → EAT → you**.
 
 ```mermaid
 flowchart LR
   QI["Riverway Title\nexchange draws"]:::neutral
+  LN["Construction lender"]:::neutral
   EAT["EAT\nowner"]:::neutral
   GC["Hanover Construction Group\nGMP pay apps"]:::han
   SUB["Subs"]:::neutral
-  QI --> EAT --> GC --> SUB
+  QI --> EAT
+  LN --> EAT
+  EAT --> GC --> SUB
   classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
 ```
 
-| Phase | Calendar | Paid from | Hanover receives |
-|---|---|---|---|
-| Sitework | Oct–Nov 2026 | QI → EAT → **GC** | GMP progress payments (4.5% fee on hard) |
-| Foundations | Dec 2026–Feb 2027 | QI → EAT → **GC** | Same |
-| Dev management | Ongoing | EAT | **4%** dev fee per DMA |
+| Phase | Calendar | $ | **Paid from** | Hanover receives |
+|---|---|---|---|---|
+| Sitework | Oct–Nov 2026 | $5.0M | **QI → EAT** | GMP progress payments |
+| Foundations (exchange) | Dec 2026–Feb 2027 | $8.5M | **QI → EAT** | Same |
+| Foundations (balance) | Dec 2026–Feb 2027 | $1.5M | **Lender → EAT** | Same |
+| Dev management | Ongoing | per DMA | EAT | **4%** dev fee |
 
-- **Draw certification:** GC submits pay apps; EAT/QI releases exchange funds per counsel's protocol  
-- **After ~$21.5M exchange equity deployed:** **construction lender** advances to EAT — you **guaranty** per term sheet  
-- **Controllable overruns:** **100% Sponsor** per term sheet — budget risk is yours during build  
+- **Draw certification:** GC pay apps; QI releases only against **identified** NFCC and certified work  
+- **After exchange pool exhausted (~$20M):** **construction lender** advances to EAT — you **guaranty** per term sheet  
+- **Controllable overruns:** **100% Sponsor** per term sheet  
 
 ## Step 4 — Day 180 (Mar 14, 2027)
 
@@ -476,21 +508,24 @@ flowchart TB
 Selling Belara for **$20M** triggers a large capital gain. **IRC §1031** defers that tax if you reinvest into **like-kind real property** (North Forsyth) and follow IRS rules:
 
 1. **Strake's purchase price** wires to **Riverway Title (QI)** — not to you. Touching the cash = **constructive receipt** = exchange fails.
-2. Within **45 days** of Belara close, you **identify** replacement property in a **written notice to the QI** (legal deadline).
-3. Within **180 days**, you **complete** the exchange. NFCC is not built yet, so an **Exchange Accommodation Titleholder (EAT)** holds title while **QI funds** buy land and pay construction; on Day 180 the EAT **deeds** the property to **your acquisition LLC**.
+2. **On or before 45 days** after Belara close, you must have given the QI a **written identification** of replacement property. **Oct 30, 2026** is the **last day**; in our model the letter goes to Riverway **Sept 15, before any NFCC disbursement**.
+3. Within **180 days**, you **complete** the exchange. NFCC is not built yet, so an **Exchange Accommodation Titleholder (EAT)** holds title while **QI funds** (only after identification) buy land and pay construction; on Day 180 the EAT **deeds** the property to **your acquisition LLC**.
 
 The word **"exchange"** means: Belara out → North Forsyth in, same taxpayer, QI in the middle, tax deferred. It is the **tax mechanism** for this deal — not a separate optional step.
 
 ## Key dates (model — STATED user)
 
-**Day 0 = Belara close.** Modeled same day as **NFCC land close / construction start.**
+**Day 0 = Belara close.** NFCC land closes **same day**, but **only after** the identification letter is on file with QI.
 
 | Milestone | Date | What actually happens |
 |---|---|---|
-| **Day 0** | **Sept 15, 2026** | Strake closes Belara → **$20M to Riverway Title**; QI funds **$6.5M land** to **EAT** on title |
-| **Day 45** | **Oct 30, 2026** | **Written identification** of NFCC delivered to QI (IRS rule — see Step 3) |
-| **Day 180** | **Mar 14, 2027** | **EAT deeds** land + in-place improvements to **Kao acquisition LLC** — exchange **closes** |
-| **Full build** | ~**Aug 2027** | ~11 months from Sept 15; balance funded by **construction loan** (~60% LTC) |
+| **Day 0 — ① Belara** | **Sept 15, 2026** | Strake closes → **$20M to Riverway Title**; clocks start |
+| **Day 0 — ② ID letter** | **Sept 15, 2026** | **Written identification** of NFCC to Riverway **before** land wire |
+| **Day 0 — ③ Land** | **Sept 15, 2026** | Riverway releases **$6.5M** → **EAT**; land seller paid |
+| **45-day deadline** | **Oct 30, 2026** | Last day to identify — **not** when we act in this model |
+| **Construction** | Sept 16, 2026 – Mar 13, 2027 | QI draws (to ≈$20M) then loan → EAT → Hanover GC |
+| **Day 180** | **Mar 14, 2027** | **EAT deeds** to **Kao acquisition LLC** — exchange **closes** |
+| **Full build** | ~**Aug 2027** | ~11 months from Sept 15; balance via **construction loan** |
 
 ## Step 1 — Pre-close (before Sept 15)
 
@@ -517,81 +552,80 @@ flowchart TB
 - **Select independent EAT** ([Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf))
 - **Form Kao acquisition SMLLC** (name TBD) — receives Day 180 deed
 - **Land PSA** with third-party seller ($6.5M)
+- **Draft identification letter** for NFCC (land + improvements, value ≥ $20M) — ready to deliver **before** any QI disbursement to EAT
 
-## Step 2 — Day 0: Belara sale + NFCC land (Sept 15, 2026)
+## Step 2 — Day 0: Belara, identification, land (Sept 15, 2026)
 
-IRS **clocks start** at Belara close. Two transactions modeled **same day**:
+IRS **clocks start** at Belara close. **Same calendar day, fixed order** — QI will not fund NFCC until step **②** is complete.
 
-```mermaid
-flowchart TB
-  subgraph Belara["Belara closing"]
-    SK["Strake Jesuit\nbuyer"]:::neutral
-    ESC["Escrow"]:::neutral
-    QI["Riverway Title\nholds $20M"]:::neutral
-    SK -->|"$20M"| ESC --> QI
-  end
-  subgraph NFCC["NFCC land closing"]
-    QI2["Riverway Title\nreleases funds"]:::neutral
-    EAT["EAT\nfee simple on title"]:::neutral
-    LS["Third-party\nland seller"]:::neutral
-    QI2 -->|"$6.5M"| EAT -->|deed| EAT
-    EAT -->|"$6.5M"| LS
-  end
-  QI --> QI2
-  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
-```
-
-| From | To | $ | Note |
-|---|---|---|---|
-| **Strake Jesuit** | **Riverway Title** | **$20M** | Exchange proceeds — **not** to Kao/Titan |
-| **Riverway Title** | **EAT** | **$6.5M** | Land purchase from exchange pool |
-| **Third-party seller** | **EAT** | — | Deeds NFCC land to **EAT**, not to you yet |
-
-**You** sign as exchanger/seller. **You do not** deposit or control the $20M.
-
-## Step 3 — Day 45: identification (by Oct 30, 2026)
-
-Not a construction step — an **IRS deadline**.
+### ② Identification letter (before any NFCC wire)
 
 | | |
 |---|---|
 | **Who acts** | Exchangor (Kao / aligned entity), through §1031 counsel |
 | **Who receives** | **Riverway Title** (QI) |
-| **What** | **Written identification letter** describing North Forsyth Commerce Center — parcel, address, planned improvements, estimated total value **≥ $20M** |
-| **Why** | Without valid identification by Day 45, **no exchange** — regardless of construction |
+| **What** | **Written identification** — NFCC parcel, address, planned improvements, estimated value **≥ $20M** |
+| **Why first** | Proceeds applied to replacement property must match **identified** property ([Reg. §1.1031(k)-1](https://www.law.cornell.edu/cfr/text/26/1.1031(k)-1)) |
 
-Counsel drafts and QI acknowledges. Consider identifying a **backup** replacement (finished asset or DST) if build slips — **DRAFT**; confirm with counsel.
+**Oct 30, 2026** is the **45-day deadline** if Belara were earlier; delivering the letter **Sept 15** satisfies the rule and unlocks land/construction draws.
 
-## Step 4 — Construction: who pays whom (Oct 2026 – Feb 2027)
+### ① Belara close + ③ NFCC land (after ID on file)
 
-**"Equity draws"** = **Riverway Title releasing exchange funds** on draw requests. **Not** Kao wiring from a personal account.
+```mermaid
+flowchart TB
+  SK["Strake\n$20M"]:::neutral
+  QI["Riverway Title"]:::neutral
+  K["Kao\nID letter"]:::kao
+  EAT["EAT"]:::neutral
+  LS["Land seller"]:::neutral
+  SK -->|"①"| QI
+  K -->|"② before ③"| QI
+  QI -->|"③ $6.5M"| EAT --> LS
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+```
+
+| Step | From | To | $ | Note |
+|---|---|---|---|---|
+| **①** | **Strake Jesuit** | **Riverway Title** | **$20M** | Belara proceeds — **not** to you |
+| **②** | **You (exchangor)** | **Riverway Title** | — | ID letter — **no wire** |
+| **③** | **Riverway Title** | **EAT** → land seller | **$6.5M** | Only after **②**; EAT on title |
+
+**You** sign as seller/exchangor. **You do not** receive or control the $20M.
+
+## Step 3 — Construction: who pays whom (Sept 16, 2026 – Mar 13, 2027)
+
+**QI draws** = Riverway releasing **exchange pool** funds on certified requests. Pool is **≈$20M total** (after land: **≈$13.5M** left for improvements).
 
 ```mermaid
 flowchart LR
-  QI["Riverway Title\n~$20M pool"]:::neutral
+  QI["Riverway Title\n≈$20M pool"]:::neutral
   EAT["EAT\nowner · borrower"]:::neutral
   GC["Hanover Construction Group\nGMP"]:::han
-  V["Subs / vendors"]:::neutral
-  QI -->|"certified draws"| EAT
-  EAT -->|"sitework · foundations"| GC --> V
+  LN["Construction lender\nafter pool out"]:::neutral
+  V["Subs"]:::neutral
+  QI -->|"④⑤ exchange draws"| EAT
+  LN -->|"⑤b loan portion"| EAT
+  EAT --> GC --> V
   classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
 ```
 
-| Phase | Calendar (model) | QI → EAT | Cumulative in-place |
-|---|---|---|---|
-| Land | Sept 15, 2026 | $6.5M | $6.5M |
-| Sitework | Oct–Nov 2026 | $5M | $11.5M |
-| Foundations | Dec 2026–Feb 2027 | $10M | **$21.5M** |
+| Phase | Calendar | $ | **Source** | Exchange pool cumulative |
+|---|---|---|---|---|
+| Land | Sept 15 | $6.5M | **QI** | $6.5M |
+| Sitework | Oct–Nov 2026 | $5.0M | **QI** | $11.5M |
+| Foundations | Dec 2026–Feb 2027 | $8.5M | **QI** | **$20.0M** (pool exhausted) |
+| Foundations (balance) | Dec 2026–Feb 2027 | $1.5M | **Construction loan** | — |
+| **Project subtotal** | | **$21.5M** | | (user draw model) |
 
-- **Who requests draws:** EAT / GC under GMP; **QI pays EAT** per exchange agreement
+- **Who requests draws:** EAT / GC under GMP; **QI pays EAT** only for exchange-funded amounts
 - **Who is paid:** **Hanover Construction Group** and subs — from **EAT's** account
-- **Construction loan** (~60% LTC): lender advances to **EAT** for costs **after** exchange equity is deployed; Hanover guaranties per term sheet — exact routing **OPEN**
-- Only improvements **complete and paid within 180 days** count toward exchange value — counsel must document
+- Only improvements **complete and paid with exchange funds within 180 days** count toward §1031 value — counsel must document; loan-funded work does not add exchange credit
 
-Remaining ~$30M of ~$50.3M project after exchange equity → **loan**, not additional §1031 proceeds.
+After exchange pool is out, remaining **≈$28.8M** of ≈$50.3M project → **construction loan** (~60% LTC).
 
-## Step 5 — Day 180: what "exchange complete" means (Mar 14, 2027)
+## Step 4 — Day 180: what "exchange complete" means (Mar 14, 2027)
 
 Three concrete events — not a label:
 
@@ -621,7 +655,8 @@ Construction continues toward ~**Aug 2027** full completion. Hanover **95/5 JV a
 - **Same taxpayer** Belara sale → replacement deed — resolve Titan vs Kao Trust **before PSA**
 - **Never touch proceeds** — constructive receipt ends the exchange
 - **No debt on Belara** at close — no mortgage boot
-- **Day 45 identification** and **Day 180 completion** are hard IRS deadlines
+- **45-day identification** — letter on file **before** QI funds NFCC; **Oct 30** is last day, not action day
+- **180-day completion** — deed by **Mar 14, 2027**
 - **Form 8824**; boot if documented in-place value **< ≈$20M** at Day 180
 
 ## Before Belara closes
@@ -629,6 +664,7 @@ Construction continues toward ~**Aug 2027** full completion. Hanover **95/5 JV a
 - [ ] Lock **exchangor entity** (Kao Trust preferred)  
 - [ ] Engage **Riverway Title**; select **EAT**  
 - [ ] §1031 counsel + CPA; pick structure path (Overview tab)  
+- [ ] Draft **identification letter** — deliver to Riverway **before** any NFCC disbursement  
 - [ ] Draft Belara PSA — proceeds to QI only  
 
 **Sources:** [IRC §1031](https://www.law.cornell.edu/uscode/text/26/1031) · [Reg. §1.1031(k)-1](https://www.law.cornell.edu/cfr/text/26/1.1031(k)-1) · [Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf)

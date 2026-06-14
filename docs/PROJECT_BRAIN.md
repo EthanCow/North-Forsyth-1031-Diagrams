@@ -22,8 +22,8 @@
 | Event | Date |
 |---|---|
 | **Day 0 (model)** | **Sept 15, 2026** — Belara close aligned with NFCC land close / construction start |
-| **Day 45** | **Oct 30, 2026** |
-| **Day 180** | **Mar 14, 2027** |
+| **Day 45** | **Oct 30, 2026** — **deadline** to identify to QI (modeled: **Sept 15** before land wire) |
+| **Day 180** | **Mar 14, 2027** — exchange completion deadline |
 | Term sheet response (original letter) | June 23, 2026 — **we drive Hanover response** |
 
 ---
@@ -32,11 +32,12 @@
 
 | Phase | Timing | Amount | Cumulative |
 |---|---|---|---|
-| Land | Day 0 (Sept 15) | **$6.5M** | $6.5M |
-| Sitework | Oct–Nov 2026 | **$5M** | $11.5M |
-| Foundations | Dec 2026–Feb 2027 | **$10M** | **$21.5M** |
+| Land | Day 0 (Sept 15) | **$6.5M** | $6.5M | **QI** |
+| Sitework | Oct–Nov 2026 | **$5M** | $11.5M | **QI** |
+| Foundations | Dec 2026–Feb 2027 | **$8.5M** | **$20M** | **QI** (pool exhausted) |
+| Foundations (balance) | Dec 2026–Feb 2027 | **$1.5M** | $21.5M project | **Construction loan** |
 
-Exchange equity funds first. **~$20M §1031 target** met by ~month 5 if in-place + documented.
+Exchange equity funds first — **QI pool ≈$20M max** from Belara; $1.5M of foundations phase is loan, not exchange proceeds.
 
 ---
 

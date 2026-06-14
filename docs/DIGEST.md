@@ -39,7 +39,7 @@ Internal model for our family: map the full path **Belara sale → North Forsyth
 | Project cost | **~$50.3M** · land **$6.5M** · loan **~60% LTC** |
 | Equity | **95% Kao / 5% Hanover** (term sheet) |
 | **Day 0 (model)** | **Sept 15, 2026** — Belara + NFCC land close / construction start |
-| **Day 45** | **Oct 30, 2026** |
+| **Day 45** | **Oct 30, 2026** — ID **deadline** (letter modeled **Sept 15** before land wire) |
 | **Day 180** | **Mar 14, 2027** |
 | QI | **Riverway Title** (identified) |
 | EAT | **TBD** |
@@ -51,11 +51,12 @@ Internal model for our family: map the full path **Belara sale → North Forsyth
 
 | Phase | Timing | $ | Cumulative |
 |---|---|---|---|
-| Land | Day 0 | 6.5M | 6.5M |
-| Sitework | Mo 1–2 | 5M | 11.5M |
-| Foundations | Mo 3–5 | 10M | **21.5M** |
+| Land | Day 0 | 6.5M | 6.5M | QI |
+| Sitework | Oct–Nov 2026 | 5M | 11.5M | QI |
+| Foundations | Dec–Feb 2027 | 8.5M | 20M | QI (pool out) |
+| Foundations (balance) | Dec–Feb 2027 | 1.5M | 21.5M project | Loan |
 
-~$20M §1031 target met by ~month 5 if work is **in place, paid via QI/EAT, and documented** at Day 180.
+QI pool ≈$20M from Belara. Identification letter to QI **before** any NFCC disbursement; Oct 30 = 45-day **deadline**.
 
 ---
 
