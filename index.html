@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>North Forsyth 1031 Exchange</title>
+  <title>North Forsyth §1031 — Structure A</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -203,28 +203,75 @@
 <body>
   <header class="site-header">
     <div class="header-top">
-      <h1>North Forsyth 1031 Exchange</h1>
-      <p>Belara Apartments &rarr; North Forsyth Commerce Center &middot; Informational only</p>
+      <h1>North Forsyth &sect;1031 &mdash; Structure A</h1>
+      <p>Belara Apartments &rarr; North Forsyth Commerce Center &middot; &ldquo;Exchange First, Then Combine&rdquo; &middot; Illustrative only, not a covered opinion</p>
     </div>
-    <nav class="tab-bar" role="tablist" aria-label="Party views">
+    <nav class="tab-bar" role="tablist" aria-label="Structure A views">
       <button class="tab-btn active" role="tab" aria-selected="true" data-tab="overview">
         Overview
-        <span class="tab-sub">Full picture</span>
+        <span class="tab-sub">Deal + facts</span>
       </button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="strake">
-        Strake
-        <span class="tab-sub">Buyer</span>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="structure">
+        Structure
+        <span class="tab-sub">Why it works</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="bigpicture">
+        Big picture
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="phase1">
+        Phase 1
+        <span class="tab-sub">Exchange</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="phase2">
+        Phase 2
+        <span class="tab-sub">JV</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="seasoning">
+        Seasoning
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="neutrality">
+        Neutrality
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="entities">
+        Entities
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="moneyflow">
+        Money flow
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="tax">
+        Tax
+        <span class="tab-sub">Event by event</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="taxmechanics">
+        Tax mechanics
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="timeline">
+        Timeline
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="kao">
+        Kao
+        <span class="tab-sub">Exchanger</span>
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="hanover">
         Hanover
         <span class="tab-sub">Developer</span>
       </button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="kao">
-        Kao
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="strake">
+        Strake
+        <span class="tab-sub">Buyer</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="checklist">
+        Checklist
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="terms">
+        Key terms
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="references">
         Sources
         <span class="tab-sub">IRS &amp; case law</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="appendix">
+        Appendix
       </button>
     </nav>
   </header>
@@ -239,7 +286,7 @@
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-    const TAB_ORDER = ["overview", "strake", "hanover", "kao", "references"];
+    const TAB_ORDER = ["overview", "structure", "bigpicture", "phase1", "phase2", "seasoning", "neutrality", "entities", "moneyflow", "tax", "taxmechanics", "timeline", "kao", "hanover", "strake", "checklist", "terms", "references", "appendix"];
     let activeTab = "overview";
     let mermaidReady = false;
 
@@ -350,7 +397,7 @@
 
       try {
         initMermaid();
-        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=7");
+        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=8");
         if (!response.ok) throw new Error(`Could not load content (${response.status})`);
         const markdown = await response.text();
         const sections = parseTabs(markdown);
