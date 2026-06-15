@@ -6,7 +6,7 @@ alwaysApply: false
 
 # Tab content
 
-Tabs: `overview`, `strake`, `hanover`, `kao`, `references` — must match `index.html` `TAB_ORDER`.
+Tabs: `starthere`, `overview`, `kao`, `hanover`, `strake`, `references` — must match `index.html` `TAB_ORDER`. `starthere` = plain-English primer + acronym legend (audience: deal participant with no §1031 background).
 
 - Preserve `<!-- TAB:id -->` markers
 - Keep mermaid classDef colors (kao/han/neutral/asset)

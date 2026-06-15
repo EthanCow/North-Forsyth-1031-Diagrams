@@ -2,7 +2,7 @@
 
 **Live site:** https://ethancow.github.io/North-Forsyth-1031-Diagrams/
 
-Internal family tool — not legal advice, not client-facing. **Working model: Structure A** (DRAFT).
+Internal family tool — not legal advice, not client-facing. **Working model: Structure C-Hybrid** (DRAFT).
 
 ## Clone on another device
 
@@ -17,11 +17,12 @@ Open `index.html` locally, or use the GitHub Pages URL above. All source PDFs, t
 
 | Tab | Contents |
 |---|---|
-| Overview | Deal facts, term sheet economics, §1031 conflict, structure paths, timeline, Hanover entity map |
+| Start Here | Plain-English §1031 primer + acronym legend + cast + the core tension — for readers with no exchange background |
+| Overview | The C-Hybrid structure: phases, bifurcation, timeline, money flow, boot risk, seasoning, entity map, ranked risks |
+| Kao | Exchangor steps, entity alignment, Riverway QI, draw model, seasoning conduct |
+| Hanover | Four Phase-1 roles, control line, Phase-2 bifurcation, conduct/conflict governance, commercial terms |
 | Strake | Belara buyer / QI wire (our reference) |
-| Hanover | Sponsor role, Construction Group GMP, commercial terms |
-| Kao | Exchangor steps, Riverway QI, draw model |
-| Sources | IRS citations |
+| Sources | IRS citations, each paired with what it does in the deal |
 
 ## Docs
 
@@ -32,4 +33,4 @@ Open `index.html` locally, or use the GitHub Pages URL above. All source PDFs, t
 | `docs/research/` | 2026-06-14 research memos |
 | `ai_rules.md` | Facts + agent rules |
 
-Updated **2026-06-14**: **Structure A** diagrams, Sept 15 timeline, party step-by-step tabs, Riverway QI.
+Updated **2026-06-14**: **Structure C-Hybrid** (exchange → seasoning → §721 JV with bifurcated Hanover economics); added a **Start Here** plain-English/acronym tab; Sept 15 timeline; party step-by-step tabs; Riverway QI. 6 tabs: Start Here · Overview · Kao · Hanover · Strake · Sources.

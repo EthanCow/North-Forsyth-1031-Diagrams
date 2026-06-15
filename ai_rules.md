@@ -59,8 +59,8 @@ Every chat in this repo, **without the user typing @-commands**:
 | **Land seller** | STATED (user) | **Third party, unaffiliated** with Hanover or us; **under PSA** |
 | **QI** | STATED (user) | **Riverway Title** — identified; engagement/docs TBD |
 | **EAT** | OPEN | Not selected yet |
-| **Structure preference** | STATED (user) | **Structure A** (exchange first, §721 JV) — working model on site; counsel opinion **OPEN** |
-| **Site working model** | DRAFT | **Structure A** per `docs/sources/StructureA-draft.md` — not counsel-adopted |
+| **Structure preference** | STATED (user) | **Structure C-Hybrid** (exchange first, seasoning, §721 JV with bifurcated Hanover economics) — working model on site; counsel opinion **OPEN**. Supersedes draft Structure A's loan-conversion |
+| **Site working model** | DRAFT | **Structure C-Hybrid** per `docs/research/2026-06-14_structure-C-hybrid-legal-review.md` — not counsel-adopted |
 | **Hanover term sheet response** | STATED (user) | **Depends on us** — we drive timing/substance of what we send back |
 | **Belara PSA / QI escrow** | STATED (user) | **Not drafted yet** — we have leverage to add QI/escrow language later; see **Future: Belara PSA** below |
 | **Budget (headline)** | STATED + TERM SHEET | ~**$50.3M** total, **$6.5M** land — detailed dev budget **not** modeling priority |
@@ -124,7 +124,7 @@ Same **taxpayer/ownership chain** must be preserved through the exchange (per un
 | 6 | **Exchangor entity** — Titan Management sells Belara; Kao Management Trust on term sheet — same family, **not same legal entity** |
 | 7 | EAT provider — not selected |
 
-**Current site:** **Structure A** (exchange first, §721 JV after seasoning) — **DRAFT**. Fallback: Structure B (fee-only) if counsel rejects A.
+**Current site:** **Structure C-Hybrid** (exchange first, seasoning, §721 JV — Hanover **fresh-cash 5% + separate profits-interest promote**, loan **repaid** not converted) — **DRAFT**. Fallback: Structure B (fee-only) if counsel rejects it.
 
 ---
 
@@ -135,7 +135,7 @@ Same **taxpayer/ownership chain** must be preserved through the exchange (per un
 | `North_Forsyth_1031_Diagrams.md` | Tab content (**DRAFT**) |
 | `index.html` | Renders markdown |
 
-**Tabs (5):** `overview`, `strake`, `hanover`, `kao`, `references`
+**Tabs (6):** `starthere`, `overview`, `kao`, `hanover`, `strake`, `references` — `starthere` = plain-English primer + acronym legend for readers with no §1031 background. Must match `index.html` `TAB_ORDER`.
 
 **Mermaid colors:** kao=blue, han=amber, neutral=grey, asset=green
 
@@ -184,7 +184,8 @@ When drafting Belara PSA, must include (for counsel/escrow):
 | `docs/incoming/hanover-org-chart-extracted.txt` | Text extract |
 | `docs/incoming/` term sheet (pdf/docx) | Kao → Hanover JV proposal, 06.12.2026 |
 | `docs/incoming/lawyer-unreviewed-potential-1031.txt` | Generic §1031 primer — UNREVIEWED |
-| `docs/sources/StructureA-draft.md` | Structure A hypothesis — **site working model** — DRAFT |
+| `docs/sources/StructureA-draft.md` | Structure A hypothesis — **superseded** by Structure C-Hybrid; kept as historical draft |
+| `docs/research/2026-06-14_structure-C-hybrid-legal-review.md` | **Structure C-Hybrid** — current site working model — DRAFT |
 | `docs/sources/*-extracted.txt` | AI tax memos — DRAFT, not counsel |
 | `Claude CoWork research/` | Original Structure A research (md, html, docx) — mirrors `docs/sources/` |
 | `Hanover JV Term Sheet/` | Term sheet copies (same files as `docs/incoming/`) |

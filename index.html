@@ -204,23 +204,28 @@
   <header class="site-header">
     <div class="header-top">
       <h1>North Forsyth §1031</h1>
-      <p>Belara &rarr; North Forsyth &middot; Structure A &middot; Internal working model</p>
+      <p>Belara &rarr; North Forsyth &middot; Structure C-Hybrid &middot; Internal working model</p>
     </div>
     <nav class="tab-bar" role="tablist" aria-label="Party views">
-      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="overview">
-        Overview
-        <span class="tab-sub">Full picture</span>
+      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="starthere">
+        Start Here
+        <span class="tab-sub">Plain English &amp; terms</span>
       </button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="strake">
-        Strake
-        <span class="tab-sub">Buyer</span>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="overview">
+        Overview
+        <span class="tab-sub">The structure</span>
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="kao">
+        Kao
+        <span class="tab-sub">Our family</span>
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="hanover">
         Hanover
         <span class="tab-sub">Developer</span>
       </button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="kao">
-        Kao
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="strake">
+        Strake
+        <span class="tab-sub">Buyer</span>
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="references">
         Sources
@@ -239,8 +244,8 @@
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-    const TAB_ORDER = ["overview", "strake", "hanover", "kao", "references"];
-    let activeTab = "overview";
+    const TAB_ORDER = ["starthere", "overview", "kao", "hanover", "strake", "references"];
+    let activeTab = "starthere";
     let mermaidReady = false;
 
     function isDark() {
@@ -359,7 +364,7 @@
 
       try {
         initMermaid();
-        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=16");
+        const response = await fetch("North_Forsyth_1031_Diagrams.md?v=17");
         if (!response.ok) throw new Error(`Could not load content (${response.status})`);
         const markdown = await response.text();
         const sections = parseTabs(markdown);

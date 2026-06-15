@@ -82,16 +82,17 @@ QI pool ≈$20M from Belara. Identification letter to QI **before** any NFCC dis
 
 ## 6. Structure paths
 
-**Site working model:** **Structure A** — exchange first (EAT, 100% fee to Kao), §721 JV after seasoning. Source: `docs/sources/StructureA-draft.md` — **DRAFT**.
+**Site working model:** **Structure C-Hybrid** — exchange first (EAT, 100% fee to Kao), genuine seasoning, then §721 JV where Hanover takes a **fresh-cash 5% capital interest + a separate zero-liquidation-value profits-interest promote** (Phase-1 loan **repaid**, not converted). Source: `docs/research/2026-06-14_structure-C-hybrid-legal-review.md` — **DRAFT**. Supersedes draft Structure A (`docs/sources/StructureA-draft.md`).
 
 | Path | Exchange (draft) | Hanover promote |
 |---|---|---|
-| **Structure A** (site model) | MLTN at best | **Capital gain** in Phase 2 JV |
+| **Structure C-Hybrid** (site model) | MLTN at best | **Capital gain** — fresh-cash 5% + separate profits interest |
+| Structure A (loan-conversion) | MLTN at best | Capital gain, but bundled — superseded |
 | Term sheet LLC Day 1 | **Fails** | N/A |
 | TIC + promote-as-fee | Uncertain | Aggressive |
 | Structure B fee-only | Strongest | **Ordinary income** |
 
-**Counsel opinion:** **OPEN** — Structure A on site for planning; not adopted until written opinion.
+**Counsel opinion:** **OPEN** — Structure C-Hybrid on site for planning; not adopted until a written MLTN opinion on executed docs.
 
 ---
 
@@ -123,7 +124,7 @@ QI engaged pre-close · proceeds to QI only · escrow wiring · exchanger named 
 
 ## 9. Site status
 
-GitHub Pages content updated 2026-06-14: **Structure A** working model (exchange + §721 JV), Sept 15 timeline, party steps — **DRAFT**, counsel opinion **OPEN**.
+GitHub Pages content updated 2026-06-14: **Structure C-Hybrid** working model (exchange + seasoning + §721 JV with bifurcated Hanover economics). **6 tabs** — added a **Start Here** tab (plain-English primer + acronym legend) for deal participants with no §1031 background; tab order Start Here · Overview · Kao · Hanover · Strake · Sources. **DRAFT**, counsel opinion **OPEN**.
 
 ---
 

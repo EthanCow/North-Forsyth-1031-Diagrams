@@ -16,11 +16,12 @@ Accuracy beats confidence. Unverified claims get labeled **DRAFT** or **OPEN**.
 
 | Tab | Purpose |
 |---|---|
-| **Overview** | End-to-end summary: deal facts, Key Terms, structure options, money flow, clocks, risks |
-| **Kao** | Our family's role — exchanger steps, constraints, what we must not do |
-| **Hanover** | Developer's role — fees, capital, guaranties, promote (all **negotiable**) |
+| **Start Here** | Plain-English §1031 primer + acronym legend + cast + the core tension — for a deal participant with **no** exchange background; makes the site self-contained |
+| **Overview** | End-to-end summary: deal facts, the C-Hybrid structure, bifurcation, money flow, clocks, boot risk, seasoning, entity map, ranked risks |
+| **Kao** | Our family's role — exchanger steps, entity alignment, constraints, what we must not do |
+| **Hanover** | Developer's role — four Phase-1 roles, control line, Phase-2 bifurcation, conduct (all **negotiable**) |
 | **Strake** | Belara buyer's place in the flow — for **our** understanding of the closing/QI wire; not a document we send them |
-| **Sources** | Statute, regulations, rev procs, case law — cited |
+| **Sources** | Statute, regulations, rev procs, case law — cited, each paired with its role |
 
 Structure detail may live in Overview (current site) or a future dedicated tab — whatever keeps the story consistent.
 
@@ -69,4 +70,4 @@ Find a path to defer the Belara gain into North Forsyth while keeping **economic
 | `docs/sources/HANDOFF-StructureA.md` | DRAFT — context from prior research session |
 | `Claude CoWork research/` | Original copies of Structure A research |
 
-Current live site content (`North_Forsyth_1031_Diagrams.md`) reflects the **TIC co-ownership** working model from before today's Structure A rewrite — also **DRAFT**, not verified.
+Current live site content (`North_Forsyth_1031_Diagrams.md`) reflects **Structure C-Hybrid** (exchange → seasoning → §721 JV with bifurcated Hanover economics), per `docs/research/2026-06-14_structure-C-hybrid-legal-review.md` — **DRAFT**, not counsel-verified. Supersedes the earlier Structure A and TIC drafts.

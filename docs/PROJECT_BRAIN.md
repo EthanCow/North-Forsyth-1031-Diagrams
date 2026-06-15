@@ -13,6 +13,8 @@
 | **Term sheet LP name** | **Kao Management Trust** |
 | **Commercial modeling** | Assume **LLC JV Day 1** as Hanover's economic template; **restructured term sheet** required because legal/§1031 wrapper differs — that's this project |
 | **Structure preference** | **Whatever works** — compare paths, no label loyalty |
+| **Site working model** | **Structure C-Hybrid** (DRAFT) — exchange → seasoning → §721 JV; Hanover = **fresh-cash 5% capital interest + separate zero-liquidation-value profits-interest promote**, Phase-1 loan **repaid** not converted. Per `docs/research/2026-06-14_structure-C-hybrid-legal-review.md`. Supersedes draft Structure A |
+| **Site tabs** | **6**: Start Here (plain-English primer + acronym legend) · Overview · Kao · Hanover · Strake · Sources |
 | **Internal only** | Not for Strake or Hanover delivery as-is |
 
 ---
