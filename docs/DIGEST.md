@@ -1,6 +1,6 @@
 # Master Digest — North Forsyth §1031
 
-**Status:** Internal working document · **Last updated:** 2026-06-14  
+**Status:** Internal working document · **Last updated:** 2026-06-17  
 **Purpose:** Single synthesis of all sources + research. Not legal advice. No structure is locked.
 
 **Also read:** `docs/PROJECT_BRAIN.md` (persistent facts) · `docs/research/` (2026-06-14 memos)
@@ -131,7 +131,25 @@ GitHub Pages content updated 2026-06-14: **Structure C-Hybrid** working model (e
 ## 10. Still missing
 
 - Hanover marked-up term sheet response  
-- Real §1031 counsel opinion  
-- EAT provider  
+- Real §1031 counsel opinion (June 17 call was preliminary discussion only — see §11)  
+- EAT provider (may not be needed in the base case — see §11)  
 - NFCC-specific entity names at formation  
 - Line-item budget (optional per user)
+
+---
+
+## 11. Counsel input — June 17, 2026 call (Chamberlain + Hanover) — COUNSEL (preliminary)
+
+First outside §1031 review. Discussion, **not** a written opinion. Next: confirm with Hanover's outside tax counsel **Jeff Wallace (Winstead)**. Source: `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
+
+- **Counsel:** Chamberlain — **Hobbs** (Habib) + **Marianne**. Hanover: **John** (President) + in-house counsel.
+- **Bargain sale:** Belara appraised about **$28M** (Mar 2026), sold to Strake at **$20M** → about **$8M charitable deduction**. Counsel reads the §1031 replacement benchmark as about **$28M, not $20M** → **full deferral unreachable; partial only**.
+- **Counts by Day 180:** **land (about $6.5M) yes; site work probably NOT; soft costs no.**
+- **Base case = the about $6.5M land** (about a quarter of the gain; benefit ballparked $0.75M–$1.2M, not pinned). **Upside = some site work** (disallowance likely strikes only that portion → low downside to trying).
+- **Structure: no drop** — Belara forms a disregarded SMLLC → buys land via QI → Hanover invests later → partnership. **No EAT needed in base case.**
+- **Sequencing:** do NOT pay tax first; route through QI, deploy about $6.5M, pull remainder and pay tax. Decision within about 30–45 days.
+- **Intent-to-sell:** cuts against §1031; don't document; risk about 1-in-15 to 1-in-20; penalty likely waived. **Leases help.**
+- **Construction:** land close Sept 15, 2026; about $40M contract, about $11M site work; first-180-day spend about $8–11M; permits may delay 60–90 days.
+- **Tension vs. C-Hybrid:** chasing site work → Hanover enters "almost immediately," pulling against the seasoning gap; reconcile step-transaction risk.
+
+**Impact on §6 paths:** the C-Hybrid build-to-suit model still stands as the long-term structure, but counsel's read on the **replacement benchmark ($28M) and qualifying improvements (land only, base case)** supersedes the prior assumption that about $20M of reinvestment was readily achievable.

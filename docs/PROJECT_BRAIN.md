@@ -91,6 +91,22 @@ Source: `docs/incoming/Hanover-Org-Chart-Example-Project.pdf`
 
 ---
 
+## Counsel call — June 17, 2026 (Chamberlain + Hanover) — COUNSEL (preliminary)
+
+First outside §1031 review. **Not** a written opinion; confirm with Hanover's outside tax counsel **Jeff Wallace (Winstead)** next. Source: `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
+
+- **Counsel:** Chamberlain — **Hobbs** (Habib; tax+corporate hybrid) + **Marianne** (1031 detail); firm has a former IRS Commissioner. Hanover on call: **John** (President) + in-house counsel.
+- **Bargain sale:** Belara appraised about **$28M** (Mar 2026), sold to Strake at **$20M** → about **$8M charitable deduction**. Counsel reads the §1031 **replacement benchmark as about $28M, not $20M** → full deferral unreachable; **partial deferral only**.
+- **What counts by Day 180:** **land (about $6.5M) yes; site work probably NOT; soft costs no.**
+- **Base case = the about $6.5M land** (defers about a quarter of the gain; benefit ballparked $0.75M–$1.2M, not pinned). **Upside case = capture some site work** (disallowance likely strikes only that portion → low downside to trying).
+- **Structure: no drop.** Belara forms a disregarded SMLLC → buys land via QI → Hanover invests later → partnership. **No EAT needed in base case.**
+- **Sequencing:** do NOT pay tax first; route through QI, deploy about $6.5M, pull remainder and pay tax. Decision within about 30–45 days of close.
+- **Intent-to-sell:** lease-up-and-sell cuts against §1031; don't document intent; risk about 1-in-15 to 1-in-20; penalty likely waived if nullified. **Leases help.**
+- **Construction:** land close **Sept 15, 2026**; contract about $40M total, about $11M site work; first-180-day spend about $8–11M (mostly site work); permits could delay 60–90 days.
+- **Open tension:** chasing site work means Hanover enters "almost immediately," which pulls against the C-Hybrid seasoning gap — reconcile step-transaction risk with counsel.
+
+---
+
 ## File map
 
 | Read first | File |
@@ -99,3 +115,4 @@ Source: `docs/incoming/Hanover-Org-Chart-Example-Project.pdf`
 | 2 | **`docs/PROJECT_BRAIN.md`** (this file) |
 | 3 | `docs/DIGEST.md` |
 | `docs/research/` | Parallel research memos (2026-06-14) |
+| `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md` | First §1031 counsel call — COUNSEL (preliminary) |

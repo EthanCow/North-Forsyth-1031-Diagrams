@@ -71,6 +71,28 @@ Every chat in this repo, **without the user typing @-commands**:
 
 ---
 
+## Counsel input — June 17, 2026 call (Chamberlain + Hanover)
+
+*First outside §1031 review. Label **COUNSEL (preliminary)** — discussion, not a written opinion. To be confirmed with Hanover's outside tax counsel (Jeff Wallace, Winstead). Source: `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.*
+
+| Topic | Status | What counsel said |
+|---|---|---|
+| **Counsel identity** | COUNSEL | **Chamberlain** = Kao §1031/tax counsel — **Hobbs** (legal name Habib; tax+corporate hybrid) and **Marianne** (1031 detail). Firm notes a former IRS Commissioner (Trump first-term appointee) on staff. |
+| **Hanover counsel** | COUNSEL | **Jeff Wallace** — now at **Winstead** (formerly Locke Lord / Troutman) — Hanover's **outside tax counsel**. Confirm structure with him next. |
+| **Bargain sale to charity** | COUNSEL (preliminary) | Belara appraised about **$28M** (Mar 2026); sold to Strake at **$20M** → about **$8M charitable deduction**. Strake is land-constrained, wants parking by its stadium. |
+| **Replacement benchmark** | COUNSEL (preliminary) | Counsel reads the §1031 replacement target as about **$28M** (appraised value), **not** $20M. A "clash"/"dysfunction" of code sections. → **Full deferral unreachable on this build.** Conflicts with prior site assumption that hitting about $20M of spend = full reinvestment. |
+| **What counts by Day 180** | COUNSEL (preliminary) | **Land (about $6.5M) yes.** **Site work probably NOT** (improvement must be physically completed + attached; site work likely isn't, though in basis → arguable). **Soft costs no** (architecture/engineering/permits/zoning/environmental = "fees"). |
+| **Base case** | STATED (user) + COUNSEL | Defer only the **land's** gain share (about a quarter of $28M). Loosely about $6M of gain; tax benefit ballparked $0.75M–$1.2M, **not pinned**. Deal is still family's #1 option even paying full tax. |
+| **Upside case** | STATED (user) + COUNSEL | Try to count **site work**. Disallowance likely strikes only that portion, **not the whole exchange** → low downside to trying. |
+| **Recommended structure (no drop)** | COUNSEL (preliminary) | Belara's owner forms a **disregarded SMLLC** → SMLLC buys land with QI proceeds → treated as Belara buying (**no drop**) → Hanover invests **later** → partnership. Lower IRS risk than drop-and-swap. **No EAT needed in base case** (QI just holds cash to buy land). |
+| **Cash sequencing** | COUNSEL (preliminary) | **Do not pay tax first.** Proceeds → QI; deploy about $6.5M into land; pull remainder from QI and pay tax. Keep-vs-pay decision within about **30–45 days** of close. |
+| **Intent-to-sell risk** | COUNSEL (preliminary) | Lease-up-and-sell cuts against §1031 (inventory). Don't document intent; frame sale as major decision + buy-sell. Risk about **1-in-15 to 1-in-20**; downside = tax + interest, **penalty likely waived**. Not an IRS audit-focus area. **Leases help** (held-for-investment). |
+| **Construction / timing** | STATED (user) + COUNSEL | Land close **Sept 15, 2026**. Construction contract about **$40M total, about $11M site work**. First-180-day spend about **$8–11M**, mostly site work. Permit delays 60–90 days may cut the site-work window to about 4 months. |
+| **PSA assignment** | COUNSEL (preliminary) | Hanover assigns the land PSA to the new entity; confirm assignable without seller consent (entity not a Hanover affiliate until Hanover enters). |
+| **Hanover entry timing tension** | OPEN | If chasing site work, Hanover wants in "almost immediately" → pulls against the long seasoning gap in C-Hybrid; reconcile step-transaction exposure with counsel. |
+
+---
+
 ## Verified deal facts (documents + user)
 
 | Item | Value | Status |
@@ -119,7 +141,7 @@ Same **taxpayer/ownership chain** must be preserved through the exchange (per un
 |---|---|
 | 1 | TIC co-ownership at Day 180 vs. 100% fee to Kao then §721 JV vs. other |
 | 2 | How to deliver promote economics without breaking §1031 or partnership rules |
-| 3 | Day 180 **documentation** — draw schedule front-loads equity; what counts as in-place for IRS (not whether construction can hit ~$20M — user: it can) |
+| 3 | What counts toward the replacement benchmark by Day 180 — **counsel (6/17): land yes, site work probably not, soft costs no.** Benchmark is about **$28M** (bargain-sale appraisal), not $20M, so this is a **partial** deferral. Hitting about $20M of *spend* ≠ $20M of qualifying *replacement value*. Supersedes the prior "construction can hit $20M" framing |
 | 4 | Hanover Phase-1 role: equity vs. loan vs. fees only |
 | 6 | **Exchangor entity** — Titan Management sells Belara; Kao Management Trust on term sheet — same family, **not same legal entity** |
 | 7 | EAT provider — not selected |
@@ -180,6 +202,7 @@ When drafting Belara PSA, must include (for counsel/escrow):
 | Path | Contents |
 |---|---|
 | **`docs/DIGEST.md`** | **Master synthesis — read this** |
+| **`docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`** | **First §1031 counsel call (Chamberlain + Hanover)** — base/upside reframe, $28M benchmark, no-drop SMLLC — COUNSEL (preliminary) |
 | `docs/incoming/Hanover-Org-Chart-Example-Project.pdf` | Hanover typical entity stack (Simi Valley example) |
 | `docs/incoming/hanover-org-chart-extracted.txt` | Text extract |
 | `docs/incoming/` term sheet (pdf/docx) | Kao → Hanover JV proposal, 06.12.2026 |

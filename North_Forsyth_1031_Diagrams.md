@@ -32,6 +32,7 @@ Sell **Belara Apartments** ($20M) and reinvest into the **North Forsyth Commerce
 | **DMA / GMP / GC** | Hanover's 4% development contract / its 4.5% construction contract / general contractor. |
 | **Nonrecourse debt** | Loan where the lender can take only the property, not the borrower personally. Matters for the Phase-2 tax math. |
 | **Grantor vs. non-grantor trust** | Whether the trust is tax-invisible to its creators or its own taxpayer. Changes whether moving Belara in is tax-free. |
+| **Bargain sale** | Selling below appraised value to a charity (here Belara at $20M vs. about $28M appraised, to Strake). The discount is a charitable deduction, but counsel reads the §1031 replacement benchmark off the about $28M value, not the $20M price. |
 
 ## The four §1031 rules
 
@@ -54,6 +55,8 @@ Miss one and the full gain becomes taxable.
 | **EAT** (TBD) | Holds title and builds during the exchange. |
 | **Construction lender** | Bank funding about 60% of cost (about $30M), nonrecourse. |
 | **Land seller** | Unaffiliated third party selling the land ($6.5M). |
+| **Chamberlain (Hobbs, Marianne)** | Our family's §1031 / tax counsel. First walked the deal on the June 17 call. |
+| **Jeff Wallace (Winstead)** | Hanover's outside tax counsel. To confirm the structure before the family decides. |
 
 ## The core tension
 
@@ -67,6 +70,8 @@ The fix is sequence: real property first (Phase 1), promoted partnership later (
 <!-- TAB:overview -->
 
 > Seasoning lowers risk, it is not a safe harbor. Target opinion MLTN, not certainty. DRAFT, needs §1031 counsel.
+>
+> **Updated June 17, 2026 after the first §1031 counsel call (Chamberlain).** See "June 17 counsel call" below: counsel reads the replacement benchmark as about $28M (Belara is a bargain sale to Strake) and likely excludes site work, which tempers the about $20M-replacement and build-to-suit assumptions in the C-Hybrid sections that follow.
 
 **In one line:** Kao exchanges into 100% title via a QI plus EAT (Phase 1), runs it alone through a seasoning gap, then forms the 95/5 promoted JV via tax-free §721 (Phase 2). Same economics as the term sheet, Hanover's promote stays capital gain, no surprise tax to Kao.
 
@@ -75,6 +80,7 @@ The fix is sequence: real property first (Phase 1), promoted partnership later (
 | | |
 |---|---|
 | **Sell** | Belara Apartments, $20M, no debt |
+| **Belara appraisal** | about $28M (Mar 2026). Sale to Strake at $20M is a bargain sale to a school, about $8M charitable deduction. Counsel reads the §1031 replacement benchmark as about $28M (June 17 call) |
 | **Buy** | North Forsyth Commerce Center, about $50.3M ground-up industrial, about 327,600 SF, Forsyth County GA |
 | **Exchanger / owner** | Kao Management Trust (one taxpayer throughout) |
 | **Belara seller today** | Titan Management, move into a trust-owned SMLLC before sale |
@@ -86,6 +92,34 @@ The fix is sequence: real property first (Phase 1), promoted partnership later (
 | **45-day ID** | Oct 30, 2026 deadline (letter filed Sept 15) |
 | **180-day deed** | Mar 14, 2027 (EAT deeds 100% to Kao) |
 | **Phase 2 JV (model)** | Earliest about Mar 2028 (OPEN with counsel) |
+
+## June 17 counsel call: base case vs. upside (NEW, reframes the economics below)
+
+> **COUNSEL (Chamberlain: Hobbs, Marianne; with Hanover's John and in-house counsel), June 17, 2026 call. Preliminary discussion, not a written opinion. Next step: confirm with Hanover's outside tax counsel, Jeff Wallace (Winstead).** Transcript: `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
+
+The first time outside §1031 counsel walked the deal. Their read is more conservative than the C-Hybrid build-to-suit model below on **how much gain we can actually shelter**. Plan around two cases.
+
+**The bargain-sale problem (new).** Belara appraised at about **$28M** (March 2026) but sells to Strake for **$20M**, a bargain sale to a school that produces about **$8M of charitable deduction**. Counsel reads the §1031 **replacement-value benchmark as the about $28M appraised value, not the $20M price** (they called it a "clash"/"dysfunction" of tax-code sections). Full deferral would need about $28M of qualifying replacement in place by Day 180, which is unreachable on this build. So this is a **partial deferral, not a full one** (confirm with Jeff Wallace).
+
+**What counts toward the benchmark by Day 180 (counsel's read):**
+
+| Item | Counts? | Counsel's reasoning |
+|---|---|---|
+| **Land (about $6.5M)** | **Yes** | The land purchase qualifies |
+| **Site work** (clearing, grading, dirt, some utilities) | **Probably not** | A qualifying "improvement" must be physically completed and attached to the land; site work likely is not (it is in tax basis, so arguable) |
+| **Soft costs** (architecture, engineering, permits, zoning, environmental) | **No** | Treated as "fees," never improvements |
+
+**Base case: the about $6.5M land is the deferral.** Defer only the gain attributable to the land. The land is about a quarter of the $28M, so a minority of the total gain (counsel framed it loosely as about $6M of gain; the exact gain was not pinned down on the call). The dollar tax benefit was ballparked at roughly $0.75M to $1.2M and is **not settled**. Better than nothing, and the deal stands on its own even paying full tax (it is still the family's number-one option versus cleanly 1031-ing into a multifamily deal).
+
+**Upside case: capture some site work.** Try to count site work as qualifying improvement. Counsel leans against it, **but** a disallowance would likely strike only that portion, not the whole exchange, so the downside of trying is low (Ethan: if it does not kill the whole thing, "then we would go for it"). Worth pursuing if the schedule allows. The construction contract is about **$40M total, about $11M site work**; about **$8 to 11M** of spend falls in the first 180 days, mostly site work. Permit delays of 60 to 90 days could shrink the window (perhaps only about 4 months of site work).
+
+**Structure counsel recommends: no "drop."** Belara's owner forms a **disregarded SMLLC**; the SMLLC buys the land with QI proceeds. Because it is disregarded, Belara is treated as the buyer for tax, so **there is no drop** to a partnership. Hanover invests into that entity **later**, turning it into the JV. Lower IRS-risk profile than a classic drop-and-swap. In the base case (conceding site work) **no EAT is needed**: the QI just holds proceeds to buy the land. The EAT / build-to-suit machinery only matters if chasing site-work improvements.
+
+**Cash sequencing: do not pay the tax first.** Route the $20M through the **QI**, deploy about $6.5M into the land, then pull the remainder back from the QI and pay tax on it. Paying tax outright first blows the exchange. Counsel expects the keep-vs-pay decision on the remainder within about **30 to 45 days** of closing.
+
+**Intent-to-sell risk.** The plan is to lease up the building and sell, which cuts against §1031 (inventory risk). Mitigate: do not document an intent to sell; frame a future sale as a major decision requiring both partners' approval, with a buy-sell. Counsel sized the risk at about **1-in-15 to 1-in-20**. If the IRS nullified it, the cost is the deferred tax plus interest (penalty likely waived on a good-faith position). Not a current IRS audit-focus area. **Signing leases helps**, it evidences holding for investment.
+
+**Open tension to resolve with counsel.** If chasing site work, Hanover wants to enter the entity "almost immediately," which pulls against the long seasoning gap in the C-Hybrid model below and raises step-transaction exposure. Reconcile the timing of Hanover's entry with the seasoning story before committing.
 
 ## Why not the term sheet as written
 
@@ -205,6 +239,8 @@ Capital stack: pool (about $20M) plus loan (about $30M) plus Hanover loan (about
 
 ## Boot risk by Day 180
 
+> Revised June 17: counsel reads the benchmark as about $28M (Belara's appraised value, a bargain sale to Strake) and likely excludes site work as an "improvement." Treat the about $6.5M land as the bankable replacement (base case); the figures in this section reflect the more ambitious C-Hybrid build-to-suit model. See "June 17 counsel call" above.
+
 Only real property in place and paid for by Day 180 counts. $6.5M land plus about $13.5M of improvements is plausible but not bankable. Levers:
 
 - **Belara timing is the strongest lever.** We control the close date, so align it so Day 180 lands after enough construction is in place. Sept 15 is a model, not a commitment.
@@ -282,6 +318,16 @@ The exchanger. Sell Belara, defer the tax, end up owning North Forsyth at 100%, 
 | **Phase 2** | Contribute for 95% of PropCo, Hanover gets fresh-cash 5% plus promote |
 | **Hanover in Phase 1** | Contractor plus secured lender, not your partner yet |
 
+## June 17 counsel call: base case and conduct (NEW)
+
+> COUNSEL (Chamberlain), June 17 call. See the Overview "June 17 counsel call" section for the full reframe. The items below are what the family should do or avoid.
+
+- **Base case is the about $6.5M land.** Counsel expects only the land to qualify; site work (grading, dirt, utilities) probably does not, and soft costs (architecture, engineering, permits, environmental) do not. The benchmark counsel uses is about $28M (Belara's appraised value), so this is a **partial** deferral, on the order of a quarter of the gain.
+- **Do not pay the tax first.** Proceeds still go to the QI. Deploy about $6.5M into the land through the QI, then pull the remainder back from the QI and pay tax on it. Paying tax outright blows the exchange. Decision on the remainder within about 30 to 45 days of close.
+- **Upside is site work, and the downside of trying is low.** Pushing to count site work likely risks only that portion, not the whole exchange, so it is worth attempting if the schedule allows.
+- **Intent-to-sell discipline.** The goal is to lease up and sell, which cuts against §1031. Do not document an intent to sell. Frame any future sale as a major decision needing both partners' approval, with a buy-sell. Counsel sized the audit/recharacterization risk at about 1-in-15 to 1-in-20; downside is tax plus interest (penalty likely waived).
+- **Sign leases.** Leasing the building evidences holding for investment and **helps** the §1031 position.
+
 ## Step 0: align the taxpayer first (gating)
 
 The taxpayer that sells Belara must be the one that acquires North Forsyth. Belara sits in Titan Management today, the Trust is the intended owner, and they are probably different taxpayers, so move Belara into a trust-owned SMLLC before the PSA.
@@ -352,7 +398,7 @@ You sign as seller and exchanger. You do not receive or control the $20M.
 
 ## Construction (Sept 16 to Mar 13)
 
-The QI releases pool funds on certified requests. Only improvements paid with exchange funds within 180 days count toward §1031 value.
+The QI releases pool funds on certified requests. Only improvements paid with exchange funds within 180 days count toward §1031 value. **Counsel (June 17) cautions that site work likely is not a qualifying improvement** (must be physically completed and attached), so the table below reflects the optimistic C-Hybrid model, not the base case.
 
 | Phase | Calendar | $ | Source |
 |---|---|---|---|
@@ -554,7 +600,7 @@ flowchart LR
 
 <!-- TAB:references -->
 
-> Citations paired with what they do in this deal. DRAFT, not counsel-reviewed. Full analysis: `docs/research/2026-06-14_structure-C-hybrid-legal-review.md`.
+> Citations paired with what they do in this deal. DRAFT, not counsel-reviewed. Full analysis: `docs/research/2026-06-14_structure-C-hybrid-legal-review.md`. First counsel discussion (Chamberlain + Hanover): `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
 
 ## The exchange (§1031)
 
