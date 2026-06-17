@@ -1,580 +1,332 @@
 <!-- TAB:starthere -->
 
-> Internal working model. DRAFT, not legal advice. Obtain a §1031 counsel opinion before Belara closes.
+> Internal working model. DRAFT, not legal advice. Reflects the **June 17, 2026 §1031 counsel call** (Chamberlain), a preliminary discussion, not a written opinion. Confirm with Hanover's outside tax counsel (Jeff Wallace, Winstead) and get a §1031 opinion before Belara closes.
 
-Sell **Belara Apartments** ($20M) and reinvest into the **North Forsyth Commerce Center** industrial project without paying capital-gains tax now. The rule that allows this, a **§1031 exchange**, conflicts with how the developer (**Hanover**) wants its profit share taxed. **Structure C-Hybrid** satisfies both: do the tax-free exchange first, form the developer partnership later, with a real gap of time between.
+Sell **Belara Apartments** ($20M) and reinvest into the **North Forsyth Commerce Center** industrial project, deferring capital-gains tax where §1031 allows. After the first counsel call, the realistic picture is a **partial** deferral, planned in two cases.
 
-**The one thing to get right:** a waiting period ("seasoning") lowers risk, it is not a legal safe harbor. The plan holds only if our family genuinely could keep North Forsyth forever, and Hanover has no enforceable right to its stake until a separate, later decision.
+- **Base case:** the **about $6.5M land** is the §1031 replacement. We defer the slice of gain tied to the land (about a quarter of the deal). The rest of the proceeds come back from the exchange and we pay tax on them.
+- **Upside case:** if we can get some early **site work** counted as a qualifying improvement, we defer more. Counsel doubts it qualifies, but trying likely risks only that slice, not the whole exchange.
+
+**The structure counsel recommends:** the entity that sells Belara forms a **disregarded single-member LLC (SMLLC)** that buys the land with the exchange proceeds. For tax it is the same taxpayer buying, so there is **no "drop"** into a partnership. Hanover invests into that entity **later** to develop and co-own the building.
 
 ## Terms
 
 | Term | Meaning |
 |---|---|
-| **§1031 exchange** | Defer the tax on selling an investment property if you reinvest into "like-kind" real estate under strict rules. |
-| **Like-kind** | For real estate, almost any U.S. investment property swaps for any other. A company or partnership interest is not like-kind. |
-| **Boot** | Value received that is not like-kind real property (cash, or a reinvestment shortfall). Taxable. |
-| **Capital gain vs. ordinary income** | Capital gain is taxed lower. A fee is ordinary income. Hanover wants its promote taxed as capital gain. |
-| **QI (Qualified Intermediary)** | Independent party that holds the sale cash so you never touch it. Here: Riverway Title. |
-| **Constructive receipt** | If you can reach the cash, the IRS treats you as having received it and the exchange fails. The QI prevents this. |
-| **EAT (Exchange Accommodation Titleholder)** | Independent party that temporarily holds title and builds, since you cannot build on land you do not yet own. |
-| **QEAA** | The agreement (Rev. Proc. 2000-37) letting the EAT park title up to 180 days. |
-| **45 / 180-day clocks** | From the sale: 45 days to identify the replacement, 180 days to receive it. |
-| **DST (Delaware Statutory Trust)** | A passive fractional property that qualifies as replacement. Used here as a backup to absorb leftover cash and avoid boot. |
-| **§721** | Contribute property into a partnership tax-free for a partnership interest. The Phase-2 move. |
-| **JV / PropCo** | The Kao plus Hanover partnership (LLC taxed as a partnership) formed in Phase 2. |
-| **Promote / carried interest** | The developer's share of profits above set return hurdles. |
-| **Profits interest** | A stake sharing only in future upside (worth $0 if liquidated today). Makes the promote a capital gain. |
-| **Capital interest** | A stake backed by real money contributed (Hanover's fresh-cash 5%). |
-| **Seasoning** | The real span Kao owns and runs the property 100% before forming the JV. Evidence the steps are separate. |
-| **Step-transaction doctrine** | IRS doctrine collapsing pre-arranged steps into one. The main threat. |
-| **MLTN (More Likely Than Not)** | A confidence level above 50% for a tax opinion. Our target. |
-| **SMLLC** | Single-member LLC. "Disregarded" means treated as its owner for tax. |
-| **DMA / GMP / GC** | Hanover's 4% development contract / its 4.5% construction contract / general contractor. |
-| **Nonrecourse debt** | Loan where the lender can take only the property, not the borrower personally. Matters for the Phase-2 tax math. |
-| **Grantor vs. non-grantor trust** | Whether the trust is tax-invisible to its creators or its own taxpayer. Changes whether moving Belara in is tax-free. |
-| **Bargain sale** | Selling below appraised value to a charity (here Belara at $20M vs. about $28M appraised, to Strake). The discount is a charitable deduction, but counsel reads the §1031 replacement benchmark off the about $28M value, not the $20M price. |
+| **§1031 exchange** | Defer tax on selling an investment property if you reinvest into "like-kind" real estate under strict rules. |
+| **Like-kind** | For real estate, almost any U.S. investment property swaps for any other. A partnership or LLC interest is **not** like-kind. |
+| **Bargain sale** | Selling below appraised value to a charity. Belara sells to Strake for $20M vs. about $28M appraised, about $8M of charitable deduction. Counsel reads the §1031 benchmark off the about $28M value, not the $20M price. |
+| **Replacement benchmark** | The value the replacement must reach for full deferral. Here about $28M, out of reach, so the land drives a partial deferral. |
+| **Boot** | Value received that is not like-kind real property. Taxable. Here, the proceeds we do not reinvest in the land. |
+| **QI (Qualified Intermediary)** | Independent party that holds the sale cash so we never touch it. Identified: Riverway Title. |
+| **Constructive receipt** | If we can reach the cash, the IRS treats us as having received it and the exchange fails. The QI prevents this. |
+| **SMLLC (disregarded)** | Single-member LLC treated as its owner for tax. The no-drop structure: Belara's owner forms one to buy the land. |
+| **Improvement vs. site work** | A qualifying improvement must be physically completed and attached to the land. Counsel's view: clearing, grading, and dirt likely do not count; soft costs (design, permits, environmental) never do. |
+| **Hold for investment** | The replacement must be held for investment, not resale. An intent to sell risks "inventory" treatment that disqualifies the exchange. |
+| **45 / 180-day clocks** | From the sale: 45 days to identify the replacement, 180 days to receive it and complete any improvements we hope to count. |
+| **EAT (Exchange Accommodation Titleholder)** | Independent party that holds title and builds during the exchange. Needed only for the **upside** case if chasing site-work improvements; not needed just to buy the land. |
+| **Step-transaction doctrine** | IRS doctrine collapsing pre-arranged steps into one. The reason Hanover invests later, not at closing. |
 
-## The four §1031 rules
+## The §1031 rules that drive this deal
 
-1. **Same taxpayer.** Whoever sells Belara must end up owning North Forsyth.
+1. **Same taxpayer.** Whoever sells Belara must own the replacement. The disregarded SMLLC keeps it the same taxpayer.
 2. **Never touch the cash.** Proceeds go to the QI, not the family.
 3. **The clocks.** Identify within 45 days, receive within 180 days.
-4. **Like-kind.** Replacement is real property, not a company share.
-
-Miss one and the full gain becomes taxable.
+4. **Like-kind real property.** Replacement is land or completed improvements, not a company share. This is why we cannot simply join Hanover's JV.
+5. **Hold for investment, not resale.** Lease it up; do not paper an intent to sell.
+6. **Value.** Full deferral needs replacement at least equal to the relinquished value, here about $28M. We cannot reach it, so we defer the land's share.
 
 ## The cast
 
 | Party | Role |
 |---|---|
-| **Kao Management Trust** | Our family's trust. The taxpayer doing the exchange and the long-term owner. |
-| **Titan Management** | Parents' company holding Belara today. Belara moves under the Trust before sale. |
-| **Strake Jesuit** | Buyer of Belara. Wires the price to the QI. |
-| **Hanover Industrial LLC** | Developer and sponsor. Later the 5% plus promote partner. (Our family member is a salaried employee, owns zero of Hanover.) |
+| **Belara seller (Kao side)** | The entity that owns and sells Belara, and forms the disregarded SMLLC that buys the land. Exact entity still to be aligned, see Kao tab. |
+| **Strake Jesuit** | Buyer of Belara. Land-constrained school; wants the parcel for parking by its stadium. Wires the price to the QI. |
+| **Hanover** | Developer and, later, co-owner. Invests into the SMLLC after the land is bought. (A family member is a salaried Hanover employee, owns zero of Hanover.) |
 | **Riverway Title (QI)** | Holds the $20M so we never touch it. |
-| **EAT** (TBD) | Holds title and builds during the exchange. |
-| **Construction lender** | Bank funding about 60% of cost (about $30M), nonrecourse. |
-| **Land seller** | Unaffiliated third party selling the land ($6.5M). |
+| **Land seller** | Unaffiliated third party selling the land, about $6.5M, under PSA. |
+| **EAT** (upside only) | Independent party that would hold title and build if we chase site-work improvements. |
 | **Chamberlain (Hobbs, Marianne)** | Our family's §1031 / tax counsel. First walked the deal on the June 17 call. |
 | **Jeff Wallace (Winstead)** | Hanover's outside tax counsel. To confirm the structure before the family decides. |
 
 ## The core tension
 
-Two requirements pull opposite ways:
+Three things shape what is possible:
 
-1. Kao's deferral needs Kao to finish owning **100% real property**, not a JV interest.
-2. Hanover's capital-gain promote needs a **partnership**, which cannot exist when the exchange finishes.
-
-The fix is sequence: real property first (Phase 1), promoted partnership later (Phase 2), bridged by a genuine seasoning gap.
+1. **We cannot contribute the proceeds straight into a JV with Hanover.** A partnership interest is not like-kind. The fix is the **no-drop SMLLC**: the seller's own disregarded entity buys the land, and Hanover invests later.
+2. **The bargain sale sets a high bar.** Belara is deemed about $28M of value, but only about $6.5M goes into qualifying land, so this is a **partial** deferral, roughly a quarter of the gain.
+3. **We intend to lease up and sell.** That cuts against §1031. We manage it with documentation discipline and by signing leases, accepting a modest recharacterization risk.
 
 <!-- TAB:overview -->
 
-> Seasoning lowers risk, it is not a safe harbor. Target opinion MLTN, not certainty. DRAFT, needs §1031 counsel.
->
-> **Updated June 17, 2026 after the first §1031 counsel call (Chamberlain).** See "June 17 counsel call" below: counsel reads the replacement benchmark as about $28M (Belara is a bargain sale to Strake) and likely excludes site work, which tempers the about $20M-replacement and build-to-suit assumptions in the C-Hybrid sections that follow.
+> DRAFT, reflects the June 17, 2026 counsel call (preliminary, not a written opinion). Next step: confirm with Jeff Wallace (Winstead). Transcript: `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
 
-**In one line:** Kao exchanges into 100% title via a QI plus EAT (Phase 1), runs it alone through a seasoning gap, then forms the 95/5 promoted JV via tax-free §721 (Phase 2). Same economics as the term sheet, Hanover's promote stays capital gain, no surprise tax to Kao.
+**In one line:** sell Belara through a QI; the seller's own disregarded SMLLC buys the about $6.5M land (the base-case deferral); Hanover invests into that entity later to build and co-own. Try to count some site work for extra deferral (upside). This is a partial deferral, and a good deal even if we just paid the tax.
 
 ## At a glance
 
 | | |
 |---|---|
 | **Sell** | Belara Apartments, $20M, no debt |
-| **Belara appraisal** | about $28M (Mar 2026). Sale to Strake at $20M is a bargain sale to a school, about $8M charitable deduction. Counsel reads the §1031 replacement benchmark as about $28M (June 17 call) |
+| **Belara appraisal** | about $28M (Mar 2026). Sale to Strake at $20M is a bargain sale to a school, about $8M charitable deduction |
+| **§1031 benchmark** | about $28M (counsel's read), so full deferral is unreachable, partial only |
 | **Buy** | North Forsyth Commerce Center, about $50.3M ground-up industrial, about 327,600 SF, Forsyth County GA |
-| **Exchanger / owner** | Kao Management Trust (one taxpayer throughout) |
-| **Belara seller today** | Titan Management, move into a trust-owned SMLLC before sale |
-| **Developer** | Hanover Industrial LLC |
-| **Land** | $6.5M, third-party, unaffiliated, under PSA |
-| **Project cost** | about $50.3M, loan about 60% LTC (about $30M), nonrecourse |
+| **Base-case replacement** | the about $6.5M land |
+| **Structure** | seller forms a disregarded SMLLC that buys the land, no drop; Hanover invests later |
 | **QI** | Riverway Title |
-| **Day 0 (model)** | Sept 15, 2026 (Belara plus land). Belara timing is flexible, see boot note |
-| **45-day ID** | Oct 30, 2026 deadline (letter filed Sept 15) |
-| **180-day deed** | Mar 14, 2027 (EAT deeds 100% to Kao) |
-| **Phase 2 JV (model)** | Earliest about Mar 2028 (OPEN with counsel) |
+| **Day 1** | Sept 15, 2026, land close |
+| **Decision on the remainder** | about 30 to 45 days after close |
 
-## June 17 counsel call: base case vs. upside (NEW, reframes the economics below)
-
-> **COUNSEL (Chamberlain: Hobbs, Marianne; with Hanover's John and in-house counsel), June 17, 2026 call. Preliminary discussion, not a written opinion. Next step: confirm with Hanover's outside tax counsel, Jeff Wallace (Winstead).** Transcript: `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
-
-The first time outside §1031 counsel walked the deal. Their read is more conservative than the C-Hybrid build-to-suit model below on **how much gain we can actually shelter**. Plan around two cases.
-
-**The bargain-sale problem (new).** Belara appraised at about **$28M** (March 2026) but sells to Strake for **$20M**, a bargain sale to a school that produces about **$8M of charitable deduction**. Counsel reads the §1031 **replacement-value benchmark as the about $28M appraised value, not the $20M price** (they called it a "clash"/"dysfunction" of tax-code sections). Full deferral would need about $28M of qualifying replacement in place by Day 180, which is unreachable on this build. So this is a **partial deferral, not a full one** (confirm with Jeff Wallace).
-
-**What counts toward the benchmark by Day 180 (counsel's read):**
-
-| Item | Counts? | Counsel's reasoning |
-|---|---|---|
-| **Land (about $6.5M)** | **Yes** | The land purchase qualifies |
-| **Site work** (clearing, grading, dirt, some utilities) | **Probably not** | A qualifying "improvement" must be physically completed and attached to the land; site work likely is not (it is in tax basis, so arguable) |
-| **Soft costs** (architecture, engineering, permits, zoning, environmental) | **No** | Treated as "fees," never improvements |
-
-**Base case: the about $6.5M land is the deferral.** Defer only the gain attributable to the land. The land is about a quarter of the $28M, so a minority of the total gain (counsel framed it loosely as about $6M of gain; the exact gain was not pinned down on the call). The dollar tax benefit was ballparked at roughly $0.75M to $1.2M and is **not settled**. Better than nothing, and the deal stands on its own even paying full tax (it is still the family's number-one option versus cleanly 1031-ing into a multifamily deal).
-
-**Upside case: capture some site work.** Try to count site work as qualifying improvement. Counsel leans against it, **but** a disallowance would likely strike only that portion, not the whole exchange, so the downside of trying is low (Ethan: if it does not kill the whole thing, "then we would go for it"). Worth pursuing if the schedule allows. The construction contract is about **$40M total, about $11M site work**; about **$8 to 11M** of spend falls in the first 180 days, mostly site work. Permit delays of 60 to 90 days could shrink the window (perhaps only about 4 months of site work).
-
-**Structure counsel recommends: no "drop."** Belara's owner forms a **disregarded SMLLC**; the SMLLC buys the land with QI proceeds. Because it is disregarded, Belara is treated as the buyer for tax, so **there is no drop** to a partnership. Hanover invests into that entity **later**, turning it into the JV. Lower IRS-risk profile than a classic drop-and-swap. In the base case (conceding site work) **no EAT is needed**: the QI just holds proceeds to buy the land. The EAT / build-to-suit machinery only matters if chasing site-work improvements.
-
-**Cash sequencing: do not pay the tax first.** Route the $20M through the **QI**, deploy about $6.5M into the land, then pull the remainder back from the QI and pay tax on it. Paying tax outright first blows the exchange. Counsel expects the keep-vs-pay decision on the remainder within about **30 to 45 days** of closing.
-
-**Intent-to-sell risk.** The plan is to lease up the building and sell, which cuts against §1031 (inventory risk). Mitigate: do not document an intent to sell; frame a future sale as a major decision requiring both partners' approval, with a buy-sell. Counsel sized the risk at about **1-in-15 to 1-in-20**. If the IRS nullified it, the cost is the deferred tax plus interest (penalty likely waived on a good-faith position). Not a current IRS audit-focus area. **Signing leases helps**, it evidences holding for investment.
-
-**Open tension to resolve with counsel.** If chasing site work, Hanover wants to enter the entity "almost immediately," which pulls against the long seasoning gap in the C-Hybrid model below and raises step-transaction exposure. Reconcile the timing of Hanover's entry with the seasoning story before committing.
-
-## Why not the term sheet as written
-
-It hands Kao a 95% LLC membership at closing, which fails §1031: only real property is like-kind, not a company interest. C-Hybrid moves only the legal wrapper and timing.
-
-| | Term sheet | C-Hybrid |
-|---|---|---|
-| Kao receives | 95% LLC interest | 100% real property |
-| Hanover 5% plus promote | Day 1 in the JV | Phase 2 via §721 |
-| Promote tax character | Capital gain only if the exchange survived | Capital gain (clean carry) |
-| Exchange viability | Fails | MLTN at best (DRAFT) |
-
-## The three phases
+## The base-case structure (no "drop")
 
 ```mermaid
 flowchart TB
-  subgraph P1["PHASE 1: Exchange, Days 0 to 180"]
-    Belara["Belara $20M"]:::asset
-    SK["Strake"]:::neutral
-    QI["Riverway Title\nQI"]:::neutral
-    EAT["EAT\nholds title + builds"]:::neutral
-    KLLC["Kao Owner SMLLC\n100% fee"]:::kao
-    Belara --> SK --> QI
-    QI --> EAT
-    EAT -->|"Mar 14, Day 180 deed"| KLLC
-  end
-  subgraph GAP["SEASONING: Kao owns + runs 100%"]
-    G["later of 12 mo post-deed\nand substantial completion\ncomfort about 24 mo + lease-up/refi"]:::kao
-  end
-  subgraph P2["PHASE 2: §721 JV (PropCo)"]
-    K2["Kao\n95%"]:::kao
-    H["Hanover\nfresh-cash 5%\n+ promote"]:::han
-    HL["Phase-1 loan\nrepaid in cash"]:::han
-    JV["PropCo JV LLC"]:::asset
-    K2 -->|"§721, contributes property"| JV
-    H -->|"§721, fresh cash + profits interest"| JV
-    HL -.->|"NOT converted to equity"| H
-  end
-  P1 --> GAP --> P2
+  BEL["Belara seller LLC\nKao side"]:::kao
+  SMLLC["Disregarded SMLLC\nsame taxpayer as Belara"]:::kao
+  SK["Strake Jesuit\nbuyer, $20M"]:::neutral
+  QI["Riverway Title\nQI holds $20M"]:::neutral
+  LAND["North Forsyth land\nabout $6.5M, the replacement"]:::asset
+  PAY["Kao pays tax on the\nabout $13.5M not reinvested"]:::kao
+  JV["Entity becomes the JV\nHanover invests later, builds"]:::han
+  BEL -->|"forms"| SMLLC
+  BEL -->|"sells Belara"| SK
+  SK -->|"$20M to QI"| QI
+  QI -->|"about $6.5M"| SMLLC
+  SMLLC -->|"buys"| LAND
+  QI -->|"remainder"| PAY
+  SMLLC -.->|"after close, Hanover invests"| JV
   classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
   classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
   classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
 ```
 
-- **Phase 1 (Days 0 to 180):** Belara's $20M goes to the QI. An independent EAT takes title, borrows the loan, builds, then deeds 100% to Kao by Day 180. Hanover is contractor, lender, and guarantor only, never on title.
-- **Seasoning:** Kao owns and runs the property alone.
-- **Phase 2:** Kao and Hanover form the promoted JV via §721.
+Because the SMLLC is disregarded, the IRS treats Belara's seller as both the seller and the buyer, one and the same taxpayer, so there is no "drop" of property into a partnership. Hanover invests into that entity later, which is a lower-risk profile than a classic drop-and-swap.
 
-## The Phase-2 bifurcation (the key idea)
-
-Hanover's economics split into two separate instruments so the promote is a clean capital gain:
-
-1. **Fresh-cash 5% capital interest:** new cash for a real 5% stake, priced when the JV forms, running 95/5 like the term sheet.
-2. **Separate profits interest:** zero value at grant, sharing only in upside above the hurdles (the 20/30/40 promote). Capital gain if held more than 3 years.
-
-The Phase-1 loan (about $1.1M) is **repaid in cash, not converted to equity**. Converting it would reopen valuation and disguised-sale problems.
-
-## Timeline and the two clocks
-
-| Clock | Last day (model) | Meaning |
-|---|---|---|
-| **45-day identification** | Oct 30, 2026 | Give the QI a written list of the replacement on or before this date |
-| **180-day completion** | Mar 14, 2027 | Replacement received (EAT deeds to Kao) on or before this date |
-
-Oct 30 is a deadline, not the day we act. In the model the ID letter is filed Sept 15, the same day as Belara, before the land wire.
+## What counts toward the benchmark by Day 180
 
 ```mermaid
 flowchart TB
-  subgraph D0["Sept 15, Day 0: in order"]
-    A["1. Belara closes\nStrake to Riverway $20M"]:::neutral
-    B["2. ID letter\nKao to Riverway"]:::kao
-    C["3. Land closes\nRiverway to EAT $6.5M"]:::neutral
-    A --> B --> C
-  end
-  D0 --> BUILD["Sept 16 to Mar 13\nconstruction draws"]:::neutral
-  BUILD --> D180["Mar 14, Day 180\nEAT deeds 100% to Kao"]:::kao
+  GAIN["Replacement benchmark\nabout $28M appraised value"]:::asset
+  LANDQ["Land about $6.5M\nQUALIFIES, base case"]:::kao
+  SITE["Site work, grading, dirt, utilities\nprobably NOT, upside if argued"]:::neutral
+  SOFT["Soft costs, design, permits, environmental\nnever qualify"]:::neutral
+  GAIN --> LANDQ
+  GAIN --> SITE
+  GAIN --> SOFT
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+```
+
+Counsel's read: a qualifying improvement must be physically completed and attached to the land. Site work likely is not, though it sits in tax basis and is arguable. Soft costs are "fees," never improvements.
+
+## Base case: the about $6.5M land is the deferral
+
+Defer only the gain attributable to the land, about a quarter of the about $28M. Counsel framed it loosely as about $6M of gain; the exact gain was not pinned down. The dollar tax benefit was ballparked at roughly $0.75M to $1.2M and is not settled. It is better than nothing, and the deal stands on its own even paying full tax, it is still the family's number-one option versus cleanly 1031-ing into a multifamily deal.
+
+## Upside case: capture some site work
+
+Try to count early site work as qualifying improvement. Counsel leans against it, but a disallowance would likely strike only that portion, not the whole exchange, so the downside of trying is low. The construction contract is about $40M total, about $11M site work; about $8 to 11M of spend falls in the first 180 days, mostly site work. Permit delays of 60 to 90 days could shrink the window to perhaps four months. Chasing the upside also means Hanover enters the entity sooner, see the tension note below.
+
+## Cash sequencing: do not pay the tax first
+
+```mermaid
+flowchart LR
+  D0["Sept 15, 2026\nland close, $20M to QI"]:::neutral
+  BUY["Buy land\nabout $6.5M from QI"]:::kao
+  DEC["about 30 to 45 days\nkeep or pull the remainder"]:::kao
+  REST["Remainder from QI\npay tax on it"]:::kao
+  D0 --> BUY --> DEC --> REST
   classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
   classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
 ```
 
-## Money in Phase 1
+Route the $20M through the QI, deploy about $6.5M into the land, then pull the remainder back from the QI and pay tax on it. Paying tax outright first blows the exchange. Counsel expects the keep-vs-pay decision within about 30 to 45 days of closing.
 
-The QI holds about $20M from Belara and cannot disburse more than that pool.
+## Money flow, base case
 
-| When | From and to | $ | Source |
+| When | From and to | $ | Note |
 |---|---|---|---|
-| Sept 15 | Strake to Riverway | 20.0M | Belara sale |
-| Sept 15 | Riverway to EAT to land seller | 6.5M | Pool |
-| Oct-Nov 2026 | Riverway to EAT (sitework) | 5.0M | Pool |
-| Dec 2026 to Feb 2027 | Riverway to EAT (foundations) | 8.5M | Pool (exhausts about $20M) |
-| Dec 2026 to Feb 2027 | Lender to EAT (balance) | 1.5M | Loan |
-| Mar 14, 2027 | EAT deeds 100% to Kao | n/a | Phase 1 done |
+| Sept 15 | Strake to QI | 20.0M | Belara sale proceeds |
+| Sept 15 | QI to SMLLC to land seller | about 6.5M | Buys the land, the §1031 replacement |
+| Within about 30 to 45 days | QI back to Kao | about 13.5M | Remainder, pay tax on this |
+| Upside only | QI funds early site work | TBD | Only if chasing site-work improvements |
 
-```mermaid
-flowchart TB
-  SK["Strake"]:::neutral
-  QI["Riverway Title"]:::neutral
-  EAT["EAT"]:::neutral
-  LN["Construction lender\nabout $30M nonrecourse"]:::neutral
-  HLOAN["Hanover Capital LLC\nabout $1.1M secured LOAN"]:::han
-  GC["Hanover Construction Group\nGMP 4.5%"]:::han
-  DEV["Hanover Industrial\nDMA 4%"]:::han
-  KLLC["Kao Owner SMLLC\n100% at Day 180"]:::kao
-  SK -->|"$20M"| QI --> EAT
-  LN --> EAT
-  HLOAN -->|"debt only"| EAT
-  EAT --> GC
-  EAT --> DEV
-  EAT -->|"deed"| KLLC
-  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
-  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
-  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
-```
+## Intent-to-sell risk
 
-Capital stack: pool (about $20M) plus loan (about $30M) plus Hanover loan (about $1.1M). No Hanover equity until Phase 2.
+The plan is to lease up the building and sell, which cuts against §1031, inventory risk. Mitigate:
 
-## Boot risk by Day 180
+- Do not document an intent to sell.
+- Frame a future sale as a major decision requiring both partners' approval, with a buy-sell.
+- Sign leases. Leasing evidences holding for investment and helps the position.
 
-> Revised June 17: counsel reads the benchmark as about $28M (Belara's appraised value, a bargain sale to Strake) and likely excludes site work as an "improvement." Treat the about $6.5M land as the bankable replacement (base case); the figures in this section reflect the more ambitious C-Hybrid build-to-suit model. See "June 17 counsel call" above.
+Counsel sized the risk at about 1-in-15 to 1-in-20. If the IRS nullified it, the cost is the deferred tax plus interest, penalty likely waived on a good-faith position. Not a current IRS audit-focus area.
 
-Only real property in place and paid for by Day 180 counts. $6.5M land plus about $13.5M of improvements is plausible but not bankable. Levers:
+## Ranked risks
 
-- **Belara timing is the strongest lever.** We control the close date, so align it so Day 180 lands after enough construction is in place. Sept 15 is a model, not a commitment.
-- **Backup DST by Day 45** absorbs any leftover cash.
-- **Model acceptable boot** rather than gamble the exchange.
-- **Confirm clean title history** (prior ownership within 180 days breaks the parking safe harbor).
+1. **Intent-to-sell recharacterization** (about 1-in-15 to 1-in-20). Cost is tax plus interest, penalty likely waived.
+2. **Site work disallowed.** Base case already assumes this; the upside risk is only that slice, not the whole exchange.
+3. **Step-transaction**, if Hanover enters too soon or the deal looks pre-wired from day one.
+4. **Same-taxpayer alignment**, the exact Belara-selling entity must be set before the PSA, see Kao tab.
+5. **Constructive receipt**, if proceeds do not go straight to the QI.
+6. **Permit delays** shrink the site-work window (upside only).
 
-## Seasoning
+## The open tension to resolve with counsel
 
-Runs from the EAT-to-Kao deed, not Day 0. There is no statutory period, these are evidentiary targets:
+If we chase site work, Hanover wants to enter the entity almost immediately to fund as much qualifying work as possible inside 180 days. That speed pulls against the "more time is better" point that lowers the intent and step-transaction risk. Reconcile the timing of Hanover's entry with counsel before committing.
 
-- **Floor:** later of 12 months post-deed and substantial completion.
-- **Comfort:** about 24 months plus lease-up and ideally a refinance.
+## Status and next step
 
-Kao must genuinely run it alone: signs leases, carries the loan, takes depreciation, funds shortfalls with debt, never Hanover equity. No binding promise to form the JV.
-
-## Kao's no-surprise-tax (timing)
-
-Contributing mortgaged property can trigger tax if Kao's debt share drops. Defused mainly by timing, but the CPA must model it:
-
-- Form the JV after the construction guaranties expire, so only nonrecourse debt remains.
-- By then capitalized construction costs have built up Kao's basis.
-- No cash or refi distribution to Kao near the contribution.
-- CPA confirms the debt-share shift does not exceed Kao's basis.
-
-## Entity map (placeholders, none formed yet)
-
-| Entity | Side | Role |
-|---|---|---|
-| Kao Management Trust | Kao | Taxpayer and owner (grantor vs. non-grantor TBD, gating) |
-| Belara Seller SMLLC | Kao | Holds and sells Belara |
-| Kao NFCC Owner SMLLC | Kao | Receives 100% at Day 180, later contributes for 95% |
-| Riverway Title (QI) | Neutral | Holds the $20M |
-| NFCC Parking Title LLC (EAT) | Neutral | Parks title, borrows, builds. Independent of both sides |
-| Construction lender | Neutral | About $30M nonrecourse |
-| Backup DST | Neutral | Boot backstop, identified by Day 45 |
-| Hanover Industrial LLC | Hanover | Sponsor, 4% dev fee |
-| Hanover Construction Group LLC | Hanover | GC on the GMP, not equity |
-| Hanover NFCC Capital LLC | Hanover | Phase-1 lender, repaid before Phase 2 |
-| Hanover NFCC Member LLC | Hanover | Phase 2: fresh-cash 5% plus profits-interest promote |
-| North Forsyth PropCo JV LLC | JV | Operating partnership |
-
-## What can blow it up
-
-1. Wrong taxpayer, or the Belara-to-Trust move is taxable.
-2. Phase 2 locked in (binding option, or "done deal" emails).
-3. Hanover looks like a Phase-1 owner (title, equity, control of sale or refi).
-4. QI or EAT not independent, or Kao touches the cash.
-5. Not enough real property in place by Day 180, no DST backup.
-6. Distribution or refi to Kao too soon (disguised sale).
-7. Debt-shift tax (surviving guaranties or shift above basis).
-8. Promote contaminated (value at grant, or bundled with the capital interest).
-9. Conflict, the employee appears to control both sides.
-
-## Conduct rules
-
-- No binding contribution agreement, option, fixed-price admission, or exclusivity for Phase 2. Non-binding LOI only, either side free to walk.
-- No writings saying "done deal," "guaranteed promote," or "temporary 1031 wrapper."
-- The employee recuses from every Hanover-side decision. Separate counsel and disinterested decision-makers per side.
-- Independent arm's-length pricing of every fee, the loan, the guaranty, and the break fee.
-- Kao behaves as sole owner throughout seasoning.
+Hanover is willing to accommodate the structure. Next is a call with Hanover's outside tax counsel, Jeff Wallace (Winstead), to confirm. Then the family decides whether the deferral is worth the effort, the juice worth the squeeze.
 
 <!-- TAB:kao -->
 
-> Seasoning lowers risk, it is not a safe harbor. Target MLTN. DRAFT, needs §1031 counsel.
+> DRAFT, reflects the June 17 counsel call. The exchanger's playbook.
 
-The exchanger. Sell Belara, defer the tax, end up owning North Forsyth at 100%, then contribute it into the 95% JV after seasoning.
+Sell Belara through the QI, buy the land via a disregarded SMLLC (the base-case deferral), hold for investment, and let Hanover invest into the entity later.
 
 | | |
 |---|---|
-| **Sell** | Belara, seller today Titan Management (move into a trust-owned SMLLC first) |
+| **Sell** | Belara, $20M, no debt |
 | **Buyer** | Strake Jesuit |
 | **QI** | Riverway Title, you never receive the proceeds |
-| **Phase 1 receipt** | Kao NFCC Owner SMLLC, 100% deed at Day 180 |
-| **Phase 2** | Contribute for 95% of PropCo, Hanover gets fresh-cash 5% plus promote |
-| **Hanover in Phase 1** | Contractor plus secured lender, not your partner yet |
+| **Base-case replacement** | the about $6.5M land, bought by your disregarded SMLLC |
+| **Remainder** | about $13.5M comes back from the QI, you pay tax on it |
+| **Hanover** | invests into the SMLLC later to build and co-own |
 
-## June 17 counsel call: base case and conduct (NEW)
+## Step 0: align the selling taxpayer first (gating)
 
-> COUNSEL (Chamberlain), June 17 call. See the Overview "June 17 counsel call" section for the full reframe. The items below are what the family should do or avoid.
-
-- **Base case is the about $6.5M land.** Counsel expects only the land to qualify; site work (grading, dirt, utilities) probably does not, and soft costs (architecture, engineering, permits, environmental) do not. The benchmark counsel uses is about $28M (Belara's appraised value), so this is a **partial** deferral, on the order of a quarter of the gain.
-- **Do not pay the tax first.** Proceeds still go to the QI. Deploy about $6.5M into the land through the QI, then pull the remainder back from the QI and pay tax on it. Paying tax outright blows the exchange. Decision on the remainder within about 30 to 45 days of close.
-- **Upside is site work, and the downside of trying is low.** Pushing to count site work likely risks only that portion, not the whole exchange, so it is worth attempting if the schedule allows.
-- **Intent-to-sell discipline.** The goal is to lease up and sell, which cuts against §1031. Do not document an intent to sell. Frame any future sale as a major decision needing both partners' approval, with a buy-sell. Counsel sized the audit/recharacterization risk at about 1-in-15 to 1-in-20; downside is tax plus interest (penalty likely waived).
-- **Sign leases.** Leasing the building evidences holding for investment and **helps** the §1031 position.
-
-## Step 0: align the taxpayer first (gating)
-
-The taxpayer that sells Belara must be the one that acquires North Forsyth. Belara sits in Titan Management today, the Trust is the intended owner, and they are probably different taxpayers, so move Belara into a trust-owned SMLLC before the PSA.
-
-Whether that move is tax-free depends on the trust:
+The taxpayer that sells Belara must be the one that forms the SMLLC and buys the land. Belara sits in **Titan Management** today; the intended long-term owner is the **Kao Management Trust**. They are likely different taxpayers, so align this before the PSA.
 
 - **Grantor trust** (invisible to the parents): the move may be between disregarded entities of the same taxpayer, tax-neutral.
 - **Non-grantor trust** (its own taxpayer): moving about $20M of Belara in is a gift or a sale, taxable.
 
-This can change whether the whole plan is tax-free. CPA confirms before the PSA.
+Counsel did not resolve this on the June 17 call; the CPA must confirm before the PSA.
+
+## The Kao-side flow
+
+```mermaid
+flowchart TB
+  OWN["Belara owner\nKao side"]:::kao
+  SMLLC["Disregarded SMLLC\nyou form it"]:::kao
+  QI["Riverway Title\nQI"]:::neutral
+  LAND["North Forsyth land\nabout $6.5M"]:::asset
+  TAX["Pay tax on the\nremainder, about $13.5M"]:::kao
+  LEASE["Hold for investment\nsign leases"]:::kao
+  OWN -->|"1, forms"| SMLLC
+  OWN -->|"2, sells Belara, $20M to QI"| QI
+  QI -->|"3, about $6.5M"| SMLLC --> LAND
+  QI -->|"4, remainder"| TAX
+  LAND --> LEASE
+  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
+  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
+  classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
+```
+
+## What the family should do or avoid
+
+- **Base case is the about $6.5M land.** Expect only the land to qualify. Site work probably does not; soft costs do not. Benchmark is about $28M, so this is a partial deferral, about a quarter of the gain.
+- **Do not pay the tax first.** Proceeds still go to the QI. Deploy about $6.5M into the land through the QI, then pull the remainder back and pay tax. Decision within about 30 to 45 days of close.
+- **Upside is site work, and the downside of trying is low.** Pushing to count site work likely risks only that portion, not the whole exchange.
+- **Intent-to-sell discipline.** The goal is to lease up and sell, which cuts against §1031. Do not document an intent to sell. Frame any future sale as a major decision needing both partners' approval, with a buy-sell.
+- **Sign leases.** Leasing the building evidences holding for investment and helps the §1031 position.
+- **Let Hanover in later.** More time between buying the land and Hanover's investment lowers the step-transaction and intent risk (unless we chase site work, which pulls the other way).
 
 ## Key dates
 
 | Milestone | Date | What happens |
 |---|---|---|
-| Day 0, Belara | Sept 15, 2026 | Strake closes, $20M to Riverway, clocks start |
-| Day 0, ID letter | Sept 15, 2026 | Identify North Forsyth to Riverway, before the land wire |
-| Day 0, land | Sept 15, 2026 | Riverway releases $6.5M to the EAT |
-| 45-day deadline | Oct 30, 2026 | Last day to identify |
-| Construction | Sept 16 2026 to Mar 13 2027 | QI draws (to about $20M) then loan |
-| Day 180 | Mar 14, 2027 | EAT deeds 100% to Kao |
-| Seasoning | Mar 2027 to about Mar 2028+ | You own 100%, operate, depreciate, carry the loan |
-| Phase 2 §721 | about Mar 2028+ (OPEN) | Contribute for 95%, Hanover gets 5% plus promote |
+| Land close, Day 1 | Sept 15, 2026 | Belara closes, $20M to QI; SMLLC buys the land |
+| Decision on remainder | about Oct, 30 to 45 days | Keep deferring or pull the remainder and pay tax |
+| Site-work window | first about 180 days | Upside only, complete and argue qualifying site work |
+| Hanover invests | later (timing OPEN) | Entity becomes the JV; build the industrial facility |
 
-## Pre-close
+## Critical rules
 
-```mermaid
-flowchart TB
-  K["Kao / counsel\nmove Belara to trust SMLLC"]:::kao
-  QI["Riverway Title\nQI engagement"]:::neutral
-  EAT["EAT TBD\nQEAA"]:::neutral
-  H["Hanover\nGMP + dev agreements"]:::han
-  ST["Strake\nBelara PSA + escrow"]:::neutral
-  K --> QI
-  K --> EAT
-  EAT --> H
-  ST --> QI
-  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
-  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
-  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
-```
+- Same taxpayer from Belara sale to land purchase, through the disregarded SMLLC.
+- Never touch the proceeds, they go straight to the QI.
+- No debt on Belara at close.
+- Buy the land with exchange funds; pull the remainder and pay tax.
+- Hold for investment, do not document an intent to sell, sign leases.
+- Keep Hanover out of the entity until after the land is bought.
 
-- Resolve the Titan-to-Trust alignment and the grantor fork first.
-- Engage Riverway Title. The PSA wires proceeds to the QI only.
-- Select an independent EAT, not a Hanover affiliate.
-- Form the Kao NFCC Owner SMLLC for the Day-180 deed.
-- Draft the ID letter (value at least $20M) and a real backup DST.
+<!-- TAB:hanover -->
 
-## Day 0: Belara, ID, land (Sept 15)
+> DRAFT, reflects the June 17 counsel call. Hanover is willing to accommodate the structure; its outside tax counsel, Jeff Wallace (Winstead), to confirm.
 
-Same day, fixed order. The QI will not fund North Forsyth until the ID letter is filed.
+Hanover is the developer and, later, the co-owner. To protect Kao's §1031, Hanover does **not** take an interest at closing. It invests into the SMLLC **after** Belara's owner has bought the land.
+
+## Hanover's role, in order
+
+1. **At and just after closing:** none on the exchange. The Kao-side SMLLC buys the land with exchange funds; Hanover assigns the land PSA to that entity (confirm it is assignable without the seller's consent, since the entity is not a Hanover affiliate yet).
+2. **Then it invests** cash into that entity, turning it into the development JV, and builds the industrial facility as developer and GC.
+3. **Eventual economics** (term sheet, proposed and unsigned): about 95% Kao / 5% Hanover, promote 20/30/40 over 10/14/18% IRR, 4% dev fee, 4.5% GC fee.
 
 ```mermaid
 flowchart TB
-  SK["Strake\n$20M"]:::neutral
-  QI["Riverway Title"]:::neutral
-  K["Kao\nID letter"]:::kao
-  EAT["EAT"]:::neutral
-  LS["Land seller"]:::neutral
-  SK -->|"1"| QI
-  K -->|"2, before 3"| QI
-  QI -->|"3, $6.5M"| EAT --> LS
-  classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
-  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
-```
-
-You sign as seller and exchanger. You do not receive or control the $20M.
-
-## Construction (Sept 16 to Mar 13)
-
-The QI releases pool funds on certified requests. Only improvements paid with exchange funds within 180 days count toward §1031 value. **Counsel (June 17) cautions that site work likely is not a qualifying improvement** (must be physically completed and attached), so the table below reflects the optimistic C-Hybrid model, not the base case.
-
-| Phase | Calendar | $ | Source |
-|---|---|---|---|
-| Land | Sept 15 | $6.5M | QI |
-| Sitework | Oct-Nov 2026 | $5.0M | QI |
-| Foundations | Dec 2026 to Feb 2027 | $8.5M | QI (pool out) |
-| Foundations (balance) | Dec 2026 to Feb 2027 | $1.5M | Loan |
-
-The remaining about $28.8M of the project is loan-funded.
-
-## Day 180: exchange complete (Mar 14)
-
-1. EAT deeds 100% fee simple to the Kao NFCC Owner SMLLC.
-2. Riverway closes the exchange.
-3. File Form 8824. Gain deferred to the extent about $20M was reinvested, any shortfall is taxable boot.
-
-Until this deed, Kao does not own North Forsyth for §1031 purposes, the EAT does.
-
-## Seasoning: you own 100% (Mar 2027 to about Mar 2028+)
-
-The clock starts at the deed, not at Belara close.
-
-- 100% title, borrower on the loan, sign leases, take depreciation, control the bank accounts.
-- Retain every owner decision: budget, debt and refi, leases, a sale, and forming the JV itself. Hanover runs the build only.
-- No binding obligation to form the JV.
-- Kao indemnity or LC covers Hanover's guaranty exposure (collateralized, cost-based).
-
-| Target | Model |
-|---|---|
-| Floor | later of 12 mo post-deed and substantial completion, about Mar 2028 |
-| Comfort | about 24 mo plus lease-up/refi, about Mar 2029 |
-
-If Phase 2 looks pre-wired from Day 0, the IRS can collapse both phases. Real time plus real sole ownership is the defense.
-
-## Phase 2: the §721 JV (about Mar 2028+, OPEN)
-
-```mermaid
-flowchart TB
-  LLC["Kao NFCC Owner SMLLC\n100% owner"]:::kao
-  JV["PropCo JV LLC"]:::asset
-  H["Hanover Member LLC\nfresh-cash 5% + promote"]:::han
-  LLC -->|"§721, contribute property, 95%"| JV
-  H -->|"§721, fresh cash + profits interest"| JV
+  SMLLC["Kao SMLLC\nowns the land"]:::kao
+  HAN["Hanover\ninvests cash later"]:::han
+  JV["Development JV\nabout 95 Kao / 5 Hanover + promote"]:::asset
+  BLDG["Industrial building\ndeveloped and leased"]:::asset
+  SMLLC -->|"land in"| JV
+  HAN -->|"cash in, becomes a partner"| JV
+  JV --> BLDG
   classDef kao fill:#e3edf7,stroke:#1f3a5f,color:#0f2440;
   classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
   classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
 ```
 
-Term-sheet economics activate: 95/5, the 20/30/40 promote over 10/14/18% IRR. The contribution is designed to be tax-silent, but only with the CPA's §752 and §704(c) schedules.
+## When Hanover comes in
 
-## Critical rules
-
-- Same taxpayer from Belara sale to replacement deed.
-- Never touch the proceeds.
-- No debt on Belara at close.
-- ID letter on file before the QI funds North Forsyth.
-- Deed by Mar 14, 2027.
-- Boot if in-place value is below about $20M at Day 180.
-- Act as sole owner through seasoning, keep Phase 2 non-binding.
-
-<!-- TAB:hanover -->
-
-> Seasoning lowers risk, it is not a safe harbor. DRAFT, needs §1031 counsel.
-
-Hanover Industrial LLC, the Sponsor. Economics split across two phases so Kao's §1031 survives and the promote stays capital gain.
-
-| Phase | Role | Equity / promote |
-|---|---|---|
-| Phase 1 (build) | Developer (4% DMA), GC (4.5% GMP), secured lender (about $1.1M), guarantor | None, creditor plus contractor |
-| Seasoning | Same fees, loan outstanding, Kao owns 100% | None, non-binding LOI only |
-| Phase 2 (§721 JV) | Managing member, fresh-cash 5% plus promote | Capital-gain carry |
-
-## Four Phase-1 roles (all non-owner)
-
-1. Developer under a market 4% DMA.
-2. GC under the GMP at 4.5% ($300K advance, 5% contingency), a contract with the EAT.
-3. Secured lender of about $1.1M at market interest, a real note, not a preferred return.
-4. Guarantor (completion, carry, overrun, carve-out), auto-terminating at Substantial Completion.
-
-Not on title, no equity in Phase 1.
-
-## The control line
-
-Hanover runs the build: permits, design, schedule, subs, draws, and recommends budgets and leasing. Kao keeps every owner decision: budget and material changes, debt and refi, leases above thresholds, a sale, forming the JV, final draw approval, bank-account control.
-
-Crossing it (unilateral control of sale, refi, leasing, or budget, upside beyond fees plus interest, or loss-sharing) makes Hanover look like a Phase-1 owner, which breaks the exchange.
-
-## Phase 2: how you get paid
-
-1. **Fresh-cash 5% capital interest:** new cash for a real 5% stake, priced when the JV forms, running 95/5 like the term sheet.
-2. **Separate profits interest:** zero value at grant, sharing only in upside above the hurdles (20/30/40 over 10/14/18% IRR), capital gain if held more than 3 years.
-
-The Phase-1 loan (about $1.1M) is repaid in cash, not converted to equity. Repay the note, then write a fresh equity check.
-
-## Protection in Phase 1 (negotiable, DRAFT)
-
-- Standalone market DMA plus GMP with normal remedies.
-- The loan is a true secured note at market interest, not a disguised return.
-- Collateralized Kao indemnity or LC, sized to your lender-guaranty exposure.
-- Cost-based break fee if Kao declines Phase 2, no promote or IRR-mirroring make-whole.
-- Non-binding LOI for Phase 2.
+- **Base case, concede site work:** later is better. More time between the land purchase and Hanover's investment lowers the step-transaction and intent risk.
+- **Upside case, chase site work:** Hanover comes in almost immediately so the venture funds and completes as much qualifying site work as possible inside 180 days. Speed helps the upside but pressures the 1031, this is the tension to resolve with counsel.
 
 ## Conduct (because of the employment tie)
 
-The family member is a salaried Hanover employee, owns zero of Hanover, so this alone does not make the parties tax-related. But the closeness makes a "pre-arranged deal" story easier to tell, and QI/EAT rules disqualify the taxpayer's recent agents. So:
+A family member is a salaried Hanover employee and owns zero of Hanover, so this alone does not make the parties tax-related. But the closeness makes a "pre-arranged deal" story easier to tell, so:
 
-- The employee recuses from every Hanover-side decision.
-- Disinterested executives set Hanover's terms, separate counsel per side.
-- Hanover does not select, control, or fund the QI or EAT.
-- Independent arm's-length pricing of every fee, the loan, the guaranty, and the break fee.
+- The employee recuses from every Hanover-side decision on this deal.
+- Disinterested executives set Hanover's terms; separate counsel per side.
+- Hanover does not select, control, or fund the QI.
+- Arm's-length pricing of every fee and the eventual investment.
 
-## Key dates
-
-| Milestone | Date | Hanover role |
-|---|---|---|
-| Pre-close | Before Sept 15 | GMP plus dev agreements with the EAT |
-| Day 0 | Sept 15, 2026 | GMP effective after ID plus land close |
-| Construction | Sept 16 2026 to Mar 13 2027 | Invoice the EAT, paid from QI draws then loan |
-| Day 180 | Mar 14, 2027 | EAT deeds 100% to Kao, you stay GC, no equity deed |
-| Seasoning | Mar 2027 to about Mar 2028+ | Creditor, contractor, guarantor |
-| Phase 2 §721 | about Mar 2028+ (OPEN) | Loan repaid, fresh cash for 5% plus promote |
-
-## Who pays you
-
-```mermaid
-flowchart LR
-  QI["Riverway Title\nexchange draws"]:::neutral
-  LN["Construction lender"]:::neutral
-  EAT["EAT\nowner + borrower"]:::neutral
-  GC["Hanover Construction Group\nGMP pay apps"]:::han
-  SUB["Subs"]:::neutral
-  QI --> EAT
-  LN --> EAT
-  EAT --> GC --> SUB
-  classDef han fill:#fbeede,stroke:#9c6b1e,color:#5a3d0e;
-  classDef neutral fill:#eef0f2,stroke:#7a8696,color:#333;
-```
-
-You bill the EAT. Early costs flow QI to EAT to you, then lender to EAT to you once the pool is spent. Controllable overruns are 100% Sponsor.
-
-## Commercial terms (Phase 2 target)
+## Commercial terms (term sheet, proposed)
 
 | Item | Term |
 |---|---|
-| Equity | 5% (95% Kao), at §721, not Day 1 |
-| Promote | 20/30/40 over 10/14/18% IRR, capital gain |
-| Dev fee | 4%, runs both phases |
+| Equity | about 5% Hanover, 95% Kao, when Hanover invests, not at closing |
+| Promote | 20/30/40 over 10/14/18% IRR |
+| Dev fee | 4% |
 | GC / GMP | 4.5% hard, $300K advance, 5% contingency |
-| Phase 1 loan | about $1.1M secured, repaid, then fresh 5% cash |
-| Overruns / guaranties | Per term sheet, guaranties auto-terminate at Substantial Completion |
+| Construction loan | about 60% LTC |
 
 <!-- TAB:strake -->
 
 > Our reference for the Belara closing wire, not a document we send Strake.
 
-Buyer of Belara Apartments only. Strake purchases the relinquished property so Kao can run a §1031 exchange. Not a party to North Forsyth, the EAT, or any exchange filing.
+Buyer of Belara Apartments only. Strake is a land-constrained school that wants the parcel for parking by its stadium, and is buying at a bargain price.
 
 | | |
 |---|---|
 | What they buy | Belara Apartments, $20M, no debt |
-| Seller | Titan Management (aligned into a trust-owned SMLLC before close) |
+| Appraised value | about $28M (Mar 2026), so the $20M sale is a bargain sale, about $8M charitable deduction |
+| Seller | Kao side, the Belara owner / SMLLC |
 | QI | Riverway Title, their wire destination |
 | North Forsyth | Not involved |
 
 ## Why it matters to us
 
-Kao defers tax only if the proceeds go directly to the QI. Strake's price is the $20M exchange pool. If it wires to Titan or Kao instead of Riverway Title, the exchange fails.
+Kao defers tax only if the proceeds go directly to the QI. If Strake wires to the seller instead of Riverway Title, the exchange fails. And because this is a bargain sale, counsel reads the §1031 replacement benchmark off the about $28M appraised value, not the $20M price, which is what makes full deferral unreachable and drives the partial, land-only base case.
 
-## Day 0: the closing (Sept 15, 2026)
+## Day 1: the closing (Sept 15, 2026)
 
 ```mermaid
 flowchart LR
   ST["Strake Jesuit"]:::neutral
   ESC["Escrow"]:::neutral
   QI["Riverway Title\nQI"]:::neutral
-  SEL["Titan / Kao\nseller"]:::kao
+  SEL["Kao seller"]:::kao
   BEL["Belara deed"]:::asset
   ST -->|"$20M purchase"| ESC
   ESC -->|"$20M net proceeds"| QI
@@ -585,12 +337,6 @@ flowchart LR
   classDef asset fill:#e5efe9,stroke:#2d6a4f,color:#14402e;
 ```
 
-| From | To | $ | Note |
-|---|---|---|---|
-| Strake Jesuit | Escrow | $20M | Purchase price |
-| Escrow | Riverway Title | $20M net | Required for §1031, not to the seller |
-| Seller | Strake | n/a | Deed to Belara |
-
 ## Escrow checklist
 
 - [ ] Riverway Title named as the proceeds recipient
@@ -600,46 +346,29 @@ flowchart LR
 
 <!-- TAB:references -->
 
-> Citations paired with what they do in this deal. DRAFT, not counsel-reviewed. Full analysis: `docs/research/2026-06-14_structure-C-hybrid-legal-review.md`. First counsel discussion (Chamberlain + Hanover): `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
+> Citations paired with what they do in this deal. DRAFT, not counsel-reviewed. First counsel discussion (Chamberlain + Hanover): `docs/incoming/2026-06-17_chamberlain-hanover-1031-call.md`.
 
 ## The exchange (§1031)
 
-- [IRC §1031](https://www.law.cornell.edu/uscode/text/26/1031): like-kind exchange, real property only since the 2017 tax act.
-- [Reg. §1.1031(a)-3](https://www.law.cornell.edu/cfr/text/26/1.1031(a)-3): a partnership or LLC interest is not like-kind.
+- [IRC §1031](https://www.law.cornell.edu/uscode/text/26/1031): like-kind exchange, real property only since the 2017 tax act. Requires holding for investment, not resale.
+- [Reg. §1.1031(a)-3](https://www.law.cornell.edu/cfr/text/26/1.1031(a)-3): a partnership or LLC interest is not like-kind, why we cannot just join Hanover's JV.
 - [Reg. §1.1031(k)-1](https://www.law.cornell.edu/cfr/text/26/1.1031(k)-1): QI safe harbor, the 45/180 clocks, constructive receipt, the disqualified-person rule.
-- [Reg. §301.7701-3](https://www.law.cornell.edu/cfr/text/26/301.7701-3): when an SMLLC is disregarded.
-- [Form 8824](https://www.irs.gov/forms-pubs/about-form-8824): reports the exchange and computes boot.
+- [Reg. §301.7701-3](https://www.law.cornell.edu/cfr/text/26/301.7701-3): when an SMLLC is disregarded, the basis for the no-drop structure.
+- [Form 8824](https://www.irs.gov/forms-pubs/about-form-8824): reports the exchange and computes the taxable boot.
 
-## Building during the exchange
+## Holding for investment, not resale
 
-- [Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf): the EAT and QEAA build-to-suit safe harbor (parking up to 180 days).
+- The replacement must be held for productive use or investment, not primarily for sale, or it risks "inventory" treatment that disqualifies the exchange. Signing leases supports investment intent. Counsel's practical read: about a 1-in-15 to 1-in-20 recharacterization risk, cost is tax plus interest, penalty likely waived.
+
+## Building during the exchange (upside only)
+
+- [Rev. Proc. 2000-37](https://www.irs.gov/pub/irs-drop/rp-00-37.pdf): the EAT and build-to-suit safe harbor, parking title up to 180 days. Relevant only if we chase site-work improvements.
 - [Rev. Proc. 2004-51](https://www.irs.gov/pub/irs-drop/rp-04-51.pdf): the safe harbor breaks if the taxpayer owned the property within 180 days before parking.
-- [Rev. Proc. 2002-22](https://www.irs.gov/pub/irs-drop/rp-02-22.pdf): tenant-in-common guidance, why co-ownership-at-Day-180 was rejected.
 
-## The partnership (Phase 2)
+## The later partnership
 
-- [IRC §721](https://www.law.cornell.edu/uscode/text/26/721): tax-free contribution of property for a partnership interest.
-- [Rev. Proc. 93-27](https://www.irs.gov/pub/irs-drop/rp-93-27.pdf) and [Rev. Proc. 2001-43](https://www.irs.gov/pub/irs-drop/rp-01-43.pdf): a zero-value profits interest is generally not taxed when received.
-- [IRC §1061](https://www.law.cornell.edu/uscode/text/26/1061): carried interest needs more than 3 years for long-term treatment.
-
-## No surprise tax (Phase-2 math)
-
-- [IRC §752](https://www.law.cornell.edu/uscode/text/26/752) and [Reg. §1.752-3](https://www.law.cornell.edu/cfr/text/26/1.752-3): how partnership debt is allocated. Needs a CPA outside-basis schedule.
-- [IRC §707 / Reg. §1.707-3](https://www.law.cornell.edu/cfr/text/26/1.707-3): disguised-sale rules, the 2-year window.
-- IRC §704(c): keeps Belara's built-in gain with Kao.
-- IRC §263A: capitalized construction costs build Kao's basis.
-
-## Related-party
-
-- [IRC §267(b)](https://www.law.cornell.edu/uscode/text/26/267), [§707(b)](https://www.law.cornell.edu/uscode/text/26/707), [§1031(f)](https://www.law.cornell.edu/uscode/text/26/1031): key off family, ownership, and control, not salaried employment.
-
-## Case law
-
-- *Gluck v. Commissioner*, T.C. Memo. 2020-66: an LLC interest is not like-kind real property.
-- *Magneson* (753 F.2d 1490, 9th Cir. 1985): exchange-then-contribute survived. Pre-1984, 9th Cir., not binding in the 11th.
-- *Bolker* (760 F.2d 1039): related held-for analysis, not a §721 case.
-- *Bergford* (12 F.3d 166): co-ownership recharacterized as a partnership.
+- [IRC §721](https://www.law.cornell.edu/uscode/text/26/721): tax-free contribution of property for a partnership interest, when Hanover invests and the entity becomes the JV.
 
 ## Disclaimer
 
-Internal working model only, not legal or tax advice. No structure here is locked or counsel-approved. Target opinion MLTN, not certainty. Obtain a written §1031 opinion before Belara closes.
+Internal working model only, not legal or tax advice. The June 17 call was a preliminary discussion, not a written opinion, and the structure is not locked. Confirm with Hanover's outside tax counsel and obtain a written §1031 opinion before Belara closes.
